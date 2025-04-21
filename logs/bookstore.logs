@@ -1,0 +1,35 @@
+2025-04-21 17:25:44 - Initialized BookFileManager for: src/test/resources/test_books_file.txt
+2025-04-21 17:25:44 - Starting to save 2 books
+2025-04-21 17:25:44 - Save book: Book One
+2025-04-21 17:25:44 - Save book: Book Two
+2025-04-21 17:25:44 - Successfully saved all books
+2025-04-21 17:30:39 - Initialized BookFileManager for: src/test/resources/test_books_file.txt
+2025-04-21 17:30:39 - Starting to save 2 books
+2025-04-21 17:30:39 - Save book: Book One
+2025-04-21 17:30:39 - Save book: Book Two
+2025-04-21 17:30:39 - Successfully saved all books
+2025-04-21 17:30:49 - Initialized BookFileManager for: src/test/resources/test_books_file.txt
+2025-04-21 17:30:49 - Starting to save 0 books
+2025-04-21 17:30:49 - Successfully saved all books
+2025-04-21 17:30:55 - Initialized BookFileManager for: src/test/resources/test_books_file.txt
+2025-04-21 17:30:55 - Starting to save 0 books
+2025-04-21 17:30:55 - Successfully saved all books
+2025-04-21 17:30:55 - Initialized BookFileManager for: src/test/resources/test_books_file.txt
+2025-04-21 17:30:55 - Starting to save 2 books
+2025-04-21 17:30:55 - Save book: Book One
+2025-04-21 17:30:55 - Save book: Book Two
+2025-04-21 17:30:55 - Successfully saved all books
+2025-04-21 17:33:55 - Initialized BookFileManager for: src/main/resources/books.txt
+2025-04-21 17:33:55 - Starting to save 3 books
+2025-04-21 17:33:55 - Save book: Java Programming
+2025-04-21 17:33:55 - Save book: Effective Java
+2025-04-21 17:33:55 - Save book: Clean Code
+2025-04-21 17:33:55 - Successfully saved all books
+2025-04-21 17:33:55 - Books saved to file: src/main/resources/books.txt
+2025-04-21 17:36:59 - Initialized BookFileManager for: src/main/resources/books.txt
+2025-04-21 17:36:59 - Starting to save 3 books
+2025-04-21 17:36:59 - Save book: Design Patterns
+2025-04-21 17:36:59 - Save book: Refactoring
+2025-04-21 17:36:59 - Save book: The Pragmatic Programmer
+2025-04-21 17:36:59 - Successfully saved all books
+2025-04-21 17:36:59 - Books saved to file: src/main/resources/books.txt
