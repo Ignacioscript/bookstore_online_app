@@ -1,4 +1,4 @@
-# Bookstore File Manager Project
+# Bookstore Online App
 
 ## Overview
 This project is a **raw implementation** of file handling, testing, and persistence in Java, with integrated logging functionality. It serves as a foundational project to demonstrate knowledge in Java and to provide a base for continuous learning and improvement. The project is designed to evolve over time, incorporating various frameworks and technologies as it progresses.
@@ -22,16 +22,16 @@ This project is designed to evolve through different branches, each introducing 
 ## Project Goals
 - **Showcase Java Knowledge**: Demonstrate proficiency in Java fundamentals and file handling.
 - **Continuous Learning**: Serve as a platform for learning and applying new frameworks and technologies.
-- **Version Control**: Each framework or technology upgrade will be handled in a separate branch to track progress and changes.
+- **Version Control**: Each framework or technology upgrade will be developed in a separate branch to track progress and changes.
 
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/bookstore-file-manager.git
+   git clone https://github.com/Ignacioscript/bookstore_online_app.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd bookstore-file-manager
+   cd bookstore_online_app
    ```
 3. Build the project using Maven:
    ```bash
@@ -39,7 +39,7 @@ This project is designed to evolve through different branches, each introducing 
    ```
 4. Run the application:
    ```bash
-   java -jar target/bookstore-file-manager.jar
+   java -jar target/bookstore-online-app.jar
    ```
 
 ## Project Structure
