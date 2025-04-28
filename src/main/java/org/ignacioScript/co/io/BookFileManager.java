@@ -55,7 +55,7 @@ public class BookFileManager extends FileManager <Book> {
     }
 
     @Override
-    protected void delete(int id) {
+    public void delete(int id) {
         FileLogger.log("Attempting to delete book with ID: " + id);
         try {
             List<Book> books = load();
@@ -81,7 +81,7 @@ public class BookFileManager extends FileManager <Book> {
     }
 
     @Override
-    protected void update(Book book) {
+    public void update(Book book) {
         FileLogger.log("Attempting to update bok with ID: " + book.getBookId());
         try {
             List<Book> books = load();

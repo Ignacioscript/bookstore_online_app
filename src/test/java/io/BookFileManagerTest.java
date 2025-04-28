@@ -69,4 +69,45 @@ class BookFileManagerTest {
         // Assert
         assertTrue(loadedBooks.isEmpty(), "Loaded books should be empty");
     }
+
+    @Test
+    @DisplayName("Test deleting book")
+    void testDeleteBook() throws IOException {
+        List<Book> booksToSave = Arrays.asList(
+                new Book("A1234567890123", "Book One", "Description One", "Publisher One", LocalDate.of(2023, 1, 1), 19.99, 10),
+                new Book("A9876543210987", "Book Two", "Description Two", "Publisher Two", LocalDate.of(2022, 5, 15), 29.99, 5)
+        );
+
+        bookFileManager.save(booksToSave);
+        Book bookToRemove = booksToSave.get(0);
+
+        bookFileManager.delete(bookToRemove.getBookId());
+        List<Book> loadedBooks = bookFileManager.load();
+
+        assertEquals(1, loadedBooks.size(), "one book must remain after removing");
+        assertNotEquals(bookToRemove.getBookTitle(), loadedBooks.get(0).getBookTitle(), "removed book should not exist");
+    }
+
+    @Test
+    @DisplayName("Test updating a book")
+    void testUpdateBook() throws IOException {
+        List<Book> booksToSave = Arrays.asList(
+                new Book("A1234567890123", "Book One", "Description One", "Publisher One", LocalDate.of(2023, 1, 1), 19.99, 10),
+                new Book("A9876543210987", "Book Two", "Description Two", "Publisher Two", LocalDate.of(2022, 5, 15), 29.99, 5)
+        );
+
+        bookFileManager.save(booksToSave);
+        Book bookToUpdate = new Book("B1234567890123", "Book Three", "Description Updated", "Publisher Updated", LocalDate.of(2023, 1, 1), 69.99, 35);
+        bookToUpdate.setBookId(booksToSave.get(0).getBookId());
+
+        bookFileManager.update(bookToUpdate);
+        List<Book> loadedBooks = bookFileManager.load();
+
+        assertEquals(booksToSave.size(), loadedBooks.size(), "The number of books should remain the same");
+        assertEquals("B1234567890123", loadedBooks.get(0).getIsbn());
+        assertEquals("Book Three", loadedBooks.get(0).getBookTitle());
+        assertEquals("Publisher Updated", loadedBooks.get(0).getPublisher());
+        assertEquals(69.99, loadedBooks.get(0).getPrice());
+        assertEquals(35, loadedBooks.get(0).getStock());
+    }
 }

@@ -51,13 +51,54 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
     }
 
     @Override
-    protected void delete(int id) {
+    public void delete(int id) {
+        FileLogger.log("Attempting to deleting item order with ID: " + id);
+        try {
+            List<ItemOrder> itemOrders = load();
+            ItemOrder itemOrderToRemove = null;
+
+            for (ItemOrder itemOrder : itemOrders) {
+                if (itemOrder.getItemOrderId() == id) {
+                    itemOrderToRemove = itemOrder;
+                    break;
+                }
+            }
+
+            if (itemOrderToRemove != null) {
+                itemOrders.remove(itemOrderToRemove);
+                save(itemOrders);
+                FileLogger.log("Successfully item order deleted with ID: " + id);
+            }else {
+                FileLogger.log("NO item order found with ID: " + id);
+            }
+
+        }catch (IOException e) {
+            FileLogger.log("ERROR deleting item order: " + e.getMessage());
+        }
 
     }
 
     @Override
-    protected void update(ItemOrder itemOrder) {
+    public void update(ItemOrder itemOrder) {
+        FileLogger.log("Attempting to update item order with ID: " + itemOrder.getItemOrderId());
+        try {
+            List<ItemOrder> itemOrders = load();
+            boolean updated = false;
+            for (int i = 0; i < itemOrders.size(); i ++) {
+                if (itemOrders.get(i).getItemOrderId() == itemOrder.getItemOrderId()) {
+                    itemOrders.set(i, itemOrder);
+                    updated = true;
+                    break;
+                }
+            }
 
+            if(updated) {
+                save(itemOrders);
+                FileLogger.log("Successfully updated item order with ID: " + itemOrder.getItemOrderId());
+            }
+        }catch (IOException e) {
+            FileLogger.log("ERROR updating item order :" + e.getMessage());
+        }
     }
 
     @Override

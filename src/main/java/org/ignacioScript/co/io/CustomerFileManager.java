@@ -52,17 +52,65 @@ public class CustomerFileManager extends FileManager <Customer> {
     }
 
     @Override
-    protected void delete(int id) {
+    public void delete(int id) {
+        FileLogger.log("Attempting to delete customer with ID: "  + id);
+        try {
+            List<Customer> customers = load();
+            Customer customerToRemove = null;
+
+            for (Customer customer : customers) {
+                if (customer.getCustomerId() == id) {
+                    customerToRemove = customer;
+                    break;
+                }
+            }
+
+            if (customerToRemove != null) {
+                customers.remove(customerToRemove);
+                save(customers);
+                FileLogger.log("Successfuly deleted customer with ID: " + id);
+            }else {
+                FileLogger.log("No Customer found it with ID:  " + id);
+            }
+
+        }catch (IOException e) {
+            FileLogger.log("ERROR deleting customer: " + e.getMessage());
+        }
 
     }
 
     @Override
-    protected void update(Customer customer) {
+    public void update(Customer customer) {
+        FileLogger.log("Attempting to update customer with ID: " + customer.getCustomerId());
+        try {
+            List<Customer> customers = load();
+            boolean updated = false;
+
+            for (int i = 0; i < customers.size(); i ++) {
+                if (customers.get(i).getCustomerId() == customer.getCustomerId()) {
+                    customers.set(i, customer);
+                    updated = true;
+                    break;
+                }
+            }
+
+            if (updated) {
+                save(customers);
+                FileLogger.log("Successfully updated customer with ID: " + customer.getCustomerId());
+            }else {
+                FileLogger.log("No customer found with ID: " + customer.getCustomerId());
+                throw new RuntimeException("Customer with ID: " + customer.getCustomerId() + " Not found");
+            }
+
+        }catch (IOException e) {
+            FileLogger.log("ERROR updating customer: " + e.getMessage());
+
+        }
 
     }
 
     @Override
-    protected Customer getById(int id) {
+    public Customer getById(int id) {
         List<Customer> customers = new ArrayList<>();
            try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
                String line;
@@ -105,7 +153,7 @@ public class CustomerFileManager extends FileManager <Customer> {
         if (parts.length < 8) { // Ensure there are at least 8 parts
             throw new IllegalArgumentException("Invalid customer data: " + line);
         }
-        return new Customer(
+        Customer customer =  new Customer(
                 parts[1],
                 parts[2],
                 parts[3],
@@ -114,6 +162,9 @@ public class CustomerFileManager extends FileManager <Customer> {
                 LocalDate.parse(parts[6]),
                 Integer.parseInt(parts[7])
         );
+
+        customer.setCustomerId(Integer.parseInt(parts[0]));
+        return customer;
     }
 
 
