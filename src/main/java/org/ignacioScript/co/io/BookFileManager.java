@@ -56,11 +56,58 @@ public class BookFileManager extends FileManager <Book> {
 
     @Override
     protected void delete(int id) {
+        FileLogger.log("Attempting to delete book with ID: " + id);
+        try {
+            List<Book> books = load();
+            Book bookToRemove = null;
 
+            for (Book book : books) {
+                if (book.getBookId() == id) {
+                    bookToRemove = book;
+                    break;
+                }
+            }
+
+            if (bookToRemove != null) {
+                books.remove(bookToRemove);
+                save(books);
+                FileLogger.log("Successfully deleted book with ID: " + id);
+            } else {
+                FileLogger.log("No Book found with ID: " + id);
+            }
+        } catch (IOException e) {
+            FileLogger.log("ERROR deleting book: " + e.getMessage());
+        }
     }
 
     @Override
     protected void update(Book book) {
+        FileLogger.log("Attempting to update bok with ID: " + book.getBookId());
+        try {
+            List<Book> books = load();
+            boolean updated = false;
+
+            for (int i = 0; i < books.size(); i++) {
+                if (books.get(i).getBookId() == book.getBookId()) {
+                    books.set(i, book);
+                    updated = true;
+                    break;
+
+                }
+            }
+
+            if (updated) {
+                save(books);
+                FileLogger.log("Successfully updated book with ID: " + book.getBookId());
+            }else {
+                FileLogger.log("NO book found with ID: " + book.getBookId());
+                throw new RuntimeException("Book with ID: " + book.getBookId() + " Not found");
+            }
+
+        }catch (IOException e) {
+            FileLogger.log("ERROR updating book: " + e.getMessage());
+        }
+
 
     }
 
