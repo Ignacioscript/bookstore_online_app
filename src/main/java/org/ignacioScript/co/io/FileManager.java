@@ -20,11 +20,17 @@ public abstract class FileManager <T> {
     // Read object using BufferedReader
     protected abstract List<T> load() throws IOException;
 
-    protected abstract T getById(int id); //TODO create this in other classes and review tests
+    protected abstract void delete(int id);
+
+    protected abstract void update(T t);
+
+    protected abstract T getById(int id);
 
     // Convert   Object to CSV String
     protected abstract String  objectToString(T t);
 
     protected abstract T stringToObject(String line);
+
+
 
 }

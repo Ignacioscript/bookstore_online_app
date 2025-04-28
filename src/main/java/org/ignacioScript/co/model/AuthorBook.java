@@ -1,8 +1,6 @@
 package org.ignacioScript.co.model;
 
 
-import org.ignacioScript.co.validation.AuthorBookValidator;
-
 public class AuthorBook {
     private Book book;
     private Author author;
@@ -39,4 +37,13 @@ public class AuthorBook {
         sb.append('}');
         return sb.toString();
     }
+
+    public String toCsvString() {
+        return String.join(",",
+                String.valueOf(this.getBook().getBookId()),
+                String.valueOf(this.getAuthor().getAuthorId())
+                );
+    }
+
+
 }

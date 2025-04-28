@@ -55,6 +55,16 @@ public class BookFileManager extends FileManager <Book> {
     }
 
     @Override
+    protected void delete(int id) {
+
+    }
+
+    @Override
+    protected void update(Book book) {
+
+    }
+
+    @Override
     public Book getById(int id) {
         try {
             List<Book> books = load(); // or however you load your books

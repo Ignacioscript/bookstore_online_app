@@ -34,4 +34,11 @@ public class BookGenre {
         sb.append('}');
         return sb.toString();
     }
+
+    public String toCsvString() {
+        return String.join(",",
+                String.valueOf(this.book.getBookId()),
+                String.valueOf(this.genre.getGenreId())
+                );
+    }
 }

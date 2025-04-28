@@ -51,4 +51,12 @@ public class Genre {
         sb.append('}');
         return sb.toString();
     }
+
+    public String toCsvString() {
+        return String.join(",",
+                String.valueOf(this.getGenreId()),
+                this.getGenreName(),
+                this.getGenreDescription()
+                );
+    }
 }

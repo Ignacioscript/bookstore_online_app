@@ -22,6 +22,8 @@ public class Author {
         setNationality(nationality);
     }
 
+
+
     public void setAuthorId(int authorId) {
         AuthorId = authorId;
     }
@@ -77,5 +79,15 @@ public class Author {
         sb.append(", nationality='").append(nationality).append('\'');
         sb.append('}');
         return sb.toString();
+    }
+
+    public String toCsvString() {
+        return String.join(",",
+                String.valueOf(this.getAuthorId()),
+                this.getFirstName(),
+                this.getLastName(),
+                this.getBio(),
+                this.getNationality()
+        );
     }
 }

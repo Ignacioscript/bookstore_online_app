@@ -51,6 +51,16 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
     }
 
     @Override
+    protected void delete(int id) {
+
+    }
+
+    @Override
+    protected void update(ItemOrder itemOrder) {
+
+    }
+
+    @Override
     public ItemOrder getById(int id) {
 
         try {

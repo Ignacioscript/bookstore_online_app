@@ -1484,3 +1484,260 @@
 2025-04-27 18:31:45 - Successfully saved all books
 2025-04-27 18:31:45 - Saving orders to file.
 2025-04-27 18:31:45 - Saving item orders to file.
+2025-04-27 23:35:00 - Initialized BookFileManager for: src/test/resources/test_books.csv
+2025-04-27 23:35:00 - Initialized CustomerFileManager for: src/test/resources/test_customers.csv
+2025-04-27 23:35:00 - Initialized CustomerFileManager for: src/test/resources/test_customers.csv
+2025-04-27 23:35:00 - OrderFileManager initialized.
+2025-04-27 23:35:00 - Initialized BookFileManager for: src/test/resources/test_books.csv
+2025-04-27 23:35:00 - Initialized CustomerFileManager for: src/test/resources/test_customers.csv
+2025-04-27 23:35:00 - OrderFileManager initialized.
+2025-04-27 23:35:00 - ItemOrderFileManager initialized.
+2025-04-27 23:35:00 - Starting to save 1 customers
+2025-04-27 23:35:00 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@example.com', phoneNumber='1234567890', address='123 Street Name', registrationDate=2025-04-27, loyaltyPoints=50}
+2025-04-27 23:35:00 - Successfully saved all customers
+2025-04-27 23:35:00 - Starting to save 1 books
+2025-04-27 23:35:00 - Save book: Test Book
+2025-04-27 23:35:00 - Successfully saved all books
+2025-04-27 23:35:00 - Saving orders to file.
+2025-04-27 23:35:00 - Saving item orders to file.
+2025-04-27 23:54:41 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:54:41 - Starting to save 2 authors
+2025-04-27 23:54:41 - author saved: Alan Harper
+2025-04-27 23:54:41 - author saved: Charlie Harper
+2025-04-27 23:54:41 - Successfully saved all authors
+2025-04-27 23:54:41 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:54:41 - Starting to save 2 authors
+2025-04-27 23:54:41 - author saved: Alan Harper
+2025-04-27 23:54:41 - author saved: Charlie Harper
+2025-04-27 23:54:41 - Successfully saved all authors
+2025-04-27 23:54:41 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:54:41 - Starting to save 2 authors
+2025-04-27 23:54:41 - author saved: Alan Harper
+2025-04-27 23:54:41 - author saved: Charlie Harper
+2025-04-27 23:54:41 - Successfully saved all authors
+2025-04-27 23:54:41 - Attempting to delete author with ID: 8
+2025-04-27 23:54:41 - No author found with ID: 8
+2025-04-27 23:54:41 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:54:41 - Starting to save 2 authors
+2025-04-27 23:54:41 - author saved: Alan Harper
+2025-04-27 23:54:41 - author saved: Charlie Harper
+2025-04-27 23:54:41 - Successfully saved all authors
+2025-04-27 23:54:41 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:54:41 - Starting to save 0 authors
+2025-04-27 23:54:41 - Successfully saved all authors
+2025-04-27 23:55:42 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:55:42 - Starting to save 2 authors
+2025-04-27 23:55:42 - author saved: Alan Harper
+2025-04-27 23:55:42 - author saved: Charlie Harper
+2025-04-27 23:55:42 - Successfully saved all authors
+2025-04-27 23:55:42 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:55:42 - Starting to save 2 authors
+2025-04-27 23:55:42 - author saved: Alan Harper
+2025-04-27 23:55:42 - author saved: Charlie Harper
+2025-04-27 23:55:42 - Successfully saved all authors
+2025-04-27 23:55:42 - Attempting to update author with ID: 5
+2025-04-27 23:55:42 - No author found with ID: 5
+2025-04-27 23:55:42 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:55:42 - Starting to save 2 authors
+2025-04-27 23:55:42 - author saved: Alan Harper
+2025-04-27 23:55:42 - author saved: Charlie Harper
+2025-04-27 23:55:42 - Successfully saved all authors
+2025-04-27 23:55:42 - Attempting to delete author with ID: 10
+2025-04-27 23:55:42 - No author found with ID: 10
+2025-04-27 23:55:42 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:55:42 - Starting to save 2 authors
+2025-04-27 23:55:42 - author saved: Alan Harper
+2025-04-27 23:55:42 - author saved: Charlie Harper
+2025-04-27 23:55:42 - Successfully saved all authors
+2025-04-27 23:55:42 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:55:42 - Starting to save 0 authors
+2025-04-27 23:55:42 - Successfully saved all authors
+2025-04-27 23:57:27 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:57:27 - Starting to save 0 authors
+2025-04-27 23:57:27 - Successfully saved all authors
+2025-04-27 23:57:27 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-27 23:57:27 - Starting to save 2 authors
+2025-04-27 23:57:27 - author saved: Alan Harper
+2025-04-27 23:57:27 - author saved: Charlie Harper
+2025-04-27 23:57:27 - Successfully saved all authors
+2025-04-28 00:01:12 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:12 - Starting to save 2 authors
+2025-04-28 00:01:12 - author saved: Alan Harper
+2025-04-28 00:01:12 - author saved: Charlie Harper
+2025-04-28 00:01:12 - Successfully saved all authors
+2025-04-28 00:01:12 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:12 - Starting to save 2 authors
+2025-04-28 00:01:12 - author saved: Alan Harper
+2025-04-28 00:01:12 - author saved: Charlie Harper
+2025-04-28 00:01:12 - Successfully saved all authors
+2025-04-28 00:01:12 - Attempting to update author with ID: 5
+2025-04-28 00:01:12 - Starting to save 2 authors
+2025-04-28 00:01:12 - author saved: Alan Harper
+2025-04-28 00:01:12 - author saved: Charlie Harper
+2025-04-28 00:01:12 - Successfully saved all authors
+2025-04-28 00:01:12 - Successfully updated author with ID: 5
+2025-04-28 00:01:12 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:12 - Starting to save 2 authors
+2025-04-28 00:01:12 - author saved: Alan Harper
+2025-04-28 00:01:12 - author saved: Charlie Harper
+2025-04-28 00:01:12 - Successfully saved all authors
+2025-04-28 00:01:12 - Attempting to delete author with ID: 12
+2025-04-28 00:01:12 - Starting to save 1 authors
+2025-04-28 00:01:12 - author saved: Charlie Harper
+2025-04-28 00:01:12 - Successfully saved all authors
+2025-04-28 00:01:12 - Successfully deleted author with ID: 12
+2025-04-28 00:01:12 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:12 - Starting to save 2 authors
+2025-04-28 00:01:12 - author saved: Alan Harper
+2025-04-28 00:01:12 - author saved: Charlie Harper
+2025-04-28 00:01:12 - Successfully saved all authors
+2025-04-28 00:01:12 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:12 - Starting to save 0 authors
+2025-04-28 00:01:12 - Successfully saved all authors
+2025-04-28 00:01:39 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:39 - Starting to save 2 authors
+2025-04-28 00:01:39 - author saved: Alan Harper
+2025-04-28 00:01:39 - author saved: Charlie Harper
+2025-04-28 00:01:39 - Successfully saved all authors
+2025-04-28 00:01:39 - Attempting to update author with ID: 1
+2025-04-28 00:01:39 - Starting to save 2 authors
+2025-04-28 00:01:39 - author saved: Alan Harper
+2025-04-28 00:01:39 - author saved: Charlie Harper
+2025-04-28 00:01:39 - Successfully saved all authors
+2025-04-28 00:01:39 - Successfully updated author with ID: 1
+2025-04-28 00:01:44 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:44 - Starting to save 2 authors
+2025-04-28 00:01:44 - author saved: Alan Harper
+2025-04-28 00:01:44 - author saved: Charlie Harper
+2025-04-28 00:01:44 - Successfully saved all authors
+2025-04-28 00:01:44 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:44 - Starting to save 2 authors
+2025-04-28 00:01:44 - author saved: Alan Harper
+2025-04-28 00:01:44 - author saved: Charlie Harper
+2025-04-28 00:01:44 - Successfully saved all authors
+2025-04-28 00:01:44 - Attempting to update author with ID: 5
+2025-04-28 00:01:44 - Starting to save 2 authors
+2025-04-28 00:01:44 - author saved: Alan Harper
+2025-04-28 00:01:44 - author saved: Charlie Harper
+2025-04-28 00:01:44 - Successfully saved all authors
+2025-04-28 00:01:44 - Successfully updated author with ID: 5
+2025-04-28 00:01:44 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:44 - Starting to save 2 authors
+2025-04-28 00:01:44 - author saved: Alan Harper
+2025-04-28 00:01:44 - author saved: Charlie Harper
+2025-04-28 00:01:44 - Successfully saved all authors
+2025-04-28 00:01:44 - Attempting to delete author with ID: 12
+2025-04-28 00:01:44 - Starting to save 1 authors
+2025-04-28 00:01:44 - author saved: Charlie Harper
+2025-04-28 00:01:44 - Successfully saved all authors
+2025-04-28 00:01:44 - Successfully deleted author with ID: 12
+2025-04-28 00:01:44 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:44 - Starting to save 2 authors
+2025-04-28 00:01:44 - author saved: Alan Harper
+2025-04-28 00:01:44 - author saved: Charlie Harper
+2025-04-28 00:01:44 - Successfully saved all authors
+2025-04-28 00:01:44 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:44 - Starting to save 0 authors
+2025-04-28 00:01:44 - Successfully saved all authors
+2025-04-28 00:01:56 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:56 - Starting to save 2 authors
+2025-04-28 00:01:56 - author saved: Alan Harper
+2025-04-28 00:01:56 - author saved: Charlie Harper
+2025-04-28 00:01:56 - Successfully saved all authors
+2025-04-28 00:01:56 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:56 - Starting to save 2 authors
+2025-04-28 00:01:56 - author saved: Alan Harper
+2025-04-28 00:01:56 - author saved: Charlie Harper
+2025-04-28 00:01:56 - Successfully saved all authors
+2025-04-28 00:01:56 - Attempting to update author with ID: 5
+2025-04-28 00:01:56 - Starting to save 2 authors
+2025-04-28 00:01:56 - author saved: Alan Harper
+2025-04-28 00:01:56 - author saved: Charlie Harper
+2025-04-28 00:01:56 - Successfully saved all authors
+2025-04-28 00:01:56 - Successfully updated author with ID: 5
+2025-04-28 00:01:56 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:56 - Starting to save 2 authors
+2025-04-28 00:01:56 - author saved: Alan Harper
+2025-04-28 00:01:56 - author saved: Charlie Harper
+2025-04-28 00:01:56 - Successfully saved all authors
+2025-04-28 00:01:56 - Attempting to delete author with ID: 12
+2025-04-28 00:01:56 - Starting to save 1 authors
+2025-04-28 00:01:56 - author saved: Charlie Harper
+2025-04-28 00:01:56 - Successfully saved all authors
+2025-04-28 00:01:56 - Successfully deleted author with ID: 12
+2025-04-28 00:01:56 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:56 - Starting to save 2 authors
+2025-04-28 00:01:56 - author saved: Alan Harper
+2025-04-28 00:01:56 - author saved: Charlie Harper
+2025-04-28 00:01:56 - Successfully saved all authors
+2025-04-28 00:01:56 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:01:56 - Starting to save 0 authors
+2025-04-28 00:01:56 - Successfully saved all authors
+2025-04-28 00:02:13 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:02:13 - Starting to save 2 authors
+2025-04-28 00:02:13 - author saved: Alan Harper
+2025-04-28 00:02:13 - author saved: Charlie Harper
+2025-04-28 00:02:13 - Successfully saved all authors
+2025-04-28 00:02:13 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:02:13 - Starting to save 2 authors
+2025-04-28 00:02:13 - author saved: Alan Harper
+2025-04-28 00:02:13 - author saved: Charlie Harper
+2025-04-28 00:02:13 - Successfully saved all authors
+2025-04-28 00:02:13 - Attempting to update author with ID: 5
+2025-04-28 00:02:13 - Starting to save 2 authors
+2025-04-28 00:02:13 - author saved: Alan Harper
+2025-04-28 00:02:13 - author saved: Charlie Harper
+2025-04-28 00:02:13 - Successfully saved all authors
+2025-04-28 00:02:13 - Successfully updated author with ID: 5
+2025-04-28 00:02:13 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:02:13 - Starting to save 2 authors
+2025-04-28 00:02:13 - author saved: Alan Harper
+2025-04-28 00:02:13 - author saved: Charlie Harper
+2025-04-28 00:02:13 - Successfully saved all authors
+2025-04-28 00:02:13 - Attempting to delete author with ID: 12
+2025-04-28 00:02:13 - Starting to save 1 authors
+2025-04-28 00:02:13 - author saved: Charlie Harper
+2025-04-28 00:02:13 - Successfully saved all authors
+2025-04-28 00:02:13 - Successfully deleted author with ID: 12
+2025-04-28 00:02:13 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:02:13 - Starting to save 2 authors
+2025-04-28 00:02:13 - author saved: Alan Harper
+2025-04-28 00:02:13 - author saved: Charlie Harper
+2025-04-28 00:02:13 - Successfully saved all authors
+2025-04-28 00:02:13 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:02:13 - Starting to save 0 authors
+2025-04-28 00:02:13 - Successfully saved all authors
+2025-04-28 00:03:38 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:03:38 - Starting to save 2 authors
+2025-04-28 00:03:38 - author saved: Alan Harper
+2025-04-28 00:03:38 - author saved: Charlie Harper
+2025-04-28 00:03:38 - Successfully saved all authors
+2025-04-28 00:03:38 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:03:38 - Starting to save 2 authors
+2025-04-28 00:03:38 - author saved: Alan Harper
+2025-04-28 00:03:38 - author saved: Charlie Harper
+2025-04-28 00:03:38 - Successfully saved all authors
+2025-04-28 00:03:38 - Attempting to update author with ID: 5
+2025-04-28 00:03:38 - Starting to save 2 authors
+2025-04-28 00:03:38 - author saved: Alan Harper
+2025-04-28 00:03:38 - author saved: Charlie Harper
+2025-04-28 00:03:38 - Successfully saved all authors
+2025-04-28 00:03:38 - Successfully updated author with ID: 5
+2025-04-28 00:03:38 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:03:38 - Starting to save 2 authors
+2025-04-28 00:03:38 - author saved: Alan Harper
+2025-04-28 00:03:38 - author saved: Charlie Harper
+2025-04-28 00:03:38 - Successfully saved all authors
+2025-04-28 00:03:38 - Attempting to delete author with ID: 12
+2025-04-28 00:03:38 - Starting to save 1 authors
+2025-04-28 00:03:38 - author saved: Charlie Harper
+2025-04-28 00:03:38 - Successfully saved all authors
+2025-04-28 00:03:38 - Successfully deleted author with ID: 12
+2025-04-28 00:03:38 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:03:38 - Starting to save 2 authors
+2025-04-28 00:03:38 - author saved: Alan Harper
+2025-04-28 00:03:38 - author saved: Charlie Harper
+2025-04-28 00:03:38 - Successfully saved all authors
+2025-04-28 00:03:38 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-28 00:03:38 - Starting to save 0 authors
+2025-04-28 00:03:38 - Successfully saved all authors

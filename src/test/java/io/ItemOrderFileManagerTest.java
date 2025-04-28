@@ -25,10 +25,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ItemOrderFileManagerTest {
 
-    private static final String BOOK_FILE = "test_books.csv";
-    private static final String CUSTOMER_FILE = "test_customers.csv";
-    private static final String ORDER_FILE = "test_orders.csv";
-    private static final String ITEMORDER_FILE = "test_itemorders.csv";
+    private static final String BOOK_FILE = "src/test/resources/test_books.csv";
+    private static final String CUSTOMER_FILE = "src/test/resources/test_customers.csv";
+    private static final String ORDER_FILE = "src/test/resources/test_orders.csv";
+    private static final String ITEMORDER_FILE = "src/test/resources/test_itemorders.csv";
 
     private BookFileManager bookFileManager;
     private CustomerFileManager customerFileManager;
@@ -60,27 +60,48 @@ class ItemOrderFileManagerTest {
     void testSaveAndLoadItemOrder() throws IOException {
         // Prepare a customer
         Customer customer = new Customer(
-                "John", "Doe", "john.doe@example.com", "1234567890",
-                "123 Street Name", LocalDate.now(), 50
+                "John",
+                "Doe",
+                "john.doe@example.com",
+                "1234567890",
+                "123 Street Name",
+                LocalDate.now(),
+                50
         );
         customer.setCustomerId(1);
         customerFileManager.save(List.of(customer));
 
         // Prepare a book
         Book book = new Book(
-                "123-456-789", "Test Book", "A book for testing",
-                "Test Publisher", LocalDate.now(), 29.99, 10
+                "123-456-789",
+                "Test Book",
+                "A book for testing",
+                "Test Publisher",
+                LocalDate.now(),
+                29.99,
+                10
         );
         book.setBookId(1);
         bookFileManager.save(List.of(book));
 
         // Prepare an order
-        Order order = new Order(customer, LocalDate.now(), 59.98, "CREDIT_CARD", Status.PENDING);
+        Order order = new Order(
+                customer,
+                LocalDate.now(),
+                59.98,
+                "CREDIT_CARD",
+                Status.PENDING);
+
         order.setOrderId(1);
         orderFileManager.save(List.of(order));
 
         // Create an ItemOrder
-        ItemOrder itemOrder = new ItemOrder(book, order, 2, 29.99);
+        ItemOrder itemOrder = new ItemOrder(
+                book,
+                order,
+                2,
+                29.99);
+
         itemOrder.setItemOrderId(1);
         itemOrderFileManager.save(List.of(itemOrder));
 
@@ -113,4 +134,6 @@ class ItemOrderFileManagerTest {
         fw.write("");
         fw.close();
     }
+
+
 }

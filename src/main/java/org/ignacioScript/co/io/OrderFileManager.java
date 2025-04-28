@@ -53,6 +53,16 @@ public class OrderFileManager extends FileManager<Order> {
     }
 
     @Override
+    protected void delete(int id) {
+
+    }
+
+    @Override
+    protected void update(Order order) {
+
+    }
+
+    @Override
     public Order getById(int id) {
         try {
             List<Order> orders = load();

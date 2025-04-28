@@ -49,6 +49,16 @@ public class GenreFileManager extends FileManager <Genre> {
     }
 
     @Override
+    protected void delete(int id) {
+
+    }
+
+    @Override
+    protected void update(Genre genre) {
+
+    }
+
+    @Override
     protected Genre getById(int id) {
         try {
             for (Genre genre : load()) {

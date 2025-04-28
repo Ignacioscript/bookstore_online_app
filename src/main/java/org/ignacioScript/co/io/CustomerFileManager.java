@@ -52,6 +52,16 @@ public class CustomerFileManager extends FileManager <Customer> {
     }
 
     @Override
+    protected void delete(int id) {
+
+    }
+
+    @Override
+    protected void update(Customer customer) {
+
+    }
+
+    @Override
     protected Customer getById(int id) {
         List<Customer> customers = new ArrayList<>();
            try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
