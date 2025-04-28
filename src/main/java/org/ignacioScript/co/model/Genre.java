@@ -14,6 +14,9 @@ public class Genre {
         setGenreDescription(genreDescription);
     }
 
+    public void setGenreId(int genreId) {
+        this.genreId = genreId;
+    }
 
     public int getGenreId() {
         return genreId;

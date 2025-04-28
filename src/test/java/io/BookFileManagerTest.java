@@ -40,8 +40,8 @@ class BookFileManagerTest {
         );
 
         // Act
-        bookFileManager.saveBooks(booksToSave);
-        List<Book> loadedBooks = bookFileManager.loadBooks();
+        bookFileManager.save(booksToSave);
+        List<Book> loadedBooks = bookFileManager.load();
 
         // Assert
         assertEquals(booksToSave.size(), loadedBooks.size(), "The number of books should match");
@@ -63,8 +63,8 @@ class BookFileManagerTest {
         List<Book> emptyBooks = Collections.emptyList();
 
         // Act
-        bookFileManager.saveBooks(emptyBooks);
-        List<Book> loadedBooks = bookFileManager.loadBooks();
+        bookFileManager.save(emptyBooks);
+        List<Book> loadedBooks = bookFileManager.load();
 
         // Assert
         assertTrue(loadedBooks.isEmpty(), "Loaded books should be empty");

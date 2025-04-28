@@ -22,6 +22,10 @@ public class Order {
         this.status = status;
     }
 
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
+    }
+
     public int getOrderId() {
         return orderId;
     }
@@ -79,5 +83,16 @@ public class Order {
         sb.append(", status=").append(status);
         sb.append('}');
         return sb.toString();
+    }
+
+    public String toCsvString() {
+        return String.join(",",
+                String.valueOf(orderId),
+                String.valueOf(customer.getCustomerId()), // Assuming Customer has a getCustomerId method
+                orderDate.toString(),
+                String.valueOf(total),
+                paymentMethod,
+                status.name()
+        );
     }
 }

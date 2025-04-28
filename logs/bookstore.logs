@@ -33,3 +33,1454 @@
 2025-04-21 17:36:59 - Save book: The Pragmatic Programmer
 2025-04-21 17:36:59 - Successfully saved all books
 2025-04-21 17:36:59 - Books saved to file: src/main/resources/books.txt
+2025-04-21 18:51:49 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-04-21 18:51:49 - Starting to save 3 books
+2025-04-21 18:51:49 - Save book: Design Patterns
+2025-04-21 18:51:49 - Save book: Refactoring
+2025-04-21 18:51:49 - Save book: The Pragmatic Programmer
+2025-04-21 18:51:49 - Successfully saved all books
+2025-04-21 18:51:49 - Books saved to file: src/main/resources/books.csv
+2025-04-21 18:52:33 - Initialized BookFileManager for: src/main/resources/books.json
+2025-04-21 18:52:33 - Starting to save 3 books
+2025-04-21 18:52:33 - Save book: Design Patterns
+2025-04-21 18:52:33 - Save book: Refactoring
+2025-04-21 18:52:33 - Save book: The Pragmatic Programmer
+2025-04-21 18:52:33 - Successfully saved all books
+2025-04-21 18:52:33 - Books saved to file: src/main/resources/books.json
+2025-04-22 18:49:54 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-04-22 18:49:54 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-04-22 18:49:54 - Starting to save 3 books
+2025-04-22 18:49:54 - Save book: Design Patterns
+2025-04-22 18:49:54 - Save book: Refactoring
+2025-04-22 18:49:54 - Save book: The Pragmatic Programmer
+2025-04-22 18:49:54 - Successfully saved all books
+2025-04-22 18:49:54 - Books saved to file: src/main/resources/books.csv
+2025-04-22 18:49:54 - Starting to save 4 authors
+2025-04-22 18:49:54 - author saved: Erich Gamma
+2025-04-22 18:49:54 - author saved: Martin Fowler
+2025-04-22 18:49:54 - author saved: Andrew Hunt
+2025-04-22 18:49:54 - author saved: David Thomas
+2025-04-22 18:49:54 - Successfully saved all authors
+2025-04-22 18:49:54 - Authors saved to file: src/main/resources/authors.csv
+2025-04-23 19:40:59 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-23 19:40:59 - Starting to save 2 authors
+2025-04-23 19:40:59 - author saved: Alan Harper
+2025-04-23 19:40:59 - author saved: Charlie Harper
+2025-04-23 19:40:59 - Successfully saved all authors
+2025-04-23 19:42:05 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-23 19:42:05 - Starting to save 2 authors
+2025-04-23 19:42:05 - author saved: Alan Harper
+2025-04-23 19:42:05 - author saved: Charlie Harper
+2025-04-23 19:42:05 - Successfully saved all authors
+2025-04-23 19:45:24 - Initialized AuthorFileManager for: src/test/resources/test_authors_file.txt
+2025-04-23 19:45:24 - Starting to save 0 authors
+2025-04-23 19:45:24 - Successfully saved all authors
+2025-04-24 12:28:03 - Initialized CustomerFileManager for: src/resources/test_customers_file.txt
+2025-04-24 12:28:03 - Starting to save 2 customers
+2025-04-24 12:28:03 - ERROR saving customers src/resources/test_customers_file.txt (No such file or directory)
+2025-04-24 12:30:31 - Initialized CustomerFileManager for: src/resources/test_customers_file.txt
+2025-04-24 12:30:31 - Starting to save 2 customers
+2025-04-24 12:30:31 - ERROR saving customers src/resources/test_customers_file.txt (No such file or directory)
+2025-04-24 12:36:19 - Initialized CustomerFileManager for: src/resources/test_customers_file.txt
+2025-04-24 12:36:19 - Starting to save 2 customers
+2025-04-24 12:36:19 - ERROR saving customers src/resources/test_customers_file.txt (No such file or directory)
+2025-04-24 12:43:20 - Initialized CustomerFileManager for: src/test/resources/test_customers_file.txt
+2025-04-24 12:43:20 - Starting to save 2 customers
+2025-04-24 12:43:20 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-24, loyaltyPoints=10}
+2025-04-24 12:43:20 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-24, loyaltyPoints=20}
+2025-04-24 12:43:20 - Successfully saved all customers
+2025-04-24 18:15:37 - Initializing genre: src/test/resources/genre_test_file.csv
+2025-04-24 18:15:37 - Initializing genre: src/test/resources/genre_test_file.csv
+2025-04-24 18:15:37 - Starting to save: 0 genres
+2025-04-24 18:16:39 - Initializing genre: src/test/resources/genre_test_file.csv
+2025-04-24 18:16:39 - Starting to save: 2 genres
+2025-04-24 18:16:39 - Initializing genre: src/test/resources/genre_test_file.csv
+2025-04-24 18:16:39 - Starting to save: 0 genres
+2025-04-24 18:17:30 - Initializing genre: src/test/resources/genre_test_file.txt
+2025-04-24 18:17:30 - Starting to save: 2 genres
+2025-04-24 18:17:30 - Initializing genre: src/test/resources/genre_test_file.txt
+2025-04-24 18:17:30 - Starting to save: 0 genres
+2025-04-24 18:47:29 - Initializing genre: src/test/resources/genre_test_file.txt
+2025-04-24 18:47:29 - Starting to save: 2 genres
+2025-04-24 18:47:29 - Initializing genre: src/test/resources/genre_test_file.txt
+2025-04-24 18:47:29 - Starting to save: 0 genres
+2025-04-24 18:50:31 - Initializing genre: src/test/resources/genre_test_file.txt
+2025-04-24 18:50:31 - Starting to save: 2 genres
+2025-04-24 18:50:31 - Save genre: Genre{genreId=1, genreName='Fiction', genreDescription='Sci-Fi and sobrenatural adventures at least 50 characters to be valid or will throw a exception '}
+2025-04-24 18:50:31 - Save genre: Genre{genreId=2, genreName='Terror', genreDescription='Terror and sobrenatural adventures at least 50 characters to be valid or will throw a exception '}
+2025-04-24 18:50:31 - Successfully saved all genres
+2025-04-24 18:50:31 - Initializing genre: src/test/resources/genre_test_file.txt
+2025-04-24 18:50:31 - Starting to save: 0 genres
+2025-04-24 18:50:31 - Successfully saved all genres
+2025-04-24 18:59:01 - Initializing genre: src/test/resources/genre_test_file.txt
+2025-04-24 18:59:01 - Starting to save: 2 genres
+2025-04-24 18:59:01 - Save genre: Genre{genreId=1, genreName='Fiction', genreDescription='Sci-Fi and sobrenatural adventures at least 50 characters to be valid or will throw a exception '}
+2025-04-24 18:59:01 - Save genre: Genre{genreId=2, genreName='Terror', genreDescription='Terror and sobrenatural adventures at least 50 characters to be valid or will throw a exception '}
+2025-04-24 18:59:01 - Successfully saved all genres
+2025-04-24 18:59:01 - Initializing genre: src/test/resources/genre_test_file.txt
+2025-04-24 18:59:01 - Starting to save: 0 genres
+2025-04-24 18:59:01 - Successfully saved all genres
+2025-04-25 17:06:52 - 
+2025-04-25 17:06:52 - 
+2025-04-25 17:06:52 - 
+2025-04-25 17:06:52 - 
+2025-04-25 17:06:52 - 
+2025-04-25 17:06:52 - 
+2025-04-25 17:13:45 - 
+2025-04-25 17:17:20 - 
+2025-04-25 17:17:20 - 
+2025-04-25 17:17:20 - 
+2025-04-25 17:17:20 - 
+2025-04-25 17:17:20 - 
+2025-04-25 17:17:20 - 
+2025-04-25 17:20:46 - 
+2025-04-25 17:20:46 - 
+2025-04-25 17:20:46 - 
+2025-04-25 17:20:46 - 
+2025-04-25 17:20:46 - 
+2025-04-25 17:20:46 - 
+2025-04-25 17:21:01 - 
+2025-04-25 17:21:01 - 
+2025-04-25 17:21:01 - 
+2025-04-25 17:21:01 - 
+2025-04-25 17:21:01 - 
+2025-04-25 17:21:01 - 
+2025-04-25 17:23:58 - 
+2025-04-25 17:57:41 - 
+2025-04-25 17:57:41 - 
+2025-04-25 17:57:41 - 
+2025-04-25 17:57:41 - 
+2025-04-25 17:57:41 - 
+2025-04-25 17:57:41 - 
+2025-04-25 17:58:14 - 
+2025-04-25 17:58:14 - 
+2025-04-25 17:58:14 - 
+2025-04-25 17:58:14 - 
+2025-04-25 17:58:14 - 
+2025-04-25 17:58:14 - 
+2025-04-25 18:00:52 - 
+2025-04-25 18:00:52 - 
+2025-04-25 18:00:52 - 
+2025-04-25 18:00:52 - 
+2025-04-25 18:00:52 - 
+2025-04-25 18:03:58 - 
+2025-04-25 18:03:58 - 
+2025-04-25 18:03:58 - 
+2025-04-25 18:03:58 - 
+2025-04-25 18:03:58 - 
+2025-04-25 18:09:26 - 
+2025-04-25 18:09:26 - 
+2025-04-25 18:09:26 - 
+2025-04-25 18:09:26 - 
+2025-04-25 18:09:26 - 
+2025-04-25 18:09:26 - 
+2025-04-25 18:10:50 - 
+2025-04-25 18:10:50 - 
+2025-04-25 18:10:50 - 
+2025-04-25 18:10:50 - 
+2025-04-25 18:10:50 - 
+2025-04-25 18:11:39 - 
+2025-04-25 18:11:39 - 
+2025-04-25 18:11:39 - 
+2025-04-25 18:11:39 - 
+2025-04-25 18:11:39 - 
+2025-04-25 18:11:39 - 
+2025-04-25 18:12:06 - 
+2025-04-25 18:12:06 - 
+2025-04-25 18:12:06 - 
+2025-04-25 18:12:06 - 
+2025-04-25 18:12:06 - 
+2025-04-25 18:12:45 - 
+2025-04-25 18:12:45 - 
+2025-04-25 18:12:45 - 
+2025-04-25 18:12:45 - 
+2025-04-25 18:12:45 - 
+2025-04-25 18:12:45 - 
+2025-04-25 18:13:13 - 
+2025-04-25 18:13:13 - 
+2025-04-25 18:13:13 - 
+2025-04-25 18:13:13 - 
+2025-04-25 18:13:13 - 
+2025-04-25 18:14:40 - 
+2025-04-25 18:14:40 - 
+2025-04-25 18:14:40 - 
+2025-04-25 18:14:40 - 
+2025-04-25 18:14:40 - 
+2025-04-25 18:16:43 - 
+2025-04-25 18:33:18 - 
+2025-04-25 18:33:18 - 
+2025-04-25 18:33:18 - 
+2025-04-25 18:33:18 - 
+2025-04-25 18:33:18 - 
+2025-04-25 18:35:51 - 
+2025-04-25 18:35:51 - 
+2025-04-25 18:35:51 - 
+2025-04-25 18:35:51 - 
+2025-04-25 18:35:51 - 
+2025-04-25 18:35:51 - 
+2025-04-25 18:35:59 - 
+2025-04-25 18:35:59 - 
+2025-04-25 18:35:59 - 
+2025-04-25 18:35:59 - 
+2025-04-25 18:35:59 - 
+2025-04-25 18:35:59 - 
+2025-04-25 18:36:21 - 
+2025-04-25 18:36:21 - 
+2025-04-25 18:36:21 - 
+2025-04-25 18:36:21 - 
+2025-04-25 18:36:21 - 
+2025-04-25 18:36:21 - 
+2025-04-25 18:38:03 - 
+2025-04-25 18:38:03 - 
+2025-04-25 18:38:03 - 
+2025-04-25 18:38:03 - 
+2025-04-25 18:38:03 - 
+2025-04-25 18:38:14 - 
+2025-04-25 18:38:14 - 
+2025-04-25 18:38:14 - 
+2025-04-25 18:38:14 - 
+2025-04-25 18:38:14 - 
+2025-04-25 18:39:09 - 
+2025-04-25 18:39:09 - 
+2025-04-25 18:39:09 - 
+2025-04-25 18:39:09 - 
+2025-04-25 18:39:09 - 
+2025-04-25 18:44:07 - 
+2025-04-25 18:44:07 - 
+2025-04-25 18:44:07 - 
+2025-04-25 18:44:07 - 
+2025-04-25 18:44:07 - 
+2025-04-25 18:49:00 - 
+2025-04-25 18:49:00 - 
+2025-04-25 18:49:00 - 
+2025-04-25 18:49:00 - 
+2025-04-25 18:49:00 - 
+2025-04-25 18:52:41 - OrderFileManager initialized.
+2025-04-25 18:52:41 - Saving orders to file.
+2025-04-25 18:53:03 - OrderFileManager initialized.
+2025-04-25 18:53:31 - OrderFileManager initialized.
+2025-04-25 18:53:31 - Saving orders to file.
+2025-04-25 20:04:56 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-25 20:04:56 - OrderFileManager initialized.
+2025-04-25 20:04:56 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-25 20:04:56 - OrderFileManager initialized.
+2025-04-25 20:04:56 - ItemOrderFileManager initialized.
+2025-04-25 20:04:56 - Starting to save 2 books
+2025-04-25 20:04:56 - Save book: Book One
+2025-04-25 20:04:56 - Save book: Book Two
+2025-04-25 20:04:56 - Successfully saved all books
+2025-04-25 20:04:56 - Saving orders to file.
+2025-04-25 20:06:05 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-25 20:06:05 - OrderFileManager initialized.
+2025-04-25 20:06:05 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-25 20:06:05 - OrderFileManager initialized.
+2025-04-25 20:06:05 - ItemOrderFileManager initialized.
+2025-04-25 20:06:05 - Starting to save 2 books
+2025-04-25 20:06:05 - Save book: Book One
+2025-04-25 20:06:05 - Save book: Book Two
+2025-04-25 20:06:05 - Successfully saved all books
+2025-04-25 20:06:05 - Saving orders to file.
+2025-04-25 20:07:05 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-25 20:07:05 - OrderFileManager initialized.
+2025-04-25 20:07:05 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-25 20:07:05 - OrderFileManager initialized.
+2025-04-25 20:07:05 - ItemOrderFileManager initialized.
+2025-04-25 20:07:05 - Starting to save 2 books
+2025-04-25 20:07:05 - Save book: Book One
+2025-04-25 20:07:05 - Save book: Book Two
+2025-04-25 20:07:05 - Successfully saved all books
+2025-04-25 20:07:05 - Saving orders to file.
+2025-04-25 20:19:50 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:19:50 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:19:50 - OrderFileManager initialized.
+2025-04-25 20:20:21 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:20:21 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:20:21 - OrderFileManager initialized.
+2025-04-25 20:20:21 - Starting to save 2 customers
+2025-04-25 20:20:21 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-25, loyaltyPoints=50}
+2025-04-25 20:20:21 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-25, loyaltyPoints=100}
+2025-04-25 20:20:21 - Successfully saved all customers
+2025-04-25 20:20:21 - Saving orders to file.
+2025-04-25 20:22:07 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:22:07 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:22:07 - OrderFileManager initialized.
+2025-04-25 20:22:07 - Starting to save 2 customers
+2025-04-25 20:22:07 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-25, loyaltyPoints=50}
+2025-04-25 20:22:07 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-25, loyaltyPoints=100}
+2025-04-25 20:22:07 - Successfully saved all customers
+2025-04-25 20:22:07 - Saving orders to file.
+2025-04-25 20:24:01 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:24:01 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:24:01 - OrderFileManager initialized.
+2025-04-25 20:24:01 - Starting to save 2 customers
+2025-04-25 20:24:01 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-25, loyaltyPoints=50}
+2025-04-25 20:24:01 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-25, loyaltyPoints=100}
+2025-04-25 20:24:01 - Successfully saved all customers
+2025-04-25 20:24:01 - Saving orders to file.
+2025-04-25 20:25:09 - Initialized CustomerFileManager for: src/test/resources/test_customers_file.txt
+2025-04-25 20:25:09 - Starting to save 2 customers
+2025-04-25 20:25:09 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-25, loyaltyPoints=10}
+2025-04-25 20:25:09 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-25, loyaltyPoints=20}
+2025-04-25 20:25:09 - Successfully saved all customers
+2025-04-25 20:25:24 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:25:24 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:25:24 - OrderFileManager initialized.
+2025-04-25 20:25:24 - Starting to save 2 customers
+2025-04-25 20:25:24 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-25, loyaltyPoints=50}
+2025-04-25 20:25:24 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-25, loyaltyPoints=100}
+2025-04-25 20:25:24 - Successfully saved all customers
+2025-04-25 20:25:24 - Saving orders to file.
+2025-04-25 20:34:36 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:34:36 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:34:36 - OrderFileManager initialized.
+2025-04-25 20:34:36 - Starting to save 2 customers
+2025-04-25 20:34:36 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-25, loyaltyPoints=50}
+2025-04-25 20:34:36 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-25, loyaltyPoints=100}
+2025-04-25 20:34:36 - Successfully saved all customers
+2025-04-25 20:34:36 - Saving orders to file.
+2025-04-25 20:34:56 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:34:56 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-25 20:34:56 - OrderFileManager initialized.
+2025-04-25 20:34:56 - Starting to save 2 customers
+2025-04-25 20:34:56 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-25, loyaltyPoints=50}
+2025-04-25 20:34:56 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-25, loyaltyPoints=100}
+2025-04-25 20:34:56 - Successfully saved all customers
+2025-04-25 20:34:56 - Saving orders to file.
+2025-04-26 14:09:53 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:09:53 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:09:53 - OrderFileManager initialized.
+2025-04-26 14:09:53 - Starting to save 2 customers
+2025-04-26 14:09:53 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-26, loyaltyPoints=50}
+2025-04-26 14:09:53 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-26, loyaltyPoints=100}
+2025-04-26 14:09:53 - Successfully saved all customers
+2025-04-26 14:09:53 - Saving orders to file.
+2025-04-26 14:22:56 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:22:56 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:22:56 - OrderFileManager initialized.
+2025-04-26 14:22:56 - Starting to save 2 customers
+2025-04-26 14:22:56 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-26, loyaltyPoints=50}
+2025-04-26 14:22:56 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-26, loyaltyPoints=100}
+2025-04-26 14:22:56 - Successfully saved all customers
+2025-04-26 14:22:56 - Saving orders to file.
+2025-04-26 14:34:33 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:34:33 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:34:33 - OrderFileManager initialized.
+2025-04-26 14:34:33 - Saving orders to file.
+2025-04-26 14:35:52 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:35:52 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:35:52 - OrderFileManager initialized.
+2025-04-26 14:35:52 - Saving orders to file.
+2025-04-26 14:36:21 - Initialized CustomerFileManager for: src/test/resources/test_customers_file.txt
+2025-04-26 14:36:21 - Starting to save 2 customers
+2025-04-26 14:36:21 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 14:36:21 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 14:36:21 - Successfully saved all customers
+2025-04-26 14:36:30 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:36:30 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:36:30 - OrderFileManager initialized.
+2025-04-26 14:36:30 - Saving orders to file.
+2025-04-26 14:36:42 - Initialized CustomerFileManager for: src/test/resources/test_customers_file.txt
+2025-04-26 14:36:42 - Starting to save 2 customers
+2025-04-26 14:36:42 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 14:36:42 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 14:36:42 - Successfully saved all customers
+2025-04-26 14:36:48 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:36:48 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:36:48 - OrderFileManager initialized.
+2025-04-26 14:36:48 - Saving orders to file.
+2025-04-26 14:37:05 - Initialized CustomerFileManager for: src/test/resources/test_customers_file.csv
+2025-04-26 14:37:05 - Starting to save 2 customers
+2025-04-26 14:37:05 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 14:37:05 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 14:37:05 - Successfully saved all customers
+2025-04-26 14:37:13 - Initialized CustomerFileManager for: src/test/resources/test_customers_file.csv
+2025-04-26 14:37:13 - Starting to save 2 customers
+2025-04-26 14:37:13 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 14:37:13 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 14:37:13 - Successfully saved all customers
+2025-04-26 14:37:19 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:37:19 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:37:19 - OrderFileManager initialized.
+2025-04-26 14:37:19 - Saving orders to file.
+2025-04-26 14:38:01 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:38:01 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 14:38:01 - OrderFileManager initialized.
+2025-04-26 14:38:01 - Saving orders to file.
+2025-04-26 14:38:12 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:38:12 - Starting to save 2 customers
+2025-04-26 14:38:12 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 14:38:12 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 14:38:12 - Successfully saved all customers
+2025-04-26 14:38:30 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:38:30 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:38:30 - OrderFileManager initialized.
+2025-04-26 14:38:30 - Saving orders to file.
+2025-04-26 14:40:22 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:40:22 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:40:22 - OrderFileManager initialized.
+2025-04-26 14:40:22 - Saving orders to file.
+2025-04-26 14:40:43 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:40:43 - Starting to save 2 customers
+2025-04-26 14:40:43 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 14:40:43 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 14:40:43 - Successfully saved all customers
+2025-04-26 14:40:49 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:40:49 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:40:49 - OrderFileManager initialized.
+2025-04-26 14:40:49 - Saving orders to file.
+2025-04-26 14:43:13 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:43:13 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:43:13 - OrderFileManager initialized.
+2025-04-26 14:43:13 - Saving orders to file.
+2025-04-26 14:44:02 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:44:02 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:44:02 - OrderFileManager initialized.
+2025-04-26 14:44:02 - Saving orders to file.
+2025-04-26 14:44:17 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:44:17 - Starting to save 2 customers
+2025-04-26 14:44:17 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 14:44:17 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 14:44:17 - Successfully saved all customers
+2025-04-26 14:44:27 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:44:27 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:44:27 - OrderFileManager initialized.
+2025-04-26 14:44:27 - Saving orders to file.
+2025-04-26 14:46:37 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:46:37 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 14:46:37 - OrderFileManager initialized.
+2025-04-26 14:46:37 - Saving orders to file.
+2025-04-26 15:21:42 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 15:21:42 - Starting to save 2 customers
+2025-04-26 15:21:42 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 15:21:42 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 15:21:42 - Successfully saved all customers
+2025-04-26 15:21:52 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 15:21:52 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 15:21:52 - OrderFileManager initialized.
+2025-04-26 15:21:52 - Saving orders to file.
+2025-04-26 15:44:53 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 15:44:53 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 15:44:53 - OrderFileManager initialized.
+2025-04-26 16:22:08 - Saving orders to file.
+2025-04-26 16:54:06 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 16:54:06 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 16:54:06 - OrderFileManager initialized.
+2025-04-26 16:54:06 - Saving orders to file.
+2025-04-26 17:17:31 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 17:17:31 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 17:17:31 - OrderFileManager initialized.
+2025-04-26 17:17:31 - Saving orders to file.
+2025-04-26 17:17:38 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 17:17:38 - Starting to save 2 customers
+2025-04-26 17:17:38 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 17:17:38 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 17:17:38 - Successfully saved all customers
+2025-04-26 17:21:10 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 17:21:10 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 17:21:10 - OrderFileManager initialized.
+2025-04-26 17:21:10 - Saving orders to file.
+2025-04-26 17:59:17 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 17:59:17 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 17:59:17 - OrderFileManager initialized.
+2025-04-26 17:59:18 - Saving orders to file.
+2025-04-26 18:00:28 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:00:28 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:00:28 - OrderFileManager initialized.
+2025-04-26 18:00:28 - Saving orders to file.
+2025-04-26 18:01:17 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:01:17 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:01:17 - OrderFileManager initialized.
+2025-04-26 18:01:17 - Saving orders to file.
+2025-04-26 18:05:35 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:05:35 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:05:35 - OrderFileManager initialized.
+2025-04-26 18:05:35 - Saving orders to file.
+2025-04-26 18:06:20 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:06:20 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:06:20 - OrderFileManager initialized.
+2025-04-26 18:06:20 - Saving orders to file.
+2025-04-26 18:07:29 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:07:29 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.csv
+2025-04-26 18:07:29 - OrderFileManager initialized.
+2025-04-26 18:07:29 - Saving orders to file.
+2025-04-26 18:11:17 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:11:17 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:11:17 - OrderFileManager initialized.
+2025-04-26 18:11:17 - Saving orders to file.
+2025-04-26 18:11:37 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:11:37 - Starting to save 2 customers
+2025-04-26 18:11:37 - Save customer: Customer{customerId=1, firstName='Joe', lastName='Doe', mail='joe@mail.com', phoneNumber='555-111-22-33', address='fake st 123', registrationDate=2025-04-26, loyaltyPoints=10}
+2025-04-26 18:11:37 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Dolly', mail='jane@mail.com', phoneNumber='555-222-22-33', address='fake st 345', registrationDate=2025-04-26, loyaltyPoints=20}
+2025-04-26 18:11:37 - Successfully saved all customers
+2025-04-26 18:11:42 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:11:42 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:11:42 - OrderFileManager initialized.
+2025-04-26 18:11:42 - Saving orders to file.
+2025-04-26 18:15:58 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:15:58 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:15:58 - OrderFileManager initialized.
+2025-04-26 18:15:58 - Saving orders to file.
+2025-04-26 18:18:02 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:18:02 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:18:02 - OrderFileManager initialized.
+2025-04-26 18:18:02 - Saving orders to file.
+2025-04-26 18:18:52 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:18:52 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-26 18:18:52 - OrderFileManager initialized.
+2025-04-26 18:18:52 - Saving orders to file.
+2025-04-26 18:20:29 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-26 18:20:29 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 18:20:29 - OrderFileManager initialized.
+2025-04-26 18:20:29 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-26 18:20:29 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-26 18:20:29 - OrderFileManager initialized.
+2025-04-26 18:20:29 - ItemOrderFileManager initialized.
+2025-04-26 18:20:29 - Starting to save 2 books
+2025-04-26 18:20:29 - Save book: Book One
+2025-04-26 18:20:29 - Save book: Book Two
+2025-04-26 18:20:29 - Successfully saved all books
+2025-04-26 18:20:29 - Saving orders to file.
+2025-04-27 15:28:35 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:28:35 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:28:35 - OrderFileManager initialized.
+2025-04-27 15:28:35 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:28:35 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:28:35 - OrderFileManager initialized.
+2025-04-27 15:28:35 - ItemOrderFileManager initialized.
+2025-04-27 15:28:35 - Starting to save 2 books
+2025-04-27 15:28:35 - Save book: Book One
+2025-04-27 15:28:35 - Save book: Book Two
+2025-04-27 15:28:35 - Successfully saved all books
+2025-04-27 15:28:35 - Saving orders to file.
+2025-04-27 15:42:56 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:42:56 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:42:56 - OrderFileManager initialized.
+2025-04-27 15:42:56 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:42:56 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:42:56 - OrderFileManager initialized.
+2025-04-27 15:42:56 - ItemOrderFileManager initialized.
+2025-04-27 15:42:56 - Starting to save 2 books
+2025-04-27 15:42:56 - Save book: Book One
+2025-04-27 15:42:56 - Save book: Book Two
+2025-04-27 15:42:56 - Successfully saved all books
+2025-04-27 15:42:56 - Saving orders to file.
+2025-04-27 15:45:37 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:45:37 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:45:37 - OrderFileManager initialized.
+2025-04-27 15:45:37 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:45:37 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:45:37 - OrderFileManager initialized.
+2025-04-27 15:45:37 - ItemOrderFileManager initialized.
+2025-04-27 15:45:37 - Starting to save 2 books
+2025-04-27 15:45:37 - Save book: Book One
+2025-04-27 15:45:37 - Save book: Book Two
+2025-04-27 15:45:37 - Successfully saved all books
+2025-04-27 15:46:27 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:46:27 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:46:27 - OrderFileManager initialized.
+2025-04-27 15:46:27 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:46:27 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:46:27 - OrderFileManager initialized.
+2025-04-27 15:46:27 - ItemOrderFileManager initialized.
+2025-04-27 15:46:27 - Starting to save 2 books
+2025-04-27 15:46:27 - Save book: Book One
+2025-04-27 15:46:27 - Save book: Book Two
+2025-04-27 15:46:27 - Successfully saved all books
+2025-04-27 15:46:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:46:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:46:55 - OrderFileManager initialized.
+2025-04-27 15:46:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:46:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:46:55 - OrderFileManager initialized.
+2025-04-27 15:46:55 - ItemOrderFileManager initialized.
+2025-04-27 15:46:55 - Starting to save 2 books
+2025-04-27 15:46:55 - Save book: Book One
+2025-04-27 15:46:55 - Save book: Book Two
+2025-04-27 15:46:55 - Successfully saved all books
+2025-04-27 15:48:15 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:48:15 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:48:15 - OrderFileManager initialized.
+2025-04-27 15:48:15 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:48:15 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:48:15 - OrderFileManager initialized.
+2025-04-27 15:48:15 - ItemOrderFileManager initialized.
+2025-04-27 15:48:15 - Starting to save 2 books
+2025-04-27 15:48:15 - Save book: Book One
+2025-04-27 15:48:15 - Save book: Book Two
+2025-04-27 15:48:15 - Successfully saved all books
+2025-04-27 15:48:15 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:48:15 - Starting to save 2 customers
+2025-04-27 15:48:15 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 15:48:15 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 15:48:15 - Successfully saved all customers
+2025-04-27 15:48:15 - Saving orders to file.
+2025-04-27 15:48:15 - Saving item orders to file.
+2025-04-27 15:48:15 - Error deserializing item order: Index 1 out of bounds for length 1
+2025-04-27 15:51:15 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:51:15 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:51:15 - OrderFileManager initialized.
+2025-04-27 15:51:15 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:51:15 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:51:15 - OrderFileManager initialized.
+2025-04-27 15:51:15 - ItemOrderFileManager initialized.
+2025-04-27 15:51:16 - Starting to save 2 books
+2025-04-27 15:51:16 - Save book: Book One
+2025-04-27 15:51:16 - Save book: Book Two
+2025-04-27 15:51:16 - Successfully saved all books
+2025-04-27 15:51:16 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:51:16 - Starting to save 2 customers
+2025-04-27 15:51:16 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 15:51:16 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 15:51:16 - Successfully saved all customers
+2025-04-27 15:51:16 - Saving orders to file.
+2025-04-27 15:51:16 - Saving item orders to file.
+2025-04-27 15:55:06 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:55:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:55:06 - OrderFileManager initialized.
+2025-04-27 15:55:06 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 15:55:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:55:06 - OrderFileManager initialized.
+2025-04-27 15:55:06 - ItemOrderFileManager initialized.
+2025-04-27 15:55:06 - Starting to save 3 books
+2025-04-27 15:55:06 - Save book: Book One
+2025-04-27 15:55:06 - Save book: Book Two
+2025-04-27 15:55:06 - Save book: Book Three
+2025-04-27 15:55:06 - Successfully saved all books
+2025-04-27 15:55:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 15:55:06 - Starting to save 2 customers
+2025-04-27 15:55:06 - Save customer: Customer{customerId=4, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 15:55:06 - Save customer: Customer{customerId=5, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 15:55:06 - Successfully saved all customers
+2025-04-27 15:55:06 - Saving orders to file.
+2025-04-27 16:02:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:02:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:02:55 - OrderFileManager initialized.
+2025-04-27 16:02:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:02:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:02:55 - OrderFileManager initialized.
+2025-04-27 16:02:55 - ItemOrderFileManager initialized.
+2025-04-27 16:02:55 - Starting to save 2 books
+2025-04-27 16:02:55 - Save book: Book One
+2025-04-27 16:02:55 - Save book: Book Two
+2025-04-27 16:02:55 - Successfully saved all books
+2025-04-27 16:02:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:02:55 - Starting to save 2 customers
+2025-04-27 16:02:55 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 16:02:55 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 16:02:55 - Successfully saved all customers
+2025-04-27 16:02:55 - Saving orders to file.
+2025-04-27 16:02:55 - Saving item orders to file.
+2025-04-27 16:02:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:02:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:02:55 - OrderFileManager initialized.
+2025-04-27 16:02:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:02:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:02:55 - OrderFileManager initialized.
+2025-04-27 16:02:55 - ItemOrderFileManager initialized.
+2025-04-27 16:02:55 - Starting to save 2 books
+2025-04-27 16:02:55 - Save book: Book One
+2025-04-27 16:02:55 - Save book: Book Two
+2025-04-27 16:02:55 - Successfully saved all books
+2025-04-27 16:02:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:02:55 - Starting to save 2 customers
+2025-04-27 16:02:55 - Save customer: Customer{customerId=29, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 16:02:55 - Save customer: Customer{customerId=30, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 16:02:55 - Successfully saved all customers
+2025-04-27 16:02:55 - Saving orders to file.
+2025-04-27 16:02:55 - Saving item orders to file.
+2025-04-27 16:08:30 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:08:30 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:08:30 - OrderFileManager initialized.
+2025-04-27 16:08:30 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:08:30 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:08:30 - OrderFileManager initialized.
+2025-04-27 16:08:30 - ItemOrderFileManager initialized.
+2025-04-27 16:08:30 - Starting to save 2 books
+2025-04-27 16:08:30 - Save book: Book One
+2025-04-27 16:08:30 - Save book: Book Two
+2025-04-27 16:08:30 - Successfully saved all books
+2025-04-27 16:08:30 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:08:30 - Starting to save 2 customers
+2025-04-27 16:08:30 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 16:08:30 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 16:08:30 - Successfully saved all customers
+2025-04-27 16:08:30 - Saving orders to file.
+2025-04-27 16:08:30 - Saving item orders to file.
+2025-04-27 16:08:30 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:08:30 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:08:30 - OrderFileManager initialized.
+2025-04-27 16:08:30 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:08:30 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:08:30 - OrderFileManager initialized.
+2025-04-27 16:08:30 - ItemOrderFileManager initialized.
+2025-04-27 16:08:30 - Starting to save 2 books
+2025-04-27 16:08:30 - Save book: Book One
+2025-04-27 16:08:30 - Save book: Book Two
+2025-04-27 16:08:30 - Successfully saved all books
+2025-04-27 16:08:30 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:08:30 - Starting to save 2 customers
+2025-04-27 16:08:30 - Save customer: Customer{customerId=29, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 16:08:30 - Save customer: Customer{customerId=30, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 16:08:30 - Successfully saved all customers
+2025-04-27 16:08:30 - Saving orders to file.
+2025-04-27 16:08:30 - Saving item orders to file.
+2025-04-27 16:28:28 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:28:28 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:28:28 - OrderFileManager initialized.
+2025-04-27 16:28:28 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:28:28 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:28:28 - OrderFileManager initialized.
+2025-04-27 16:28:28 - ItemOrderFileManager initialized.
+2025-04-27 16:28:28 - Starting to save 2 books
+2025-04-27 16:28:28 - Save book: Book One
+2025-04-27 16:28:28 - Save book: Book Two
+2025-04-27 16:28:28 - Successfully saved all books
+2025-04-27 16:28:28 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:28:28 - Starting to save 2 customers
+2025-04-27 16:28:28 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 16:28:28 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 16:28:28 - Successfully saved all customers
+2025-04-27 16:28:28 - Saving orders to file.
+2025-04-27 16:28:28 - Saving item orders to file.
+2025-04-27 16:29:19 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:29:19 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:29:19 - OrderFileManager initialized.
+2025-04-27 16:29:19 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:29:19 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:29:19 - OrderFileManager initialized.
+2025-04-27 16:29:19 - ItemOrderFileManager initialized.
+2025-04-27 16:29:19 - Starting to save 2 books
+2025-04-27 16:29:19 - Save book: Book One
+2025-04-27 16:29:19 - Save book: Book Two
+2025-04-27 16:29:19 - Successfully saved all books
+2025-04-27 16:29:19 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:29:19 - Starting to save 2 customers
+2025-04-27 16:29:19 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 16:29:19 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 16:29:19 - Successfully saved all customers
+2025-04-27 16:29:19 - Saving orders to file.
+2025-04-27 16:29:19 - Saving item orders to file.
+2025-04-27 16:29:19 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:29:19 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:29:19 - OrderFileManager initialized.
+2025-04-27 16:29:19 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 16:29:19 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:29:19 - OrderFileManager initialized.
+2025-04-27 16:29:19 - ItemOrderFileManager initialized.
+2025-04-27 16:29:19 - Starting to save 2 books
+2025-04-27 16:29:19 - Save book: Book One
+2025-04-27 16:29:19 - Save book: Book Two
+2025-04-27 16:29:19 - Successfully saved all books
+2025-04-27 16:29:19 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 16:29:19 - Starting to save 2 customers
+2025-04-27 16:29:19 - Save customer: Customer{customerId=29, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 16:29:19 - Save customer: Customer{customerId=30, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 16:29:19 - Successfully saved all customers
+2025-04-27 16:29:19 - Saving orders to file.
+2025-04-27 16:29:19 - Saving item orders to file.
+2025-04-27 17:16:42 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:16:42 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:16:42 - OrderFileManager initialized.
+2025-04-27 17:16:42 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:16:42 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:16:42 - OrderFileManager initialized.
+2025-04-27 17:16:42 - ItemOrderFileManager initialized.
+2025-04-27 17:16:42 - Starting to save 2 books
+2025-04-27 17:16:42 - Save book: Book One
+2025-04-27 17:16:42 - Save book: Book Two
+2025-04-27 17:16:42 - Successfully saved all books
+2025-04-27 17:16:42 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:16:42 - Starting to save 2 customers
+2025-04-27 17:16:42 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:16:42 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:16:42 - Successfully saved all customers
+2025-04-27 17:16:42 - Saving orders to file.
+2025-04-27 17:16:42 - Saving item orders to file.
+2025-04-27 17:16:42 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:16:42 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:16:42 - OrderFileManager initialized.
+2025-04-27 17:16:42 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:16:42 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:16:42 - OrderFileManager initialized.
+2025-04-27 17:16:42 - ItemOrderFileManager initialized.
+2025-04-27 17:16:42 - Starting to save 2 books
+2025-04-27 17:16:42 - Save book: Book One
+2025-04-27 17:16:42 - Save book: Book Two
+2025-04-27 17:16:42 - Successfully saved all books
+2025-04-27 17:16:42 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:16:42 - Starting to save 2 customers
+2025-04-27 17:16:42 - Save customer: Customer{customerId=25, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:16:42 - Save customer: Customer{customerId=26, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:16:42 - Successfully saved all customers
+2025-04-27 17:16:42 - Saving orders to file.
+2025-04-27 17:16:42 - Saving item orders to file.
+2025-04-27 17:25:22 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:25:22 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:25:22 - OrderFileManager initialized.
+2025-04-27 17:25:22 - Saving orders to file.
+2025-04-27 17:26:10 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:26:10 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:26:10 - OrderFileManager initialized.
+2025-04-27 17:26:10 - Saving orders to file.
+2025-04-27 17:26:46 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:26:46 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:26:46 - OrderFileManager initialized.
+2025-04-27 17:26:46 - Saving orders to file.
+2025-04-27 17:31:10 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:31:10 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:31:10 - OrderFileManager initialized.
+2025-04-27 17:31:10 - Saving orders to file.
+2025-04-27 17:32:12 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:32:12 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:32:12 - OrderFileManager initialized.
+2025-04-27 17:32:12 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:32:12 - Starting to save 2 customers
+2025-04-27 17:32:12 - Save customer: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='555-111-22-33', address='fake St 123', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:32:12 - Save customer: Customer{customerId=2, firstName='Charlie', lastName='Harper', mail='charlie@mail.com', phoneNumber='555-111-33-44', address='fake St 321', registrationDate=2025-04-27, loyaltyPoints=10}
+2025-04-27 17:32:12 - Successfully saved all customers
+2025-04-27 17:32:12 - Saving orders to file.
+2025-04-27 17:33:23 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:33:23 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:33:23 - OrderFileManager initialized.
+2025-04-27 17:33:23 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:33:23 - Starting to save 2 customers
+2025-04-27 17:33:23 - Save customer: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='555-111-22-33', address='fake St 123', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:33:23 - Save customer: Customer{customerId=2, firstName='Charlie', lastName='Harper', mail='charlie@mail.com', phoneNumber='555-111-33-44', address='fake St 321', registrationDate=2025-04-27, loyaltyPoints=10}
+2025-04-27 17:33:23 - Successfully saved all customers
+2025-04-27 17:33:23 - Saving orders to file.
+2025-04-27 17:34:07 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:34:07 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:34:07 - OrderFileManager initialized.
+2025-04-27 17:34:07 - Saving orders to file.
+2025-04-27 17:34:29 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:34:29 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-27 17:34:29 - OrderFileManager initialized.
+2025-04-27 17:34:29 - Saving orders to file.
+2025-04-27 17:36:53 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:36:53 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:36:53 - OrderFileManager initialized.
+2025-04-27 17:36:53 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:36:53 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:36:53 - OrderFileManager initialized.
+2025-04-27 17:36:53 - ItemOrderFileManager initialized.
+2025-04-27 17:36:53 - Starting to save 2 books
+2025-04-27 17:36:53 - Save book: Book One
+2025-04-27 17:36:53 - Save book: Book Two
+2025-04-27 17:36:53 - Successfully saved all books
+2025-04-27 17:36:53 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:36:53 - Starting to save 2 customers
+2025-04-27 17:36:53 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:36:53 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:36:53 - Successfully saved all customers
+2025-04-27 17:36:53 - Saving orders to file.
+2025-04-27 17:36:53 - Saving item orders to file.
+2025-04-27 17:36:53 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:36:53 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:36:53 - OrderFileManager initialized.
+2025-04-27 17:36:53 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:36:53 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:36:53 - OrderFileManager initialized.
+2025-04-27 17:36:53 - ItemOrderFileManager initialized.
+2025-04-27 17:36:53 - Starting to save 2 books
+2025-04-27 17:36:53 - Save book: Book One
+2025-04-27 17:36:53 - Save book: Book Two
+2025-04-27 17:36:53 - Successfully saved all books
+2025-04-27 17:36:53 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:36:53 - Starting to save 2 customers
+2025-04-27 17:36:53 - Save customer: Customer{customerId=25, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:36:53 - Save customer: Customer{customerId=26, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:36:53 - Successfully saved all customers
+2025-04-27 17:36:53 - Saving orders to file.
+2025-04-27 17:36:53 - Saving item orders to file.
+2025-04-27 17:37:07 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:37:07 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:37:07 - OrderFileManager initialized.
+2025-04-27 17:37:07 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:37:07 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:37:07 - OrderFileManager initialized.
+2025-04-27 17:37:07 - ItemOrderFileManager initialized.
+2025-04-27 17:37:07 - Starting to save 2 books
+2025-04-27 17:37:07 - Save book: Book One
+2025-04-27 17:37:07 - Save book: Book Two
+2025-04-27 17:37:07 - Successfully saved all books
+2025-04-27 17:37:07 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:37:07 - Starting to save 2 customers
+2025-04-27 17:37:07 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:37:07 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:37:07 - Successfully saved all customers
+2025-04-27 17:37:07 - Saving orders to file.
+2025-04-27 17:37:07 - Saving item orders to file.
+2025-04-27 17:37:08 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:37:08 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:37:08 - OrderFileManager initialized.
+2025-04-27 17:37:08 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:37:08 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:37:08 - OrderFileManager initialized.
+2025-04-27 17:37:08 - ItemOrderFileManager initialized.
+2025-04-27 17:37:08 - Starting to save 2 books
+2025-04-27 17:37:08 - Save book: Book One
+2025-04-27 17:37:08 - Save book: Book Two
+2025-04-27 17:37:08 - Successfully saved all books
+2025-04-27 17:37:08 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:37:08 - Starting to save 2 customers
+2025-04-27 17:37:08 - Save customer: Customer{customerId=25, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:37:08 - Save customer: Customer{customerId=26, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:37:08 - Successfully saved all customers
+2025-04-27 17:37:08 - Saving orders to file.
+2025-04-27 17:37:08 - Saving item orders to file.
+2025-04-27 17:38:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:38:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:38:55 - OrderFileManager initialized.
+2025-04-27 17:38:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:38:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:38:55 - OrderFileManager initialized.
+2025-04-27 17:38:55 - ItemOrderFileManager initialized.
+2025-04-27 17:38:55 - Starting to save 2 books
+2025-04-27 17:38:55 - Save book: Book One
+2025-04-27 17:38:55 - Save book: Book Two
+2025-04-27 17:38:55 - Successfully saved all books
+2025-04-27 17:38:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:38:55 - Starting to save 2 customers
+2025-04-27 17:38:55 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:38:55 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:38:55 - Successfully saved all customers
+2025-04-27 17:38:55 - Saving orders to file.
+2025-04-27 17:38:55 - Saving item orders to file.
+2025-04-27 17:38:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:38:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:38:55 - OrderFileManager initialized.
+2025-04-27 17:38:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:38:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:38:55 - OrderFileManager initialized.
+2025-04-27 17:38:55 - ItemOrderFileManager initialized.
+2025-04-27 17:38:55 - Starting to save 2 books
+2025-04-27 17:38:55 - Save book: Book One
+2025-04-27 17:38:55 - Save book: Book Two
+2025-04-27 17:38:55 - Successfully saved all books
+2025-04-27 17:38:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:38:55 - Starting to save 2 customers
+2025-04-27 17:38:55 - Save customer: Customer{customerId=25, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:38:55 - Save customer: Customer{customerId=26, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:38:55 - Successfully saved all customers
+2025-04-27 17:38:55 - Saving orders to file.
+2025-04-27 17:38:55 - Saving item orders to file.
+2025-04-27 17:42:43 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:42:43 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:42:43 - OrderFileManager initialized.
+2025-04-27 17:42:43 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:42:43 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:42:43 - OrderFileManager initialized.
+2025-04-27 17:42:43 - ItemOrderFileManager initialized.
+2025-04-27 17:42:43 - Starting to save 2 books
+2025-04-27 17:42:43 - Save book: Book One
+2025-04-27 17:42:43 - Save book: Book Two
+2025-04-27 17:42:43 - Successfully saved all books
+2025-04-27 17:42:43 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:42:43 - Starting to save 2 customers
+2025-04-27 17:42:43 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:42:43 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:42:43 - Successfully saved all customers
+2025-04-27 17:42:43 - Saving orders to file.
+2025-04-27 17:42:43 - Saving item orders to file.
+2025-04-27 17:42:43 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:42:43 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:42:43 - OrderFileManager initialized.
+2025-04-27 17:42:43 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:42:43 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:42:43 - OrderFileManager initialized.
+2025-04-27 17:42:43 - ItemOrderFileManager initialized.
+2025-04-27 17:42:43 - Starting to save 2 books
+2025-04-27 17:42:43 - Save book: Book One
+2025-04-27 17:42:43 - Save book: Book Two
+2025-04-27 17:42:43 - Successfully saved all books
+2025-04-27 17:42:43 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:42:43 - Starting to save 2 customers
+2025-04-27 17:42:43 - Save customer: Customer{customerId=25, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:42:43 - Save customer: Customer{customerId=26, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:42:43 - Successfully saved all customers
+2025-04-27 17:42:43 - Saving orders to file.
+2025-04-27 17:42:43 - Saving item orders to file.
+2025-04-27 17:43:01 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:43:01 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:43:01 - OrderFileManager initialized.
+2025-04-27 17:43:01 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:43:01 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:43:01 - OrderFileManager initialized.
+2025-04-27 17:43:01 - ItemOrderFileManager initialized.
+2025-04-27 17:43:01 - Starting to save 2 books
+2025-04-27 17:43:01 - Save book: Book One
+2025-04-27 17:43:01 - Save book: Book Two
+2025-04-27 17:43:01 - Successfully saved all books
+2025-04-27 17:43:01 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:43:01 - Starting to save 2 customers
+2025-04-27 17:43:01 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:43:01 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:43:01 - Successfully saved all customers
+2025-04-27 17:43:01 - Saving orders to file.
+2025-04-27 17:43:01 - Saving item orders to file.
+2025-04-27 17:43:08 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:43:08 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:43:08 - OrderFileManager initialized.
+2025-04-27 17:43:08 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:43:08 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:43:08 - OrderFileManager initialized.
+2025-04-27 17:43:08 - ItemOrderFileManager initialized.
+2025-04-27 17:43:08 - Starting to save 2 books
+2025-04-27 17:43:08 - Save book: Book One
+2025-04-27 17:43:08 - Save book: Book Two
+2025-04-27 17:43:08 - Successfully saved all books
+2025-04-27 17:43:08 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:43:08 - Starting to save 2 customers
+2025-04-27 17:43:08 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:43:08 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:43:08 - Successfully saved all customers
+2025-04-27 17:43:08 - Saving orders to file.
+2025-04-27 17:43:08 - Saving item orders to file.
+2025-04-27 17:44:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:44:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:44:55 - OrderFileManager initialized.
+2025-04-27 17:44:55 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:44:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:44:55 - OrderFileManager initialized.
+2025-04-27 17:44:55 - ItemOrderFileManager initialized.
+2025-04-27 17:44:55 - Starting to save 2 books
+2025-04-27 17:44:55 - Save book: Book One
+2025-04-27 17:44:55 - Save book: Book Two
+2025-04-27 17:44:55 - Successfully saved all books
+2025-04-27 17:44:55 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:44:55 - Starting to save 2 customers
+2025-04-27 17:44:55 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:44:55 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:44:55 - Successfully saved all customers
+2025-04-27 17:44:55 - Saving orders to file.
+2025-04-27 17:44:55 - Saving item orders to file.
+2025-04-27 17:45:43 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:45:43 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:43 - OrderFileManager initialized.
+2025-04-27 17:45:43 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:45:43 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:43 - OrderFileManager initialized.
+2025-04-27 17:45:43 - ItemOrderFileManager initialized.
+2025-04-27 17:45:43 - Starting to save 2 books
+2025-04-27 17:45:44 - Save book: Book One
+2025-04-27 17:45:44 - Save book: Book Two
+2025-04-27 17:45:44 - Successfully saved all books
+2025-04-27 17:45:44 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:44 - Starting to save 2 customers
+2025-04-27 17:45:44 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:45:44 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:45:44 - Successfully saved all customers
+2025-04-27 17:45:44 - Saving orders to file.
+2025-04-27 17:45:44 - Saving item orders to file.
+2025-04-27 17:45:44 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:45:44 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:44 - OrderFileManager initialized.
+2025-04-27 17:45:44 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:45:44 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:44 - OrderFileManager initialized.
+2025-04-27 17:45:44 - ItemOrderFileManager initialized.
+2025-04-27 17:45:44 - Starting to save 2 books
+2025-04-27 17:45:44 - Save book: Book One
+2025-04-27 17:45:44 - Save book: Book Two
+2025-04-27 17:45:44 - Successfully saved all books
+2025-04-27 17:45:44 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:44 - Starting to save 2 customers
+2025-04-27 17:45:44 - Save customer: Customer{customerId=25, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:45:44 - Save customer: Customer{customerId=26, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:45:44 - Successfully saved all customers
+2025-04-27 17:45:44 - Saving orders to file.
+2025-04-27 17:45:44 - Saving item orders to file.
+2025-04-27 17:45:51 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:45:51 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:51 - OrderFileManager initialized.
+2025-04-27 17:45:51 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:45:51 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:51 - OrderFileManager initialized.
+2025-04-27 17:45:51 - ItemOrderFileManager initialized.
+2025-04-27 17:45:51 - Starting to save 2 books
+2025-04-27 17:45:51 - Save book: Book One
+2025-04-27 17:45:51 - Save book: Book Two
+2025-04-27 17:45:51 - Successfully saved all books
+2025-04-27 17:45:51 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:51 - Starting to save 2 customers
+2025-04-27 17:45:51 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:45:51 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:45:51 - Successfully saved all customers
+2025-04-27 17:45:51 - Saving orders to file.
+2025-04-27 17:45:51 - Saving item orders to file.
+2025-04-27 17:45:51 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:45:51 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:51 - OrderFileManager initialized.
+2025-04-27 17:45:51 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:45:51 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:51 - OrderFileManager initialized.
+2025-04-27 17:45:51 - ItemOrderFileManager initialized.
+2025-04-27 17:45:51 - Starting to save 2 books
+2025-04-27 17:45:51 - Save book: Book One
+2025-04-27 17:45:51 - Save book: Book Two
+2025-04-27 17:45:51 - Successfully saved all books
+2025-04-27 17:45:51 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:45:51 - Starting to save 2 customers
+2025-04-27 17:45:51 - Save customer: Customer{customerId=25, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:45:51 - Save customer: Customer{customerId=26, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:45:51 - Successfully saved all customers
+2025-04-27 17:45:51 - Saving orders to file.
+2025-04-27 17:45:51 - Saving item orders to file.
+2025-04-27 17:46:06 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:46:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:06 - OrderFileManager initialized.
+2025-04-27 17:46:06 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:46:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:06 - OrderFileManager initialized.
+2025-04-27 17:46:06 - ItemOrderFileManager initialized.
+2025-04-27 17:46:06 - Starting to save 2 books
+2025-04-27 17:46:06 - Save book: Book One
+2025-04-27 17:46:06 - Save book: Book Two
+2025-04-27 17:46:06 - Successfully saved all books
+2025-04-27 17:46:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:06 - Starting to save 2 customers
+2025-04-27 17:46:06 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:46:06 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:46:06 - Successfully saved all customers
+2025-04-27 17:46:06 - Saving orders to file.
+2025-04-27 17:46:06 - Saving item orders to file.
+2025-04-27 17:46:06 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:46:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:06 - OrderFileManager initialized.
+2025-04-27 17:46:06 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:46:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:06 - OrderFileManager initialized.
+2025-04-27 17:46:06 - ItemOrderFileManager initialized.
+2025-04-27 17:46:06 - Starting to save 2 books
+2025-04-27 17:46:06 - Save book: Book One
+2025-04-27 17:46:06 - Save book: Book Two
+2025-04-27 17:46:06 - Successfully saved all books
+2025-04-27 17:46:06 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:06 - Starting to save 2 customers
+2025-04-27 17:46:06 - Save customer: Customer{customerId=25, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:46:06 - Save customer: Customer{customerId=26, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:46:06 - Successfully saved all customers
+2025-04-27 17:46:06 - Saving orders to file.
+2025-04-27 17:46:06 - Saving item orders to file.
+2025-04-27 17:46:23 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:46:23 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:23 - OrderFileManager initialized.
+2025-04-27 17:46:23 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:46:23 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:23 - OrderFileManager initialized.
+2025-04-27 17:46:23 - ItemOrderFileManager initialized.
+2025-04-27 17:46:23 - Starting to save 2 books
+2025-04-27 17:46:23 - Save book: Book One
+2025-04-27 17:46:23 - Save book: Book Two
+2025-04-27 17:46:23 - Successfully saved all books
+2025-04-27 17:46:23 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:46:23 - Starting to save 2 customers
+2025-04-27 17:46:23 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:46:23 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:46:23 - Successfully saved all customers
+2025-04-27 17:46:23 - Saving orders to file.
+2025-04-27 17:46:23 - Saving item orders to file.
+2025-04-27 17:49:49 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:49:49 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:49:49 - OrderFileManager initialized.
+2025-04-27 17:49:49 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:49:49 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:49:49 - OrderFileManager initialized.
+2025-04-27 17:49:49 - ItemOrderFileManager initialized.
+2025-04-27 17:49:49 - Starting to save 2 books
+2025-04-27 17:49:49 - Save book: Book One
+2025-04-27 17:49:49 - Save book: Book Two
+2025-04-27 17:49:49 - Successfully saved all books
+2025-04-27 17:49:49 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:49:49 - Starting to save 2 customers
+2025-04-27 17:49:49 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:49:49 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:49:49 - Successfully saved all customers
+2025-04-27 17:49:49 - Saving orders to file.
+2025-04-27 17:49:49 - Saving item orders to file.
+2025-04-27 17:51:37 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:51:37 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:51:37 - OrderFileManager initialized.
+2025-04-27 17:51:37 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 17:51:37 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:51:37 - OrderFileManager initialized.
+2025-04-27 17:51:37 - ItemOrderFileManager initialized.
+2025-04-27 17:51:37 - Starting to save 2 books
+2025-04-27 17:51:37 - Save book: Book One
+2025-04-27 17:51:37 - Save book: Book Two
+2025-04-27 17:51:37 - Successfully saved all books
+2025-04-27 17:51:37 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 17:51:37 - Starting to save 2 customers
+2025-04-27 17:51:37 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 17:51:37 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 17:51:37 - Successfully saved all customers
+2025-04-27 17:51:37 - Saving orders to file.
+2025-04-27 17:51:37 - Saving item orders to file.
+2025-04-27 17:56:42 - Initialized BookFileManager for: src/test/resources/test_books.csv
+2025-04-27 17:56:42 - Initialized CustomerFileManager for: src/test/resources/test_customers.csv
+2025-04-27 17:56:42 - OrderFileManager initialized.
+2025-04-27 17:56:42 - ItemOrderFileManager initialized.
+2025-04-27 17:56:42 - Initialized BookFileManager for: src/test/resources/test_books.csv
+2025-04-27 17:56:42 - Initialized CustomerFileManager for: src/test/resources/test_customers.csv
+2025-04-27 17:56:42 - OrderFileManager initialized.
+2025-04-27 17:56:42 - ItemOrderFileManager initialized.
+2025-04-27 17:56:42 - Initialized BookFileManager for: src/test/resources/test_books.csv
+2025-04-27 17:56:42 - Initialized CustomerFileManager for: src/test/resources/test_customers.csv
+2025-04-27 17:56:42 - OrderFileManager initialized.
+2025-04-27 17:56:42 - ItemOrderFileManager initialized.
+2025-04-27 18:02:02 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:02:02 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:02:02 - OrderFileManager initialized.
+2025-04-27 18:02:02 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:02:02 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:02:02 - OrderFileManager initialized.
+2025-04-27 18:02:02 - ItemOrderFileManager initialized.
+2025-04-27 18:02:02 - Starting to save 2 books
+2025-04-27 18:02:02 - Save book: Book One
+2025-04-27 18:02:02 - Save book: Book Two
+2025-04-27 18:02:02 - Successfully saved all books
+2025-04-27 18:02:02 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:02:02 - Starting to save 2 customers
+2025-04-27 18:02:02 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 18:02:02 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 18:02:02 - Successfully saved all customers
+2025-04-27 18:02:02 - Saving orders to file.
+2025-04-27 18:02:02 - Saving item orders to file.
+2025-04-27 18:02:02 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:02:02 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:02:02 - OrderFileManager initialized.
+2025-04-27 18:02:02 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:02:02 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:02:02 - OrderFileManager initialized.
+2025-04-27 18:02:02 - ItemOrderFileManager initialized.
+2025-04-27 18:02:02 - Starting to save 2 books
+2025-04-27 18:02:02 - Save book: Book One
+2025-04-27 18:02:02 - Save book: Book Two
+2025-04-27 18:02:02 - Successfully saved all books
+2025-04-27 18:02:02 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:02:02 - Starting to save 2 customers
+2025-04-27 18:02:02 - Save customer: Customer{customerId=19, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 18:02:02 - Save customer: Customer{customerId=20, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 18:02:02 - Successfully saved all customers
+2025-04-27 18:02:02 - Saving orders to file.
+2025-04-27 18:02:02 - Saving item orders to file.
+2025-04-27 18:05:24 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:05:24 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:05:24 - OrderFileManager initialized.
+2025-04-27 18:05:24 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:05:24 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:05:24 - OrderFileManager initialized.
+2025-04-27 18:05:24 - ItemOrderFileManager initialized.
+2025-04-27 18:05:24 - Starting to save 2 books
+2025-04-27 18:05:24 - Save book: Book One
+2025-04-27 18:05:24 - Save book: Book Two
+2025-04-27 18:05:24 - Successfully saved all books
+2025-04-27 18:05:24 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:05:24 - Starting to save 2 customers
+2025-04-27 18:05:24 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 18:05:24 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 18:05:24 - Successfully saved all customers
+2025-04-27 18:05:24 - Saving orders to file.
+2025-04-27 18:05:24 - Saving item orders to file.
+2025-04-27 18:05:24 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:05:24 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:05:24 - OrderFileManager initialized.
+2025-04-27 18:05:24 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:05:24 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:05:24 - OrderFileManager initialized.
+2025-04-27 18:05:24 - ItemOrderFileManager initialized.
+2025-04-27 18:05:24 - Starting to save 2 books
+2025-04-27 18:05:24 - Save book: Book One
+2025-04-27 18:05:24 - Save book: Book Two
+2025-04-27 18:05:24 - Successfully saved all books
+2025-04-27 18:05:24 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:05:24 - Starting to save 2 customers
+2025-04-27 18:05:24 - Save customer: Customer{customerId=23, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 18:05:24 - Save customer: Customer{customerId=24, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 18:05:24 - Successfully saved all customers
+2025-04-27 18:05:24 - Saving orders to file.
+2025-04-27 18:05:24 - Saving item orders to file.
+2025-04-27 18:07:04 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:07:04 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:07:04 - OrderFileManager initialized.
+2025-04-27 18:07:04 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:07:04 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:07:04 - OrderFileManager initialized.
+2025-04-27 18:07:04 - ItemOrderFileManager initialized.
+2025-04-27 18:07:04 - Starting to save 2 books
+2025-04-27 18:07:04 - Save book: Book One
+2025-04-27 18:07:04 - Save book: Book Two
+2025-04-27 18:07:04 - Successfully saved all books
+2025-04-27 18:07:04 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:07:04 - Starting to save 2 customers
+2025-04-27 18:07:04 - Save customer: Customer{customerId=3, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 18:07:04 - Save customer: Customer{customerId=4, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 18:07:04 - Successfully saved all customers
+2025-04-27 18:07:04 - Saving orders to file.
+2025-04-27 18:07:04 - Saving item orders to file.
+2025-04-27 18:07:04 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:07:04 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:07:04 - OrderFileManager initialized.
+2025-04-27 18:07:04 - Initialized BookFileManager for: src/test/resources/book_test_file.csv
+2025-04-27 18:07:04 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:07:04 - OrderFileManager initialized.
+2025-04-27 18:07:04 - ItemOrderFileManager initialized.
+2025-04-27 18:07:04 - Starting to save 2 books
+2025-04-27 18:07:04 - Save book: Book One
+2025-04-27 18:07:04 - Save book: Book Two
+2025-04-27 18:07:04 - Successfully saved all books
+2025-04-27 18:07:04 - Initialized CustomerFileManager for: src/test/resources/customer_test_file.csv
+2025-04-27 18:07:04 - Starting to save 2 customers
+2025-04-27 18:07:04 - Save customer: Customer{customerId=23, firstName='John', lastName='Doe', mail='john.doe@mail.com', phoneNumber='555-1234', address='123 Main St', registrationDate=2025-04-27, loyaltyPoints=30}
+2025-04-27 18:07:04 - Save customer: Customer{customerId=24, firstName='Jane', lastName='Smith', mail='jane.smith@mail.com', phoneNumber='555-5678', address='456 Elm St', registrationDate=2025-04-27, loyaltyPoints=20}
+2025-04-27 18:07:04 - Successfully saved all customers
+2025-04-27 18:07:04 - Saving orders to file.
+2025-04-27 18:07:04 - Saving item orders to file.
+2025-04-27 18:09:47 - Initialized BookFileManager for: /tmp/books13659681039909767819.txt
+2025-04-27 18:09:47 - Initialized CustomerFileManager for: /tmp/customers17686879017022156223.txt
+2025-04-27 18:09:47 - OrderFileManager initialized.
+2025-04-27 18:09:47 - Initialized BookFileManager for: /tmp/books13659681039909767819.txt
+2025-04-27 18:09:47 - Initialized CustomerFileManager for: /tmp/customers17686879017022156223.txt
+2025-04-27 18:09:47 - OrderFileManager initialized.
+2025-04-27 18:09:47 - ItemOrderFileManager initialized.
+2025-04-27 18:09:47 - Starting to save 1 books
+2025-04-27 18:09:47 - Save book: Test Book
+2025-04-27 18:09:47 - Successfully saved all books
+2025-04-27 18:10:02 - Initialized BookFileManager for: /tmp/books10347827980980374171.txt
+2025-04-27 18:10:02 - Initialized CustomerFileManager for: /tmp/customers18071699468090946807.txt
+2025-04-27 18:10:02 - OrderFileManager initialized.
+2025-04-27 18:10:02 - Initialized BookFileManager for: /tmp/books10347827980980374171.txt
+2025-04-27 18:10:02 - Initialized CustomerFileManager for: /tmp/customers18071699468090946807.txt
+2025-04-27 18:10:02 - OrderFileManager initialized.
+2025-04-27 18:10:02 - ItemOrderFileManager initialized.
+2025-04-27 18:10:02 - Starting to save 1 books
+2025-04-27 18:10:02 - Save book: Test Book
+2025-04-27 18:10:02 - Successfully saved all books
+2025-04-27 18:10:02 - Saving orders to file.
+2025-04-27 18:10:02 - Saving item orders to file.
+2025-04-27 18:10:53 - Initialized BookFileManager for: /tmp/books2272365451583352494.txt
+2025-04-27 18:10:53 - Initialized CustomerFileManager for: /tmp/customers14605697999569018140.txt
+2025-04-27 18:10:53 - OrderFileManager initialized.
+2025-04-27 18:10:53 - Initialized BookFileManager for: /tmp/books2272365451583352494.txt
+2025-04-27 18:10:53 - Initialized CustomerFileManager for: /tmp/customers14605697999569018140.txt
+2025-04-27 18:10:53 - OrderFileManager initialized.
+2025-04-27 18:10:53 - ItemOrderFileManager initialized.
+2025-04-27 18:10:53 - Starting to save 1 books
+2025-04-27 18:10:53 - Save book: Test Book
+2025-04-27 18:10:53 - Successfully saved all books
+2025-04-27 18:10:53 - Saving orders to file.
+2025-04-27 18:10:53 - Initialized BookFileManager for: /tmp/books2272365451583352494.txt
+2025-04-27 18:10:53 - Initialized CustomerFileManager for: /tmp/customers14605697999569018140.txt
+2025-04-27 18:10:53 - OrderFileManager initialized.
+2025-04-27 18:10:53 - Initialized BookFileManager for: /tmp/books2272365451583352494.txt
+2025-04-27 18:10:53 - Initialized CustomerFileManager for: /tmp/customers14605697999569018140.txt
+2025-04-27 18:10:53 - OrderFileManager initialized.
+2025-04-27 18:10:53 - ItemOrderFileManager initialized.
+2025-04-27 18:10:53 - Saving item orders to file.
+2025-04-27 18:12:18 - Initialized BookFileManager for: /tmp/books4650024786687574786.txt
+2025-04-27 18:12:18 - Initialized CustomerFileManager for: /tmp/customers14314368589878354447.txt
+2025-04-27 18:12:18 - OrderFileManager initialized.
+2025-04-27 18:12:18 - Initialized BookFileManager for: /tmp/books4650024786687574786.txt
+2025-04-27 18:12:18 - Initialized CustomerFileManager for: /tmp/customers14314368589878354447.txt
+2025-04-27 18:12:18 - OrderFileManager initialized.
+2025-04-27 18:12:18 - ItemOrderFileManager initialized.
+2025-04-27 18:12:18 - Starting to save 1 books
+2025-04-27 18:12:18 - Save book: Test Book
+2025-04-27 18:12:18 - Successfully saved all books
+2025-04-27 18:12:18 - Saving orders to file.
+2025-04-27 18:12:18 - Initialized BookFileManager for: /tmp/books4650024786687574786.txt
+2025-04-27 18:12:18 - Initialized CustomerFileManager for: /tmp/customers14314368589878354447.txt
+2025-04-27 18:12:18 - OrderFileManager initialized.
+2025-04-27 18:12:18 - Initialized BookFileManager for: /tmp/books4650024786687574786.txt
+2025-04-27 18:12:18 - Initialized CustomerFileManager for: /tmp/customers14314368589878354447.txt
+2025-04-27 18:12:18 - OrderFileManager initialized.
+2025-04-27 18:12:18 - ItemOrderFileManager initialized.
+2025-04-27 18:12:18 - Saving item orders to file.
+2025-04-27 18:14:47 - Initialized BookFileManager for: /tmp/books2602763297171907653.txt
+2025-04-27 18:14:47 - Initialized CustomerFileManager for: /tmp/customers2200791750527803226.txt
+2025-04-27 18:14:47 - OrderFileManager initialized.
+2025-04-27 18:14:47 - Initialized BookFileManager for: /tmp/books2602763297171907653.txt
+2025-04-27 18:14:47 - Initialized CustomerFileManager for: /tmp/customers2200791750527803226.txt
+2025-04-27 18:14:47 - OrderFileManager initialized.
+2025-04-27 18:14:47 - ItemOrderFileManager initialized.
+2025-04-27 18:14:47 - Starting to save 1 books
+2025-04-27 18:14:47 - Save book: Test Book
+2025-04-27 18:14:47 - Successfully saved all books
+2025-04-27 18:14:47 - Saving orders to file.
+2025-04-27 18:14:47 - Saving item orders to file.
+2025-04-27 18:15:54 - Initialized BookFileManager for: /tmp/books12308392917488177920.txt
+2025-04-27 18:15:54 - Initialized CustomerFileManager for: /tmp/customers619794817818640583.txt
+2025-04-27 18:15:54 - OrderFileManager initialized.
+2025-04-27 18:15:54 - Initialized BookFileManager for: /tmp/books12308392917488177920.txt
+2025-04-27 18:15:54 - Initialized CustomerFileManager for: /tmp/customers619794817818640583.txt
+2025-04-27 18:15:54 - OrderFileManager initialized.
+2025-04-27 18:15:54 - ItemOrderFileManager initialized.
+2025-04-27 18:15:54 - Starting to save 0 books
+2025-04-27 18:15:54 - Successfully saved all books
+2025-04-27 18:15:54 - Saving orders to file.
+2025-04-27 18:15:54 - Saving item orders to file.
+2025-04-27 18:15:54 - Starting to save 1 books
+2025-04-27 18:15:54 - Save book: Test Book
+2025-04-27 18:15:54 - Successfully saved all books
+2025-04-27 18:15:54 - Saving orders to file.
+2025-04-27 18:15:54 - Saving item orders to file.
+2025-04-27 18:21:04 - Initialized BookFileManager for: /tmp/books4567809617677087657.txt
+2025-04-27 18:21:04 - Initialized CustomerFileManager for: /tmp/customers18325021802078919101.txt
+2025-04-27 18:21:04 - OrderFileManager initialized.
+2025-04-27 18:21:04 - Initialized BookFileManager for: /tmp/books4567809617677087657.txt
+2025-04-27 18:21:04 - Initialized CustomerFileManager for: /tmp/customers18325021802078919101.txt
+2025-04-27 18:21:04 - OrderFileManager initialized.
+2025-04-27 18:21:04 - ItemOrderFileManager initialized.
+2025-04-27 18:21:04 - Starting to save 0 books
+2025-04-27 18:21:04 - Successfully saved all books
+2025-04-27 18:21:04 - Saving orders to file.
+2025-04-27 18:21:04 - Saving item orders to file.
+2025-04-27 18:21:04 - Starting to save 1 books
+2025-04-27 18:21:04 - Save book: Test Book
+2025-04-27 18:21:04 - Successfully saved all books
+2025-04-27 18:21:04 - Saving orders to file.
+2025-04-27 18:21:04 - Saving item orders to file.
+2025-04-27 18:22:52 - Initialized BookFileManager for: /tmp/books4702091971490513500.txt
+2025-04-27 18:22:52 - Initialized CustomerFileManager for: /tmp/customers1785515539341215820.txt
+2025-04-27 18:22:52 - OrderFileManager initialized.
+2025-04-27 18:22:52 - Initialized BookFileManager for: /tmp/books4702091971490513500.txt
+2025-04-27 18:22:52 - Initialized CustomerFileManager for: /tmp/customers1785515539341215820.txt
+2025-04-27 18:22:52 - OrderFileManager initialized.
+2025-04-27 18:22:52 - ItemOrderFileManager initialized.
+2025-04-27 18:22:52 - Starting to save 1 books
+2025-04-27 18:22:52 - Save book: Test Book
+2025-04-27 18:22:52 - Successfully saved all books
+2025-04-27 18:22:52 - Saving orders to file.
+2025-04-27 18:22:52 - Saving item orders to file.
+2025-04-27 18:30:34 - Initialized BookFileManager for: test_books.csv
+2025-04-27 18:30:34 - Initialized CustomerFileManager for: test_customers.csv
+2025-04-27 18:30:34 - Initialized CustomerFileManager for: test_customers.csv
+2025-04-27 18:30:34 - OrderFileManager initialized.
+2025-04-27 18:30:34 - Initialized BookFileManager for: test_books.csv
+2025-04-27 18:30:34 - Initialized CustomerFileManager for: test_customers.csv
+2025-04-27 18:30:34 - OrderFileManager initialized.
+2025-04-27 18:30:34 - ItemOrderFileManager initialized.
+2025-04-27 18:30:34 - Starting to save 1 customers
+2025-04-27 18:30:34 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@example.com', phoneNumber='1234567890', address='123 Street Name', registrationDate=2025-04-27, loyaltyPoints=50}
+2025-04-27 18:30:34 - Successfully saved all customers
+2025-04-27 18:30:34 - Starting to save 1 books
+2025-04-27 18:30:34 - Save book: Test Book
+2025-04-27 18:30:34 - Successfully saved all books
+2025-04-27 18:30:34 - Saving orders to file.
+2025-04-27 18:30:34 - Saving item orders to file.
+2025-04-27 18:31:45 - Initialized BookFileManager for: test_books.csv
+2025-04-27 18:31:45 - Initialized CustomerFileManager for: test_customers.csv
+2025-04-27 18:31:45 - Initialized CustomerFileManager for: test_customers.csv
+2025-04-27 18:31:45 - OrderFileManager initialized.
+2025-04-27 18:31:45 - Initialized BookFileManager for: test_books.csv
+2025-04-27 18:31:45 - Initialized CustomerFileManager for: test_customers.csv
+2025-04-27 18:31:45 - OrderFileManager initialized.
+2025-04-27 18:31:45 - ItemOrderFileManager initialized.
+2025-04-27 18:31:45 - Starting to save 1 customers
+2025-04-27 18:31:45 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@example.com', phoneNumber='1234567890', address='123 Street Name', registrationDate=2025-04-27, loyaltyPoints=50}
+2025-04-27 18:31:45 - Successfully saved all customers
+2025-04-27 18:31:45 - Starting to save 1 books
+2025-04-27 18:31:45 - Save book: Test Book
+2025-04-27 18:31:45 - Successfully saved all books
+2025-04-27 18:31:45 - Saving orders to file.
+2025-04-27 18:31:45 - Saving item orders to file.

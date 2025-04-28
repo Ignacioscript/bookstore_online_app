@@ -22,6 +22,10 @@ public class Author {
         setNationality(nationality);
     }
 
+    public void setAuthorId(int authorId) {
+        AuthorId = authorId;
+    }
+
     public int getAuthorId() {
         return AuthorId;
     }

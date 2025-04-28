@@ -30,6 +30,10 @@ public class Customer {
     public Customer() {
     }
 
+    public void setCustomerId(int customerId) {
+        this.customerId = customerId;
+    }
+
     //Getters
     public int getCustomerId() {
         return customerId;
@@ -114,5 +118,18 @@ public class Customer {
         sb.append(", loyaltyPoints=").append(loyaltyPoints);
         sb.append('}');
         return sb.toString();
+    }
+
+    public String toCsvString() {
+        return String.join(",",
+                String.valueOf(this.getCustomerId()),
+                this.getFirstName(),
+                this.getLastName(),
+                this.getMail(),
+                this.getPhoneNumber(),
+                this.getAddress(),
+                String.valueOf(this.getRegistrationDate()),
+                String.valueOf(this.getLoyaltyPoints()));
+
     }
 }

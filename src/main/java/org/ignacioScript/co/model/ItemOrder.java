@@ -21,6 +21,10 @@ public class ItemOrder {
         setUnitPrice(unitPrice);
     }
 
+    public void setItemOrderId(int itemOrderId) {
+        this.itemOrderId = itemOrderId;
+    }
+
     public int getItemOrderId() {
         return itemOrderId;
     }
@@ -67,11 +71,21 @@ public class ItemOrder {
     public String toString() {
         final StringBuilder sb = new StringBuilder("ItemOrder{");
         sb.append("itemOrderId=").append(itemOrderId);
-        sb.append(", book=").append(book);
-        sb.append(", order=").append(order);
+        sb.append(", book=").append(book.getBookId());
+        sb.append(", order=").append(order.getOrderId());
         sb.append(", quantity=").append(quantity);
         sb.append(", unitPrice=").append(unitPrice);
         sb.append('}');
         return sb.toString();
+    }
+
+    public String toCsvString() {
+        return String.join(",",
+                String.valueOf(this.itemOrderId),
+                String.valueOf(this.getBook().getBookId()),
+                String.valueOf(this.getOrder().getOrderId()),
+                String.valueOf(this.getQuantity()),
+                String.valueOf(this.getUnitPrice())
+                );
     }
 }

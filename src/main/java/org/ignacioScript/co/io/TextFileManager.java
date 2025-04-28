@@ -1,10 +1,8 @@
 package org.ignacioScript.co.io;
 
-import org.ignacioScript.co.validation.TextFileManagerValidator;
+import org.ignacioScript.co.validation.FileManagerValidator;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -22,7 +20,7 @@ public class TextFileManager {
     }
 
     public void writeLine(String line) throws FileNotFoundException {
-        TextFileManagerValidator.validateExistingFile(FILE_PATH);
+        FileManagerValidator.validateExistingFile(FILE_PATH);
         try (BufferedWriter writer = new BufferedWriter(
                 new FileWriter(FILE_PATH))) {
             writer.write(line);
@@ -35,7 +33,7 @@ public class TextFileManager {
     }
 
     public void appendLine(String line) throws IOException {
-        TextFileManagerValidator.validateExistingFile(FILE_PATH);
+        FileManagerValidator.validateExistingFile(FILE_PATH);
         try (BufferedWriter writer = new BufferedWriter(
                 new FileWriter(FILE_PATH, true)
         )) {
@@ -46,7 +44,7 @@ public class TextFileManager {
 
 
     public List<String> readAllLines() throws IOException {
-        TextFileManagerValidator.validateExistingFile(FILE_PATH);
+        FileManagerValidator.validateExistingFile(FILE_PATH);
        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_PATH))) {
            return reader.lines().collect(Collectors.toList());
        }

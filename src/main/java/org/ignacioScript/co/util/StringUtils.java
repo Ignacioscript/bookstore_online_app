@@ -11,7 +11,7 @@ public class StringUtils {
         String[] words = name.toLowerCase().trim().split("\\s+");
         StringBuilder capitalizedName = new StringBuilder();
 
-        for (String word : words) {
+         for (String word : words) {
             if (!word.isEmpty()) {
                 capitalizedName.append(Character.toUpperCase(word.charAt(0)))
                         .append(word.substring(1))

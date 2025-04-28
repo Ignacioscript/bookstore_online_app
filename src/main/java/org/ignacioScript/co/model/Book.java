@@ -16,7 +16,7 @@ public class Book {
     private Double price;
     private Integer stock;
 
-    public Book( String isbn, String bookTitle, String description, String publisher, LocalDate publicationDate, Double price, Integer stock) {
+    public Book(String isbn, String bookTitle, String description, String publisher, LocalDate publicationDate, Double price, Integer stock) {
         this.bookId = IdGenerator.generateId();
         setIsbn(isbn); // Calls the setter, which includes validation
         setBookTitle(bookTitle); // Calls the setter, which includes validation
@@ -28,6 +28,10 @@ public class Book {
     }
 
     public Book() {
+    }
+
+    public void setBookId(int bookId) {
+        this.bookId = bookId;
     }
 
     public int getBookId() {
@@ -67,7 +71,7 @@ public class Book {
     }
 
     public void setPublisher(String publisher) {
-       BookValidator.validatePublisher(publisher);
+        BookValidator.validatePublisher(publisher);
         this.publisher = publisher;
     }
 
@@ -115,4 +119,18 @@ public class Book {
         sb.append('}');
         return sb.toString();
     }
+
+    public String toCsvString() {
+        return String.join(",",
+                String.valueOf(bookId),
+                isbn,
+                bookTitle,
+                description,
+                publisher,
+                publicationDate.toString(),
+                String.valueOf(price),
+                String.valueOf(stock)
+        );
+    }
+
 }

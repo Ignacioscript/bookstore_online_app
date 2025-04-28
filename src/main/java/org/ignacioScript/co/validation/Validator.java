@@ -3,11 +3,12 @@ package org.ignacioScript.co.validation;
 import org.ignacioScript.co.util.NumericUtils;
 import org.ignacioScript.co.util.StringUtils;
 
+
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public abstract class Validator {
+public abstract class Validator  {
 
 
     public static void validateId(int id) {
