@@ -12,24 +12,24 @@ public class GenreFileManager extends FileManager <Genre> {
 
     public GenreFileManager(String filePath) {
         super(filePath);
-        FileLogger.log("Initializing genre: " + filePath );
+        FileLogger.logInfo("Initializing genre: " + filePath );
     }
 
     @Override
     public void save(List<Genre> genres) {
 
-        FileLogger.log("Starting to save: " + genres.size() + " genres");
+        FileLogger.logInfo("Starting to save: " + genres.size() + " genres");
         FileManagerValidator.validateExistingFile(filePath);
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
         for (Genre genre : genres) {
             writer.write(objectToString(genre));
             writer.newLine();
-            FileLogger.log("Save genre: " + genre.toString());
+            FileLogger.logInfo("Save genre: " + genre.toString());
         }
-            FileLogger.log("Successfully saved all genres");
+            FileLogger.logInfo("Successfully saved all genres");
         }catch (IOException e) {
-            FileLogger.log("ERROR saving genres:" + e.getMessage());
+            FileLogger.logInfo("ERROR saving genres:" + e.getMessage());
             throw new RuntimeException("Save operation failed", e);
         }
 

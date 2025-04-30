@@ -16,12 +16,12 @@ public class BookFileManager extends FileManager <Book> {
 
     public BookFileManager(String filePath) {
         super(filePath);
-        FileLogger.log("Initialized BookFileManager for: " + filePath);
+        FileLogger.logInfo("Initialized BookFileManager for: " + filePath);
     }
 
     @Override
     public void save(List<Book> books){
-        FileLogger.log("Starting to save " + books.size() + " books");
+        FileLogger.logInfo("Starting to save " + books.size() + " books");
 
         FileManagerValidator.validateExistingFile(filePath);
 
@@ -29,12 +29,12 @@ public class BookFileManager extends FileManager <Book> {
             for (Book book : books) {
                 writer.write(objectToString(book));
                 writer.newLine();
-                FileLogger.log("Save book: " + book.getBookTitle());
+                FileLogger.logInfo("Save book: " + book.getBookTitle());
             }
-            FileLogger.log("Successfully saved all books");
+            FileLogger.logInfo("Successfully saved all books");
 
         }catch (IOException e) {
-            FileLogger.log("ERROR saving books: " + e.getMessage());
+            FileLogger.logError("ERROR saving books: " + e.getMessage());
             throw new RuntimeException("Save Operation failed", e);
         }
 
@@ -56,7 +56,7 @@ public class BookFileManager extends FileManager <Book> {
 
     @Override
     public void delete(int id) {
-        FileLogger.log("Attempting to delete book with ID: " + id);
+        FileLogger.logInfo("Attempting to delete book with ID: " + id);
         try {
             List<Book> books = load();
             Book bookToRemove = null;
@@ -71,18 +71,18 @@ public class BookFileManager extends FileManager <Book> {
             if (bookToRemove != null) {
                 books.remove(bookToRemove);
                 save(books);
-                FileLogger.log("Successfully deleted book with ID: " + id);
+                FileLogger.logInfo("Successfully deleted book with ID: " + id);
             } else {
-                FileLogger.log("No Book found with ID: " + id);
+                FileLogger.logInfo("No Book found with ID: " + id);
             }
         } catch (IOException e) {
-            FileLogger.log("ERROR deleting book: " + e.getMessage());
+            FileLogger.logError("ERROR deleting book: " + e.getMessage());
         }
     }
 
     @Override
     public void update(Book book) {
-        FileLogger.log("Attempting to update bok with ID: " + book.getBookId());
+        FileLogger.logInfo("Attempting to update bok with ID: " + book.getBookId());
         try {
             List<Book> books = load();
             boolean updated = false;
@@ -98,14 +98,14 @@ public class BookFileManager extends FileManager <Book> {
 
             if (updated) {
                 save(books);
-                FileLogger.log("Successfully updated book with ID: " + book.getBookId());
+                FileLogger.logInfo("Successfully updated book with ID: " + book.getBookId());
             }else {
-                FileLogger.log("NO book found with ID: " + book.getBookId());
+                FileLogger.logInfo("NO book found with ID: " + book.getBookId());
                 throw new RuntimeException("Book with ID: " + book.getBookId() + " Not found");
             }
 
         }catch (IOException e) {
-            FileLogger.log("ERROR updating book: " + e.getMessage());
+            FileLogger.logError("ERROR updating book: " + e.getMessage());
         }
 
 

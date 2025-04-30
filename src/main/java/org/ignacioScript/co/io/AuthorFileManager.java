@@ -13,26 +13,26 @@ public class AuthorFileManager  extends FileManager <Author> {
 
     public AuthorFileManager(String filePath) {
         super(filePath);
-        FileLogger.log("Initialized AuthorFileManager for: " + filePath);
+        FileLogger.logInfo("Initialized AuthorFileManager for: " + filePath);
 
     }
 
 
     @Override
     public void save(List<Author> authors) {
-        FileLogger.log("Starting to save " + authors.size() + " authors");
+        FileLogger.logInfo("Starting to save " + authors.size() + " authors");
         FileManagerValidator.validateExistingFile(filePath);
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             for (Author author : authors) {
                 writer.write(objectToString(author));
                 writer.newLine();
-                FileLogger.log("author saved: " + author.getFirstName() + " " + author.getLastName());
+                FileLogger.logInfo("author saved: " + author.getFirstName() + " " + author.getLastName());
             }
-            FileLogger.log("Successfully saved all authors");
+            FileLogger.logInfo("Successfully saved all authors");
 
         }catch (IOException e) {
-            FileLogger.log("ERROR saving authors: " + e.getMessage());
+            FileLogger.logError("ERROR saving authors: " + e.getMessage());
             throw  new RuntimeException("Save operation failed");
         }
     }
@@ -53,27 +53,27 @@ public class AuthorFileManager  extends FileManager <Author> {
 
     @Override
     public void delete(int id) {
-        FileLogger.log("Attempting to delete author with ID: " + id);
+        FileLogger.logInfo("Attempting to delete author with ID: " + id);
         try {
             List<Author> authors = load();
             boolean removed = authors.removeIf(author -> author.getAuthorId() == id);
 
             if (removed) {
                 save(authors);
-                FileLogger.log("Successfully deleted author with ID: " + id);
+                FileLogger.logInfo("Successfully deleted author with ID: " + id);
             } else {
-                FileLogger.log("No author found with ID: " + id);
+                FileLogger.logInfo("No author found with ID: " + id);
                 throw new RuntimeException("Author with ID " + id + " not found");
             }
         } catch (IOException e) {
-            FileLogger.log("ERROR deleting author: " + e.getMessage());
+            FileLogger.logError("ERROR deleting author: " + e.getMessage());
             throw new RuntimeException("Failed to delete author: " + e.getMessage());
         }
     }
 
     @Override
     public void update(Author author) {
-        FileLogger.log("Attempting to update author with ID: " + author.getAuthorId());
+        FileLogger.logInfo("Attempting to update author with ID: " + author.getAuthorId());
         try {
             List<Author> authors = load();
             boolean updated = false;
@@ -88,16 +88,18 @@ public class AuthorFileManager  extends FileManager <Author> {
 
             if (updated) {
                 save(authors);
-                FileLogger.log("Successfully updated author with ID: " + author.getAuthorId());
+                FileLogger.logInfo("Successfully updated author with ID: " + author.getAuthorId());
             } else {
-                FileLogger.log("No author found with ID: " + author.getAuthorId());
+                FileLogger.logInfo("No author found with ID: " + author.getAuthorId());
                 throw new RuntimeException("Author with ID " + author.getAuthorId() + " not found");
             }
         } catch (IOException e) {
-            FileLogger.log("ERROR updating author: " + e.getMessage());
+            FileLogger.logError("ERROR updating author: " + e.getMessage());
             throw new RuntimeException("Failed to update author: " + e.getMessage());
         }
     }
+
+    // TODO crate logs and refactor by logInfo and LogError
 
     @Override
     public Author getById(int id) {
@@ -117,7 +119,7 @@ public class AuthorFileManager  extends FileManager <Author> {
         return null;
     }
 
-    //TODO modify setter id and add the logic in stringToObject
+
 
     @Override
     protected String objectToString(Author author) {

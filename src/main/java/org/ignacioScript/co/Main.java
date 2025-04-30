@@ -43,16 +43,16 @@ public class Main {
             // Save the books to the file
             bookFileManager.save(books);
             System.out.println("Books have been successfully saved to " + bookFilePath);
-            FileLogger.log("Books saved to file: " + bookFilePath);
+            FileLogger.logInfo("Books saved to file: " + bookFilePath);
 
             // Save the authors to the file
             authorFileManager.save(authors);
             System.out.println("Authors have been successfully saved to " + authorFilePath);
-            FileLogger.log("Authors saved to file: " + authorFilePath);
+            FileLogger.logInfo("Authors saved to file: " + authorFilePath);
 
         } catch (Exception e) {
             System.err.println("An error occurred: " + e.getMessage());
-            FileLogger.log("Error: " + e.getMessage());
+            FileLogger.logError("Error: " + e.getMessage());
         }
     }
 

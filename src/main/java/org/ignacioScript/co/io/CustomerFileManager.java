@@ -13,13 +13,13 @@ import java.util.List;
 public class CustomerFileManager extends FileManager <Customer> {
     public CustomerFileManager(String filePath) {
         super(filePath);
-        FileLogger.log("Initialized CustomerFileManager for: " + filePath);
+        FileLogger.logInfo("Initialized CustomerFileManager for: " + filePath);
     }
 
 
     @Override
     public void save(List<Customer> customers) {
-    FileLogger.log("Starting to save " + customers.size() + " customers");
+    FileLogger.logInfo("Starting to save " + customers.size() + " customers");
 
 
             FileManagerValidator.validateExistingFile(filePath);
@@ -28,13 +28,26 @@ public class CustomerFileManager extends FileManager <Customer> {
             for (Customer customer : customers) {
                 writer.write(objectToString(customer));
                 writer.newLine();
-                FileLogger.log("Save customer: " + customer);
+                FileLogger.logInfo("Save customer: " + customer);
             }
-            FileLogger.log("Successfully saved all customers");
+            FileLogger.logInfo("Successfully saved all customers");
 
         }catch (IOException e) {
-            FileLogger.log("ERROR saving customers " + e.getMessage());
+            FileLogger.logError("ERROR saving customers " + e.getMessage());
             throw new RuntimeException("Save operation failed");
+        }
+    }
+
+    public void appendCustomer(Customer customer) {
+        FileLogger.logInfo("Starting to append a new Customer ");
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.write(objectToString(customer));
+            writer.newLine();
+
+        }catch (IOException e) {
+            FileLogger.logError("ERROR appending a new customer: " + e.getMessage());
+            throw  new RuntimeException("Append Operation failed" );
         }
     }
 
@@ -53,7 +66,7 @@ public class CustomerFileManager extends FileManager <Customer> {
 
     @Override
     public void delete(int id) {
-        FileLogger.log("Attempting to delete customer with ID: "  + id);
+        FileLogger.logInfo("Attempting to delete customer with ID: "  + id);
         try {
             List<Customer> customers = load();
             Customer customerToRemove = null;
@@ -68,20 +81,20 @@ public class CustomerFileManager extends FileManager <Customer> {
             if (customerToRemove != null) {
                 customers.remove(customerToRemove);
                 save(customers);
-                FileLogger.log("Successfuly deleted customer with ID: " + id);
+                FileLogger.logInfo("Successfuly deleted customer with ID: " + id);
             }else {
-                FileLogger.log("No Customer found it with ID:  " + id);
+                FileLogger.logInfo("No Customer found it with ID:  " + id);
             }
 
         }catch (IOException e) {
-            FileLogger.log("ERROR deleting customer: " + e.getMessage());
+            FileLogger.logError("ERROR deleting customer: " + e.getMessage());
         }
 
     }
 
     @Override
     public void update(Customer customer) {
-        FileLogger.log("Attempting to update customer with ID: " + customer.getCustomerId());
+        FileLogger.logInfo("Attempting to update customer with ID: " + customer.getCustomerId());
         try {
             List<Customer> customers = load();
             boolean updated = false;
@@ -96,49 +109,46 @@ public class CustomerFileManager extends FileManager <Customer> {
 
             if (updated) {
                 save(customers);
-                FileLogger.log("Successfully updated customer with ID: " + customer.getCustomerId());
+                FileLogger.logInfo("Successfully updated customer with ID: " + customer.getCustomerId());
             }else {
-                FileLogger.log("No customer found with ID: " + customer.getCustomerId());
+                FileLogger.logInfo("No customer found with ID: " + customer.getCustomerId());
                 throw new RuntimeException("Customer with ID: " + customer.getCustomerId() + " Not found");
             }
 
         }catch (IOException e) {
-            FileLogger.log("ERROR updating customer: " + e.getMessage());
+            FileLogger.logError("ERROR updating customer: " + e.getMessage());
 
         }
 
     }
 
+
     @Override
     public Customer getById(int id) {
-        List<Customer> customers = new ArrayList<>();
-           try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-               String line;
-               while ((line = reader.readLine()) != null) {
-                   customers.add(stringToObject(line));
-               }
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                Customer customer = stringToObject(line);
 
-       } catch (IOException e) {
-           throw new RuntimeException(e);
-       }
-           return customers.get(id);
+                if (customer.getCustomerId() == id) {
+                    FileLogger.logInfo("CustomerFileManager - Customer found with ID: " + id);
+                    return customer; // Return the customer immediately
+                }
+            }
+
+            // Log if the customer is not found
+            FileLogger.logInfo("CustomerFileManager - Customer with ID " + id + " not found.");
+        } catch (IOException e) {
+            // Log the error and wrap it
+            FileLogger.logError("CustomerFileManager - Error reading file for getById: " + e.getMessage());
+            throw new RuntimeException("Error while reading file to search for customer with ID " + id, e);
+        }
+
+        // Return null if the customer is not found
+        return null;
+
 
     }
-
-//    @Override
-//    public Customer getById(int id) {
-//        try {
-//            for (Customer customer : load()) {
-//                if (customer.getCustomerId() == id) {
-//                    return customer;
-//                }
-//            }
-//        } catch (IOException e) {
-//            throw new RuntimeException("Failed to load customers.", e);
-//        }
-//        throw new IllegalArgumentException("Customer with ID " + id + " not found.");
-//    }
-
 
     // TODO finish this helper methods
     @Override

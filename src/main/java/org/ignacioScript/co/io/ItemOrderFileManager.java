@@ -19,12 +19,12 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
         super(filePath);
         this.bookFile = new BookFileManager(bookFilePath);
         this.orderFile = new OrderFileManager(orderFilePath, customerFilePath);
-        FileLogger.log("ItemOrderFileManager initialized.");
+        FileLogger.logInfo("ItemOrderFileManager initialized.");
     }
 
     @Override
     public void save(List<ItemOrder> itemOrders) {
-        FileLogger.log("Saving item orders to file.");
+        FileLogger.logInfo("Saving item orders to file.");
         FileManagerValidator.validateExistingFile(filePath);
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
@@ -33,7 +33,7 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
                 writer.newLine();
             }
         } catch (IOException e) {
-            FileLogger.log("ERROR saving item orders.");
+            FileLogger.logError("ERROR saving item orders.");
             throw new RuntimeException("Save operation failed: " + e.getMessage(), e);
         }
     }
@@ -52,7 +52,7 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
 
     @Override
     public void delete(int id) {
-        FileLogger.log("Attempting to deleting item order with ID: " + id);
+        FileLogger.logInfo("Attempting to deleting item order with ID: " + id);
         try {
             List<ItemOrder> itemOrders = load();
             ItemOrder itemOrderToRemove = null;
@@ -67,20 +67,20 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
             if (itemOrderToRemove != null) {
                 itemOrders.remove(itemOrderToRemove);
                 save(itemOrders);
-                FileLogger.log("Successfully item order deleted with ID: " + id);
+                FileLogger.logInfo("Successfully item order deleted with ID: " + id);
             }else {
-                FileLogger.log("NO item order found with ID: " + id);
+                FileLogger.logInfo("NO item order found with ID: " + id);
             }
 
         }catch (IOException e) {
-            FileLogger.log("ERROR deleting item order: " + e.getMessage());
+            FileLogger.logError("ERROR deleting item order: " + e.getMessage());
         }
 
     }
 
     @Override
     public void update(ItemOrder itemOrder) {
-        FileLogger.log("Attempting to update item order with ID: " + itemOrder.getItemOrderId());
+        FileLogger.logInfo("Attempting to update item order with ID: " + itemOrder.getItemOrderId());
         try {
             List<ItemOrder> itemOrders = load();
             boolean updated = false;
@@ -94,10 +94,10 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
 
             if(updated) {
                 save(itemOrders);
-                FileLogger.log("Successfully updated item order with ID: " + itemOrder.getItemOrderId());
+                FileLogger.logInfo("Successfully updated item order with ID: " + itemOrder.getItemOrderId());
             }
         }catch (IOException e) {
-            FileLogger.log("ERROR updating item order :" + e.getMessage());
+            FileLogger.logError("ERROR updating item order :" + e.getMessage());
         }
     }
 
