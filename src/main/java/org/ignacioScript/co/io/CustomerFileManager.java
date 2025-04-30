@@ -150,7 +150,7 @@ public class CustomerFileManager extends FileManager <Customer> {
 
     }
 
-    // TODO finish this helper methods
+
     @Override
     protected String objectToString(Customer customer) {
 

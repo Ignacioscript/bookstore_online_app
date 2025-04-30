@@ -110,16 +110,21 @@ public class OrderFileManager extends FileManager<Order> {
 
     @Override
     public Order getById(int id) {
-        try {
-            List<Order> orders = load();
-            for (Order order : orders) {
-                if (order.getOrderId() == id) {
-                    return order;
-                }
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+       try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+           String line;
+           while ((line = reader.readLine()) != null) {
+               Order order = stringToObject(line);
+               if (order.getOrderId() == id) {
+                   FileLogger.logInfo("OrderFileManager - Order found with ID: " + id);
+                   return  order;
+               }
+           }
+
+           FileLogger.logInfo("OrderFileManager - Order with ID: " + id + " Not found");
+       }catch (IOException e) {
+           FileLogger.logError("OrderFileManager - Error reading file for getById: " + e.getMessage());
+           throw new RuntimeException("Error while reading file to search for order with ID: " + id, e);
+       }
         return null;
 
     }

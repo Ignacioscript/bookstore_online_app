@@ -113,16 +113,21 @@ public class BookFileManager extends FileManager <Book> {
 
     @Override
     public Book getById(int id) {
-        try {
-            List<Book> books = load(); // or however you load your books
-            for (Book book : books) {
-                if (book.getBookId() == id) {
-                    return book;
-                }
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+       try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+           String line;
+           while ((line = reader.readLine()) != null) {
+               Book book = stringToObject(line);
+               if (book.getBookId() == id) {
+                   FileLogger.logInfo("BookFileManager - Book found with ID: " + id);
+                   return book;
+               }
+           }
+
+           FileLogger.logInfo("BookFileManager - Book with ID: " + id + " Not found");
+       }catch (IOException e) {
+           FileLogger.logError( "BookFileManager - Error reading file for getBYId: " + e.getMessage());
+           throw new RuntimeException("Error while reading file to search for Book with ID: " + id, e);
+       }
         return null; // or throw an exception
     }
 

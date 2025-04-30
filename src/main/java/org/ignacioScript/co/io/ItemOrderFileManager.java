@@ -104,16 +104,21 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
     @Override
     public ItemOrder getById(int id) {
 
-        try {
-            List<ItemOrder> orders = load();
-            for (ItemOrder itemOrder : orders) {
-                if (itemOrder.getItemOrderId() == id) {
-                    return itemOrder;
-                }
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+       try  (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+           String line;
+           while ((line = reader.readLine()) != null) {
+               ItemOrder itemOrder = stringToObject(line);
+               if (itemOrder.getItemOrderId() == id) {
+                   FileLogger.logInfo("ItemOrderFileManager - ItemOrder found with ID: " + id);
+                   return itemOrder;
+               }
+           }
+           FileLogger.logInfo("ItemOrderFileManager - ItemOrder with ID " + id + " Not found");
+
+       }catch (IOException e) {
+           FileLogger.logError("OrderItemFileManager - Error reading file for getById: " + e.getMessage());
+           throw new RuntimeException("Error while reading file to search for order-item with ID: " + id, e);
+       }
         return null;
 
     }

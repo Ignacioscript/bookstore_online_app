@@ -2155,3 +2155,8 @@
 2025-04-29 18:16:54 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-29, loyaltyPoints=15}
 2025-04-29 18:16:54 - Successfully saved all customers
 2025-04-29 18:16:54 - Starting to append a new Customer 
+2025-04-29 20:59:33 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-29 20:59:33 - Initialized CustomerFileManager for: src/test/resources/customers_test_file.txt
+2025-04-29 20:59:33 - OrderFileManager initialized.
+2025-04-29 20:59:33 - Saving orders to file.
+2025-04-29 20:59:33 - OrderFileManager - Order found with ID: 3

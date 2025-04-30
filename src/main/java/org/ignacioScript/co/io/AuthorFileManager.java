@@ -99,20 +99,24 @@ public class AuthorFileManager  extends FileManager <Author> {
         }
     }
 
-    // TODO crate logs and refactor by logInfo and LogError
+
 
     @Override
     public Author getById(int id) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                Author author = stringToObject(line);
 
-        try {
-            for (Author author : load()) {
                 if (author.getAuthorId() == id) {
+                    FileLogger.logInfo("AuthorFileManger - Author found with ID: " + id);
                     return author;
                 }
             }
-
+            FileLogger.logInfo("AuthorFileManager - Author with ID: " + id + " Not found");
         }catch (IOException e) {
-            throw new RuntimeException(e.getMessage());
+            FileLogger.logError("AuthorFileManager - Error reading file for getById: " + e.getMessage());
+            throw new RuntimeException("Error while reading file to search for author with ID: " + id, e);
         }
 
 
