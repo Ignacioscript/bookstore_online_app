@@ -1,1 +1,23 @@
 2025-04-29 18:10:38 - ERROR appending a new customer: src/main/resources (Is a directory)
+2025-04-30 13:00:27 - CustomerService - Error finding customer: Customer with ID 11 does not exist.
+2025-04-30 13:00:27 - CustomerService - Error finding customer: Customer with ID 999 does not exist.
+2025-04-30 13:01:33 - CustomerService - Error finding customer: Customer with ID 2 does not exist.
+2025-04-30 13:01:33 - CustomerService - Error finding customer: Customer with ID 999 does not exist.
+2025-04-30 14:02:13 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 14:02:42 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:11:44 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:14:53 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:17:06 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:17:27 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:19:26 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:21:03 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:23:46 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:26:03 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:27:56 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:30:05 - CustomerFileManager - Error reading file for getById: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:30:05 - CustomerService - Error finding customer: Error while reading file to search for customer with ID 2
+2025-04-30 18:34:06 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:34:29 - CustomerService  - Error fetching customers: src/main/resources/customers.csv (No such file or directory)
+2025-04-30 18:56:31 - CustomerService - Error finding customer: Customer with ID 12 does not exist.
+2025-04-30 18:56:57 - CustomerService - Error finding customer: Customer with ID 11 does not exist.
+2025-04-30 18:57:35 - CustomerService - Error finding customer: Customer with ID 999 does not exist.

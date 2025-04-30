@@ -2160,3 +2160,627 @@
 2025-04-29 20:59:33 - OrderFileManager initialized.
 2025-04-29 20:59:33 - Saving orders to file.
 2025-04-29 20:59:33 - OrderFileManager - Order found with ID: 3
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=6, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=7, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=8, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=9, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=10, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:00:27 - CustomerFileManager - Customer with ID 11 not found.
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=16, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=17, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=18, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=19, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=20, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:00:27 - CustomerService - Fetching all customers from file.
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=26, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=27, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=28, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=29, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=30, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:00:27 - CustomerService - Fetching all customers from file.
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=37, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=38, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=39, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=40, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=41, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:00:27 - CustomerFileManager - Customer with ID 999 not found.
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=47, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=48, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=49, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=50, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=51, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=53, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=54, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=55, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=56, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=57, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:00:27 - Starting to append a new Customer 
+2025-04-30 13:00:27 - CustomerService - Customer saved successfully: Customer{customerId=58, firstName='Ignacio', lastName='Navarro', mail='nacho@mail.com', phoneNumber='3005551122', address='cll 13-23 antioquia', registrationDate=2025-04-30, loyaltyPoints=55}
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=65, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=66, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=67, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=68, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=69, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:00:27 - CustomerService - Fetching all customers from file.
+2025-04-30 13:00:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:00:27 - Starting to save 5 customers
+2025-04-30 13:00:27 - Save customer: Customer{customerId=75, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=76, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=77, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=78, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:00:27 - Save customer: Customer{customerId=79, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:00:27 - Successfully saved all customers
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=6, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=7, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=8, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=9, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=10, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:01:33 - CustomerFileManager - Customer with ID 2 not found.
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=16, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=17, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=18, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=19, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=20, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:01:33 - CustomerService - Fetching all customers from file.
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=26, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=27, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=28, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=29, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=30, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:01:33 - CustomerService - Fetching all customers from file.
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=37, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=38, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=39, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=40, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=41, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:01:33 - CustomerFileManager - Customer with ID 999 not found.
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=47, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=48, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=49, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=50, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=51, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=53, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=54, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=55, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=56, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=57, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:01:33 - Starting to append a new Customer 
+2025-04-30 13:01:33 - CustomerService - Customer saved successfully: Customer{customerId=58, firstName='Ignacio', lastName='Navarro', mail='nacho@mail.com', phoneNumber='3005551122', address='cll 13-23 antioquia', registrationDate=2025-04-30, loyaltyPoints=55}
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=65, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=66, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=67, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=68, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=69, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:01:33 - CustomerService - Fetching all customers from file.
+2025-04-30 13:01:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:01:33 - Starting to save 5 customers
+2025-04-30 13:01:33 - Save customer: Customer{customerId=75, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=76, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=77, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='5550103', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=78, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:01:33 - Save customer: Customer{customerId=79, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550105', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:01:33 - Successfully saved all customers
+2025-04-30 13:51:46 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 13:51:46 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 13:51:46 - Starting to save 5 customers
+2025-04-30 13:51:46 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 13:51:46 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 13:51:46 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 13:51:46 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 13:51:46 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 13:51:46 - Successfully saved all customers
+2025-04-30 13:51:46 - Starting to append a new Customer 
+2025-04-30 14:02:13 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 14:02:13 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 14:02:13 - Starting to save 5 customers
+2025-04-30 14:02:13 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 14:02:13 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 14:02:13 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 14:02:13 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 14:02:13 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 14:02:13 - Successfully saved all customers
+2025-04-30 14:02:13 - CustomerService - Fetching all customers from file.
+2025-04-30 14:02:42 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 14:02:42 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 14:02:42 - Starting to save 5 customers
+2025-04-30 14:02:42 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 14:02:42 - Successfully saved all customers
+2025-04-30 14:02:42 - Starting to append a new Customer 
+2025-04-30 14:02:42 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 14:02:42 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 14:02:42 - Starting to save 5 customers
+2025-04-30 14:02:42 - Save customer: Customer{customerId=13, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=14, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=15, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=16, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=17, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 14:02:42 - Successfully saved all customers
+2025-04-30 14:02:42 - CustomerService - Fetching all customers from file.
+2025-04-30 14:02:42 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 14:02:42 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 14:02:42 - Starting to save 5 customers
+2025-04-30 14:02:42 - Save customer: Customer{customerId=19, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=20, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=21, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=22, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 14:02:42 - Save customer: Customer{customerId=23, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 14:02:42 - Successfully saved all customers
+2025-04-30 18:11:44 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:11:44 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:11:44 - Starting to save 5 customers
+2025-04-30 18:11:44 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:11:44 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:11:44 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:11:44 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:11:44 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:11:44 - Successfully saved all customers
+2025-04-30 18:11:44 - CustomerService - Fetching all customers from file.
+2025-04-30 18:14:53 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:14:53 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:14:53 - Starting to save 5 customers
+2025-04-30 18:14:53 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:14:53 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:14:53 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:14:53 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:14:53 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:14:53 - Successfully saved all customers
+2025-04-30 18:14:53 - CustomerService - Fetching all customers from file.
+2025-04-30 18:17:06 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:17:06 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:17:06 - Starting to save 5 customers
+2025-04-30 18:17:06 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:17:06 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:17:06 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:17:06 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:17:06 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:17:06 - Successfully saved all customers
+2025-04-30 18:17:06 - CustomerService - Fetching all customers from file.
+2025-04-30 18:17:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:17:27 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:17:27 - Starting to save 5 customers
+2025-04-30 18:17:27 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:17:27 - Successfully saved all customers
+2025-04-30 18:17:27 - Starting to append a new Customer 
+2025-04-30 18:17:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:17:27 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:17:27 - Starting to save 5 customers
+2025-04-30 18:17:27 - Save customer: Customer{customerId=13, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=14, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=15, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=16, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=17, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:17:27 - Successfully saved all customers
+2025-04-30 18:17:27 - CustomerService - Fetching all customers from file.
+2025-04-30 18:17:27 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:17:27 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:17:27 - Starting to save 5 customers
+2025-04-30 18:17:27 - Save customer: Customer{customerId=24, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=25, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=26, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=27, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:17:27 - Save customer: Customer{customerId=28, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:17:27 - Successfully saved all customers
+2025-04-30 18:19:26 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:19:26 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:19:26 - Starting to save 5 customers
+2025-04-30 18:19:26 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:19:26 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:19:26 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:19:26 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:19:26 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:19:26 - Successfully saved all customers
+2025-04-30 18:19:26 - CustomerService - Fetching all customers from file.
+2025-04-30 18:21:03 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:21:03 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:21:03 - Starting to save 5 customers
+2025-04-30 18:21:03 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:21:03 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:21:03 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:21:03 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:21:03 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:21:03 - Successfully saved all customers
+2025-04-30 18:21:03 - CustomerService - Fetching all customers from file.
+2025-04-30 18:22:52 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:22:52 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:22:52 - Starting to save 5 customers
+2025-04-30 18:22:52 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:22:52 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:22:52 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:22:52 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:22:52 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:22:52 - Successfully saved all customers
+2025-04-30 18:23:46 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:23:46 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:23:46 - Starting to save 5 customers
+2025-04-30 18:23:46 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:23:46 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:23:46 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:23:46 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:23:46 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:23:46 - Successfully saved all customers
+2025-04-30 18:23:46 - CustomerService - Fetching all customers from file.
+2025-04-30 18:26:03 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:26:03 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:26:03 - Starting to save 5 customers
+2025-04-30 18:26:03 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:26:03 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:26:03 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:26:03 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:26:03 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:26:03 - Successfully saved all customers
+2025-04-30 18:26:03 - CustomerService - Fetching all customers from file.
+2025-04-30 18:26:19 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:26:19 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:26:19 - Starting to save 5 customers
+2025-04-30 18:26:19 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:26:19 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:26:19 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:26:19 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:26:19 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:26:19 - Successfully saved all customers
+2025-04-30 18:26:19 - CustomerService - Fetching all customers from file.
+2025-04-30 18:27:23 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:27:23 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:27:23 - Starting to save 5 customers
+2025-04-30 18:27:23 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:27:23 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:27:23 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:27:23 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:27:23 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:27:23 - Successfully saved all customers
+2025-04-30 18:27:23 - CustomerService - Fetching all customers from file.
+2025-04-30 18:27:56 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:27:56 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:27:56 - Starting to save 5 customers
+2025-04-30 18:27:56 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:27:56 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:27:56 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:27:56 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:27:56 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:27:56 - Successfully saved all customers
+2025-04-30 18:27:56 - CustomerService - Fetching all customers from file.
+2025-04-30 18:28:09 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:28:09 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:28:09 - Starting to save 5 customers
+2025-04-30 18:28:09 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:28:09 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:28:09 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:28:09 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:28:09 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:28:09 - Successfully saved all customers
+2025-04-30 18:28:09 - CustomerService - Fetching all customers from file.
+2025-04-30 18:28:43 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:28:43 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:28:43 - Starting to save 5 customers
+2025-04-30 18:28:43 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:28:43 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:28:43 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:28:43 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:28:43 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:28:43 - Successfully saved all customers
+2025-04-30 18:28:43 - CustomerService - Fetching all customers from file.
+2025-04-30 18:29:02 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:29:02 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:29:02 - Starting to save 5 customers
+2025-04-30 18:29:02 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:29:02 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:29:02 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:29:02 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:29:02 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:29:02 - Successfully saved all customers
+2025-04-30 18:29:02 - CustomerService - Fetching all customers from file.
+2025-04-30 18:30:05 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:30:05 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:30:05 - Starting to save 5 customers
+2025-04-30 18:30:05 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:30:05 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:30:05 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:30:05 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:30:05 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:30:05 - Successfully saved all customers
+2025-04-30 18:30:05 - CustomerService - Fetching all customers from file.
+2025-04-30 18:30:05 - Attempting to update customer with ID: 2
+2025-04-30 18:30:05 - Starting to save 5 customers
+2025-04-30 18:30:05 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:30:05 - Save customer: Customer{customerId=2, firstName='ignacio', lastName='navarro', mail='nacho@mail.com', phoneNumber='3005551122', address='cll 13-23 antioquia', registrationDate=2025-04-30, loyaltyPoints=55}
+2025-04-30 18:30:05 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:30:05 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:30:05 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:30:05 - Successfully saved all customers
+2025-04-30 18:30:05 - Successfully updated customer with ID: 2
+2025-04-30 18:30:05 - CustomerService - Customer updated successfully: Customer{customerId=2, firstName='ignacio', lastName='navarro', mail='nacho@mail.com', phoneNumber='3005551122', address='cll 13-23 antioquia', registrationDate=2025-04-30, loyaltyPoints=55}
+2025-04-30 18:30:22 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:30:22 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:30:22 - Starting to save 5 customers
+2025-04-30 18:30:22 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:30:22 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:30:22 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:30:22 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:30:22 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:30:22 - Successfully saved all customers
+2025-04-30 18:30:22 - CustomerService - Fetching all customers from file.
+2025-04-30 18:30:34 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:30:34 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:30:34 - Starting to save 5 customers
+2025-04-30 18:30:34 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:30:34 - Successfully saved all customers
+2025-04-30 18:30:34 - Starting to append a new Customer 
+2025-04-30 18:30:34 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:30:34 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:30:34 - Starting to save 5 customers
+2025-04-30 18:30:34 - Save customer: Customer{customerId=13, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=14, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=15, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=16, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=17, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:30:34 - Successfully saved all customers
+2025-04-30 18:30:34 - CustomerService - Fetching all customers from file.
+2025-04-30 18:30:34 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:30:34 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:30:34 - Starting to save 5 customers
+2025-04-30 18:30:34 - Save customer: Customer{customerId=23, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=24, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=25, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=26, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=27, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:30:34 - Successfully saved all customers
+2025-04-30 18:30:34 - CustomerService - Fetching all customers from file.
+2025-04-30 18:30:34 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:30:34 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:30:34 - Starting to save 5 customers
+2025-04-30 18:30:34 - Save customer: Customer{customerId=39, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=40, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=41, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=42, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:30:34 - Save customer: Customer{customerId=43, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:30:34 - Successfully saved all customers
+2025-04-30 18:34:06 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:34:06 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:34:06 - Starting to save 5 customers
+2025-04-30 18:34:06 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:34:06 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:34:06 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:34:06 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:34:06 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:34:06 - Successfully saved all customers
+2025-04-30 18:34:06 - CustomerService - Fetching all customers from file.
+2025-04-30 18:34:29 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:34:29 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:34:29 - Starting to save 5 customers
+2025-04-30 18:34:29 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:34:29 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:34:29 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:34:29 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:34:29 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:34:29 - Successfully saved all customers
+2025-04-30 18:34:29 - CustomerService - Fetching all customers from file.
+2025-04-30 18:34:38 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:34:38 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:34:38 - Starting to save 5 customers
+2025-04-30 18:34:38 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:34:38 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:34:38 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:34:38 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:34:38 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:34:38 - Successfully saved all customers
+2025-04-30 18:34:38 - CustomerService - Fetching all customers from file.
+2025-04-30 18:36:33 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:36:33 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-04-30 18:36:33 - Starting to save 5 customers
+2025-04-30 18:36:33 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:36:33 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:36:33 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:36:33 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:36:33 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:36:33 - Successfully saved all customers
+2025-04-30 18:36:33 - CustomerService - Fetching all customers from file.
+2025-04-30 18:36:33 - Attempting to update customer with ID: 1
+2025-04-30 18:36:33 - Starting to save 5 customers
+2025-04-30 18:36:33 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@email.com', phoneNumber='5550101', address='123 updated street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:36:33 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:36:33 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:36:33 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:36:33 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:36:33 - Successfully saved all customers
+2025-04-30 18:36:33 - Successfully updated customer with ID: 1
+2025-04-30 18:36:33 - CustomerService - Customer updated successfully: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@email.com', phoneNumber='5550101', address='123 updated street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:36:33 - CustomerFileManager - Customer found with ID: 1
+2025-04-30 18:36:33 - CustomerService - Successfully found customer with ID: 1
+2025-04-30 18:50:15 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:50:15 - Starting to save 5 customers
+2025-04-30 18:50:15 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:50:15 - Successfully saved all customers
+2025-04-30 18:50:15 - Starting to append a new Customer 
+2025-04-30 18:50:15 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:50:15 - Starting to save 5 customers
+2025-04-30 18:50:15 - Save customer: Customer{customerId=13, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=14, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=15, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=16, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=17, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:50:15 - Successfully saved all customers
+2025-04-30 18:50:15 - CustomerService - Fetching all customers from file.
+2025-04-30 18:50:15 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:50:15 - Starting to save 5 customers
+2025-04-30 18:50:15 - Save customer: Customer{customerId=23, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=24, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=25, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=26, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=27, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:50:15 - Successfully saved all customers
+2025-04-30 18:50:15 - CustomerService - Fetching all customers from file.
+2025-04-30 18:50:15 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:50:15 - Starting to save 5 customers
+2025-04-30 18:50:15 - Save customer: Customer{customerId=34, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=35, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=36, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=37, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:50:15 - Save customer: Customer{customerId=38, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:50:15 - Successfully saved all customers
+2025-04-30 18:50:34 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:50:34 - Starting to save 5 customers
+2025-04-30 18:50:34 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:50:34 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:50:34 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:50:34 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:50:34 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:50:34 - Successfully saved all customers
+2025-04-30 18:50:34 - CustomerService - Fetching all customers from file.
+2025-04-30 18:50:34 - Attempting to update customer with ID: 1
+2025-04-30 18:50:34 - Starting to save 5 customers
+2025-04-30 18:50:34 - Save customer: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@email.com', phoneNumber='5550101', address='123 updated street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:50:34 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:50:34 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:50:34 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:50:34 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:50:34 - Successfully saved all customers
+2025-04-30 18:50:34 - Successfully updated customer with ID: 1
+2025-04-30 18:50:34 - CustomerService - Customer updated successfully: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@email.com', phoneNumber='5550101', address='123 updated street', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:50:34 - CustomerFileManager - Customer found with ID: 1
+2025-04-30 18:50:34 - CustomerService - Successfully found customer with ID: 1
+2025-04-30 18:56:31 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:56:31 - Starting to save 5 customers
+2025-04-30 18:56:31 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:56:31 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:56:31 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:56:31 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:56:31 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:56:31 - Successfully saved all customers
+2025-04-30 18:56:31 - CustomerService - Fetching all customers from file.
+2025-04-30 18:56:31 - Attempting to delete customer with ID: 1
+2025-04-30 18:56:31 - Starting to save 4 customers
+2025-04-30 18:56:31 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:56:31 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:56:31 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:56:31 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:56:31 - Successfully saved all customers
+2025-04-30 18:56:31 - Successfuly deleted customer with ID: 1
+2025-04-30 18:56:31 - CustomerService - Customer with ID 1 deleted successfully.
+2025-04-30 18:56:31 - CustomerFileManager - Customer with ID 12 not found.
+2025-04-30 18:56:57 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:56:57 - Starting to save 5 customers
+2025-04-30 18:56:57 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:56:57 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:56:57 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:56:57 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:56:57 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:56:57 - Successfully saved all customers
+2025-04-30 18:56:57 - CustomerFileManager - Customer with ID 11 not found.
+2025-04-30 18:57:09 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:57:09 - Starting to save 5 customers
+2025-04-30 18:57:09 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:57:09 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:57:09 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:57:09 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:57:09 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:57:09 - Successfully saved all customers
+2025-04-30 18:57:09 - CustomerFileManager - Customer found with ID: 1
+2025-04-30 18:57:09 - CustomerService - Successfully found customer with ID: 1
+2025-04-30 18:57:35 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:57:35 - Starting to save 5 customers
+2025-04-30 18:57:35 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:57:35 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:57:35 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:57:35 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:57:35 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:57:35 - Successfully saved all customers
+2025-04-30 18:57:35 - CustomerFileManager - Customer with ID 999 not found.
+2025-04-30 18:58:04 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:58:04 - Starting to save 5 customers
+2025-04-30 18:58:04 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:58:04 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:58:04 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:58:04 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:58:04 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:58:04 - Successfully saved all customers
+2025-04-30 18:58:09 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:58:09 - Starting to save 5 customers
+2025-04-30 18:58:09 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:58:09 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:58:09 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:58:09 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:58:09 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:58:09 - Successfully saved all customers
+2025-04-30 18:58:25 - Initialized CustomerFileManager for: src/test/resources/test_customer.csv
+2025-04-30 18:58:25 - Starting to save 5 customers
+2025-04-30 18:58:25 - Save customer: Customer{customerId=1, firstName='John', lastName='Morrison', mail='john.morrison@email.com', phoneNumber='555-01-01-00', address='123 fake street ', registrationDate=2025-04-30, loyaltyPoints=11}
+2025-04-30 18:58:25 - Save customer: Customer{customerId=2, firstName='Jane', lastName='Smith', mail='jane.smith@email.com', phoneNumber='5550102', address='345 fake street', registrationDate=2025-04-30, loyaltyPoints=12}
+2025-04-30 18:58:25 - Save customer: Customer{customerId=3, firstName='Bob', lastName='Johnson', mail='bob.j@email.com', phoneNumber='55501013', address='567 fake street', registrationDate=2025-04-30, loyaltyPoints=31}
+2025-04-30 18:58:25 - Save customer: Customer{customerId=4, firstName='Alice', lastName='Brown', mail='alice.b@email.com', phoneNumber='5550104', address='789 fake street', registrationDate=2025-04-30, loyaltyPoints=14}
+2025-04-30 18:58:25 - Save customer: Customer{customerId=5, firstName='Charlie', lastName='Wilson', mail='charlie.w@email.com', phoneNumber='5550106', address='012 fake street', registrationDate=2025-04-30, loyaltyPoints=15}
+2025-04-30 18:58:25 - Successfully saved all customers
+2025-04-30 18:58:25 - CustomerService - Fetching all customers from file.
