@@ -40,6 +40,20 @@ public class BookFileManager extends FileManager <Book> {
 
     }
 
+    public void appendBook(Book book) {
+        FileLogger.logInfo("Starting to append a new Book");
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.write(objectToString(book));
+            writer.newLine();
+
+
+        }catch (IOException e) {
+            FileLogger.logError("BookFileManager - Error appending a new book " + e.getMessage());
+            throw new RuntimeException("Append Operation failed");
+        }
+    }
+
     @Override
     public List<Book> load() throws IOException {
         List<Book> books = new ArrayList<>();
@@ -161,6 +175,7 @@ public class BookFileManager extends FileManager <Book> {
         book.setBookId(Integer.parseInt(parts[0])); // ← 🔥 Set the ID from the file!
         return book;
     }
+
 
 
 }

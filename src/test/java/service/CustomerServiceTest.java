@@ -50,7 +50,7 @@ public class CustomerServiceTest {
     void testSavingNewCustomer() throws IOException {
         Customer customerToAppend = new Customer("ignacio", "navarro", "nacho@mail.com", "3005551122", "cll 13-23 antioquia", LocalDate.now(), 55);
 
-        customerFileManagerTest.appendCustomer(customerToAppend);
+        customerServiceTest.saveCustomer(customerToAppend);
 
         List<Customer> loadedCustomer = customerFileManagerTest.load();
         assertEquals(6, loadedCustomer.size(), "The total id customers should now be 6");

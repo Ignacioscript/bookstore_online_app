@@ -38,6 +38,19 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
         }
     }
 
+    public void append(ItemOrder itemOrder) {
+        FileLogger.logInfo("ItemOrderFileManager - appending a new item order");
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.write(objectToString(itemOrder));
+            writer.newLine();
+
+        }catch (IOException e) {
+            FileLogger.logError("ERROR appending a new item order: " + e.getMessage());
+            throw  new RuntimeException("Append Operation failed" );
+        }
+    }
+
     @Override
     public List<ItemOrder> load() throws IOException {
         List<ItemOrder> itemOrders = new ArrayList<>();
@@ -141,26 +154,40 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
             throw new IllegalArgumentException("Invalid item order data: " + line);
         }
         try {
-            int itemOrderId = Integer.parseInt(parts[0]); // << parse itemOrderId
+            int itemOrderId = Integer.parseInt(parts[0]); // parse itemOrderId
             int bookId = Integer.parseInt(parts[1]);
             int orderId = Integer.parseInt(parts[2]);
             int quantity = Integer.parseInt(parts[3]);
             double unitPrice = Double.parseDouble(parts[4]);
 
+            // Retrieve Book and Order
             Book book = bookFile.getById(bookId);
             Order order = orderFile.getById(orderId);
 
+            // Log missing book or order instead of throwing an exception
+            if (book == null) {
+                FileLogger.logError("Book not found for ID: " + bookId);
+            }
+            if (order == null) {
+                FileLogger.logError("Order not found for ID: " + orderId);
+            }
+
+            // Prevent creation if either Book or Order is missing
             if (book == null || order == null) {
-                throw new IllegalArgumentException("Book or Order not found for IDs: " + bookId + ", " + orderId);
+                throw new IllegalArgumentException("Book or Order not found for IDs: " + bookId + ", " + orderId +
+                        ". Ensure the data exists in BookFileManager and OrderFileManager.");
             }
 
             ItemOrder itemOrder = new ItemOrder(book, order, quantity, unitPrice);
-            itemOrder.setItemOrderId(itemOrderId); // << manually set the loaded ID
+            itemOrder.setItemOrderId(itemOrderId); // manually set the loaded ID
             return itemOrder;
 
+        } catch (NumberFormatException e) {
+            throw new RuntimeException("Error parsing numerical fields in item order: " + line, e);
         } catch (Exception e) {
             throw new RuntimeException("Failed to deserialize item order: " + line, e);
         }
     }
+
 
 }

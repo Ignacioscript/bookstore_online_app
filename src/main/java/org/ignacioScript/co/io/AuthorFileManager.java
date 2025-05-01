@@ -2,6 +2,7 @@ package org.ignacioScript.co.io;
 
 import org.ignacioScript.co.model.Author;
 import org.ignacioScript.co.util.FileLogger;
+import org.ignacioScript.co.validation.AuthorValidator;
 import org.ignacioScript.co.validation.FileManagerValidator;
 
 import java.io.*;
@@ -34,6 +35,19 @@ public class AuthorFileManager  extends FileManager <Author> {
         }catch (IOException e) {
             FileLogger.logError("ERROR saving authors: " + e.getMessage());
             throw  new RuntimeException("Save operation failed");
+        }
+    }
+
+    public void appendAuthor(Author author) {
+        FileLogger.logInfo("Starting to append a new Author ");
+        try(BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.write(objectToString(author));
+            writer.newLine();
+            FileLogger.logInfo("AuthorFileManager - Append author operation success");
+
+        }catch (IOException e) {
+            FileLogger.logError("AuthorFileManager - Error appending a new author");
+            throw new RuntimeException("Error appending a new author");
         }
     }
 
@@ -148,6 +162,7 @@ public class AuthorFileManager  extends FileManager <Author> {
         author.setAuthorId(Integer.parseInt(parts[0]));
         return author;
     }
+
 
 
 }

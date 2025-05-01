@@ -40,6 +40,19 @@ public class OrderFileManager extends FileManager<Order> {
         }
     }
 
+    public void append(Order order) {
+        FileLogger.logInfo("Starting to append a new Order");
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.write(objectToString(order));
+            writer.newLine();
+
+        }catch (IOException e) {
+            FileLogger.logError("ERROR appending a new order: " + e.getMessage());
+            throw  new RuntimeException("Append Operation failed" );
+        }
+    }
+
     @Override
     public List<Order> load() throws IOException {
         List<Order> orders = new ArrayList<>();
@@ -181,29 +194,6 @@ public class OrderFileManager extends FileManager<Order> {
         }
     }
 
-
-//    @Override
-//   protected Order stringToObject(String line) {
-//        String[] parts = line.split(",");
-//
-//
-//
-//        Customer customer = customerFile.getById(Integer.parseInt(parts[1]));
-//        LocalDate orderDate = LocalDate.parse(parts[9]);
-//        double total = Double.parseDouble(parts[]);
-//        String paymentMethod = parts[4];
-//        Status status = Status.valueOf(parts[5]);
-//
-//        return new Order(
-//                customer,
-//                orderDate,
-//                total,
-//                paymentMethod,
-//                status
-//
-//        );
-//
-//    }
 
 
 

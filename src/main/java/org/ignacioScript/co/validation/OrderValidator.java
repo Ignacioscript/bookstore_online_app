@@ -2,7 +2,7 @@ package org.ignacioScript.co.validation;
 
 import org.ignacioScript.co.model.Customer;
 
-public class OrderValidator {
+public class OrderValidator extends Validator{
 
     public static void validateTotal(Double amount) {
         if (amount < 0) {

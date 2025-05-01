@@ -21,3 +21,87 @@
 2025-04-30 18:56:31 - CustomerService - Error finding customer: Customer with ID 12 does not exist.
 2025-04-30 18:56:57 - CustomerService - Error finding customer: Customer with ID 11 does not exist.
 2025-04-30 18:57:35 - CustomerService - Error finding customer: Customer with ID 999 does not exist.
+2025-05-01 09:43:12 - AuthorService - Error finding author: Author with ID: 1 does not exist
+2025-05-01 10:32:18 - AuthorService - Error finding author: Author with ID: 999 does not exist
+2025-05-01 10:32:18 - AuthorService - Error finding author: Author with ID: 0 does not exist
+2025-05-01 10:32:18 - AuthorService - Error finding author: Author with ID: -1 does not exist
+2025-05-01 10:33:47 - AuthorService - Error finding author: Author cannot be null
+2025-05-01 10:33:47 - AuthorService - Error finding author: Author cannot be null
+2025-05-01 10:33:47 - AuthorService - Error finding author: Author cannot be null
+2025-05-01 10:37:17 - AuthorService - Error finding author: Author with ID: 999 does not exist
+2025-05-01 10:51:29 - AuthorService - Error finding author: Author with ID: 5 does not exist
+2025-05-01 12:44:33 - BookService - Error finding book: Book with ID: 1 does not exist
+2025-05-01 12:45:11 - AuthorService - Error finding author: Author with ID: 1 does not exist
+2025-05-01 12:45:45 - BookService - Error finding book: Book with ID: 999 does not exist
+2025-05-01 12:46:03 - BookService - Error finding book: Book with ID: 999 does not exist
+2025-05-01 12:46:03 - BookService - Error finding book: Book with ID: 50 does not exist
+2025-05-01 13:01:11 - OrderService - Error finding order: Order with ID: 2 does not exist
+2025-05-01 13:01:11 - OrderService - Error finding order: Order with ID: 999 does not exist
+2025-05-01 13:01:12 - OrderService - Error finding order: Order with ID: 999 does not exist
+2025-05-01 13:01:28 - OrderService - Error finding order: Order with ID: 2 does not exist
+2025-05-01 13:01:28 - OrderService - Error finding order: Order with ID: 999 does not exist
+2025-05-01 13:01:28 - OrderService - Error finding order: Order with ID: 999 does not exist
+2025-05-01 13:33:56 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 16,1,1,2,19.99
+2025-05-01 13:33:56 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 29,1,1,2,19.99
+2025-05-01 13:33:56 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 47,1,1,2,19.99
+2025-05-01 13:33:56 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 77,1,1,2,19.99
+2025-05-01 13:33:56 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 100,1,1,2,19.99
+2025-05-01 13:36:47 - BookFileManager - Error reading file for getBYId: src/test/resources/test_books.csv (No such file or directory)
+2025-05-01 13:36:47 - BookFileManager - Error reading file for getBYId: src/test/resources/test_books.csv (No such file or directory)
+2025-05-01 13:36:47 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 8,1,1,2,19.99
+2025-05-01 13:36:47 - BookFileManager - Error reading file for getBYId: src/test/resources/test_books.csv (No such file or directory)
+2025-05-01 13:36:47 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 13,1,1,2,19.99
+2025-05-01 13:36:47 - BookFileManager - Error reading file for getBYId: src/test/resources/test_books.csv (No such file or directory)
+2025-05-01 13:36:47 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 23,1,1,2,19.99
+2025-05-01 13:36:47 - BookFileManager - Error reading file for getBYId: src/test/resources/test_books.csv (No such file or directory)
+2025-05-01 13:36:47 - BookFileManager - Error reading file for getBYId: src/test/resources/test_books.csv (No such file or directory)
+2025-05-01 13:36:47 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 37,1,1,2,19.99
+2025-05-01 13:36:47 - BookFileManager - Error reading file for getBYId: src/test/resources/test_books.csv (No such file or directory)
+2025-05-01 13:36:47 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 52,1,1,2,19.99
+2025-05-01 13:38:48 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 17,1,1,2,19.99
+2025-05-01 13:38:48 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 31,1,1,2,19.99
+2025-05-01 13:38:48 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 50,1,1,2,19.99
+2025-05-01 13:38:49 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 82,1,1,2,19.99
+2025-05-01 13:38:49 - ItemOrderService - Error finding ItemOrder: Failed to deserialize item order: 106,1,1,2,19.99
+2025-05-01 13:57:23 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 32 does not exist
+2025-05-01 13:57:23 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 13:57:23 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:02:26 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 41 does not exist
+2025-05-01 14:02:26 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:02:26 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:06:21 - Book not found for ID: 1
+2025-05-01 14:06:21 - Order not found for ID: 1
+2025-05-01 14:06:28 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 41 does not exist
+2025-05-01 14:06:28 - Book not found for ID: 1
+2025-05-01 14:06:28 - Order not found for ID: 1
+2025-05-01 14:06:28 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:06:28 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:07:40 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 41 does not exist
+2025-05-01 14:07:40 - Book not found for ID: 1
+2025-05-01 14:07:40 - Order not found for ID: 1
+2025-05-01 14:07:40 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:07:40 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:07:47 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 41 does not exist
+2025-05-01 14:07:47 - Book not found for ID: 1
+2025-05-01 14:07:47 - Order not found for ID: 1
+2025-05-01 14:07:47 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:07:47 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 14:45:19 - Book not found for ID: 2
+2025-05-01 14:45:19 - Order not found for ID: 2
+2025-05-01 14:47:30 - Book not found for ID: 2
+2025-05-01 14:47:30 - Order not found for ID: 2
+2025-05-01 14:48:18 - Book not found for ID: 2
+2025-05-01 14:48:18 - Order not found for ID: 2
+2025-05-01 16:10:04 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 41 does not exist
+2025-05-01 16:10:04 - Book not found for ID: 2
+2025-05-01 16:10:04 - Order not found for ID: 2
+2025-05-01 16:10:04 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 16:10:04 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 16:10:57 - Book not found for ID: 2
+2025-05-01 16:10:57 - Order not found for ID: 2
+2025-05-01 16:11:12 - Book not found for ID: 2
+2025-05-01 16:11:12 - Order not found for ID: 2
+2025-05-01 16:16:21 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 41 does not exist
+2025-05-01 16:16:21 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 16:16:21 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
+2025-05-01 17:00:46 - AuthorService - Error finding author: Author with ID: 21 does not exist
