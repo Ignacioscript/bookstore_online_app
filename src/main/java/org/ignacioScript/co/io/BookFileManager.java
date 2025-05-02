@@ -1,5 +1,6 @@
 package org.ignacioScript.co.io;
 
+import org.ignacioScript.co.model.AuthorBook;
 import org.ignacioScript.co.model.Book;
 import org.ignacioScript.co.util.FileLogger;
 import org.ignacioScript.co.validation.FileManagerValidator;
@@ -143,6 +144,17 @@ public class BookFileManager extends FileManager <Book> {
            throw new RuntimeException("Error while reading file to search for Book with ID: " + id, e);
        }
         return null; // or throw an exception
+    }
+
+    public void saveAuthorBookRelationship(AuthorBook authorBook) {
+        String filePath = "src/main/resources/author_book.csv";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.write(authorBook.toCsvString());
+            writer.newLine();
+            System.out.println("Saved author-book relationship: " + authorBook);
+        } catch (IOException e) {
+            System.out.println("Error saving author-book relationship: " + e.getMessage());
+        }
     }
 
     @Override

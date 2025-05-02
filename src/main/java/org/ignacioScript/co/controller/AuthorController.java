@@ -132,5 +132,34 @@ public class AuthorController {
         }
     }
 
+    public void sortAuthors(Scanner scanner) {
+        try {
+            System.out.println("\nHow would you like to sort authors?");
+            System.out.println("1. Sort by  First Name");
+            System.out.println("2. Sort by  Last Name");
+            System.out.print("Your choice: ");
+            int choice = Integer.parseInt(scanner.nextLine());
+
+            List<Author> authors = authorService.getAllAuthors();
+
+            if (choice == 1) {
+                authors = authorService.sortAuthorsByLastName(authors);
+            } else if (choice == 2) {
+                authors = authorService.sortAuthorsByFirstName(authors);
+            } else {
+                System.out.println("Invalid choice!");
+                return;
+            }
+
+            System.out.println("\nSorted Authors:");
+            for (Author author : authors) {
+                System.out.println(author.getAuthorId() + ": " + author.getFirstName() + " " + author.getLastName());
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+
+
 
 }

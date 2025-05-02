@@ -6167,3 +6167,415 @@
 2025-05-01 17:50:03 - AuthorFileManager - Append author operation success
 2025-05-01 17:50:03 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
 2025-05-01 17:50:05 - AuthorService - Fetching all authors from file
+2025-05-02 18:43:14 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:43:14 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:43:14 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:43:14 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:43:14 - AuthorBookFileManager initialized.
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=19, firstName='Maya', lastName='Angelou', bio='Poet and Civil Rights Activist', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=17, firstName='Isaac', lastName='Asimov', bio='Author of Foundation Series and Sci-Fi Icon', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=20, firstName='Margaret', lastName='Atwood', bio='Author of The Handmaid's Tale', nationality='Canadian'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=18, firstName='Jane', lastName='Austen', bio='Author of Timeless Romance Novels', nationality='British'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=9, firstName='Agatha', lastName='Christie', bio='Stellar Mystery Novelist and Creator of Poirot', nationality='British'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=6, firstName='Winston', lastName='Churchill', bio='Author of World War II Memoirs', nationality='British'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=12, firstName='Fyodor', lastName='Dostoevsky', bio='Russian Novelist Known for Crime and Punishment', nationality='Russian'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Alan', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=2, firstName='Charlie', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=10, firstName='Ernest', lastName='Hemingway', bio='Nobel Prize-Winning American Author', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Raymond', lastName='Holt', bio='Co-Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=5, firstName='Gina', lastName='Linetti', bio='Contributor to Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=16, firstName='Haruki', lastName='Murakami', bio='Japanese Novelist Known for Magical Realism', nationality='Japanese'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=15, firstName='George', lastName='Orwell', bio='Author of 1984 and Animal Farm', nationality='British'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=3, firstName='Jake', lastName='Peralta', bio='Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=14, firstName='JK', lastName='Rowling', bio='Author of the World-Famous Harry Potter Series', nationality='British'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=13, firstName='Homer', lastName='Simpson', bio='Co-Author of Springfield's Guide to Donuts', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=11, firstName='Leo', lastName='Tolstoy', bio='Author of War and Peace and Anna Karenina', nationality='Russian'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=8, firstName='Mark', lastName='Twain', bio='American Humorist and Author of Classic Novels', nationality='US Citizen'}
+2025-05-02 18:43:14 - Starting to append a new Author 
+2025-05-02 18:43:14 - AuthorFileManager - Append author operation success
+2025-05-02 18:43:14 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
+2025-05-02 18:43:32 - AuthorService - Fetching all authors from file
+2025-05-02 18:44:13 - Starting to append a new Author 
+2025-05-02 18:44:13 - AuthorFileManager - Append author operation success
+2025-05-02 18:44:13 - AuthorService - Author saved successfully: Author{AuthorId=61, firstName='Ignacio', lastName='Navarro', bio='Autor fo Step Up Now one of many books', nationality='colombian'}
+2025-05-02 18:44:17 - AuthorService - Fetching all authors from file
+2025-05-02 18:44:43 - Starting to append a new Book
+2025-05-02 18:44:43 - BookService - Book saved successfully
+2025-05-02 18:44:43 - Starting to append a new Book
+2025-05-02 18:44:43 - BookService - Book saved successfully
+2025-05-02 18:44:43 - Starting to append a new Book
+2025-05-02 18:44:43 - BookService - Book saved successfully
+2025-05-02 18:44:43 - Starting to append a new Book
+2025-05-02 18:44:43 - BookService - Book saved successfully
+2025-05-02 18:44:43 - Starting to append a new Book
+2025-05-02 18:44:43 - BookService - Book saved successfully
+2025-05-02 18:46:16 - Loading author-book relationships from file.
+2025-05-02 18:46:25 - AuthorService - Fetching all authors from file
+2025-05-02 18:46:26 - Sorting authors by last name
+2025-05-02 18:46:42 - BookService - Fetching all books from file
+2025-05-02 18:46:48 - BookService - Fetching all books from file
+2025-05-02 18:47:20 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:47:20 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:47:20 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:47:20 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:47:20 - AuthorBookFileManager initialized.
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=19, firstName='Maya', lastName='Angelou', bio='Poet and Civil Rights Activist', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=17, firstName='Isaac', lastName='Asimov', bio='Author of Foundation Series and Sci-Fi Icon', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=20, firstName='Margaret', lastName='Atwood', bio='Author of The Handmaid's Tale', nationality='Canadian'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=18, firstName='Jane', lastName='Austen', bio='Author of Timeless Romance Novels', nationality='British'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=9, firstName='Agatha', lastName='Christie', bio='Stellar Mystery Novelist and Creator of Poirot', nationality='British'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=6, firstName='Winston', lastName='Churchill', bio='Author of World War II Memoirs', nationality='British'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=12, firstName='Fyodor', lastName='Dostoevsky', bio='Russian Novelist Known for Crime and Punishment', nationality='Russian'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Alan', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=2, firstName='Charlie', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=10, firstName='Ernest', lastName='Hemingway', bio='Nobel Prize-Winning American Author', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Raymond', lastName='Holt', bio='Co-Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=5, firstName='Gina', lastName='Linetti', bio='Contributor to Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=16, firstName='Haruki', lastName='Murakami', bio='Japanese Novelist Known for Magical Realism', nationality='Japanese'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=15, firstName='George', lastName='Orwell', bio='Author of 1984 and Animal Farm', nationality='British'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=3, firstName='Jake', lastName='Peralta', bio='Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=14, firstName='JK', lastName='Rowling', bio='Author of the World-Famous Harry Potter Series', nationality='British'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=13, firstName='Homer', lastName='Simpson', bio='Co-Author of Springfield's Guide to Donuts', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=11, firstName='Leo', lastName='Tolstoy', bio='Author of War and Peace and Anna Karenina', nationality='Russian'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=8, firstName='Mark', lastName='Twain', bio='American Humorist and Author of Classic Novels', nationality='US Citizen'}
+2025-05-02 18:47:20 - Starting to append a new Author 
+2025-05-02 18:47:20 - AuthorFileManager - Append author operation success
+2025-05-02 18:47:20 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
+2025-05-02 18:47:28 - Starting to append a new Book
+2025-05-02 18:47:28 - BookService - Book saved successfully
+2025-05-02 18:47:28 - Starting to append a new Book
+2025-05-02 18:47:28 - BookService - Book saved successfully
+2025-05-02 18:47:28 - Starting to append a new Book
+2025-05-02 18:47:28 - BookService - Book saved successfully
+2025-05-02 18:47:28 - Starting to append a new Book
+2025-05-02 18:47:28 - BookService - Book saved successfully
+2025-05-02 18:47:28 - Starting to append a new Book
+2025-05-02 18:47:28 - BookService - Book saved successfully
+2025-05-02 18:47:43 - BookService - Fetching all books from file
+2025-05-02 18:48:50 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:48:50 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:48:50 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:48:50 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:48:50 - AuthorBookFileManager initialized.
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=19, firstName='Maya', lastName='Angelou', bio='Poet and Civil Rights Activist', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=17, firstName='Isaac', lastName='Asimov', bio='Author of Foundation Series and Sci-Fi Icon', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=20, firstName='Margaret', lastName='Atwood', bio='Author of The Handmaid's Tale', nationality='Canadian'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=18, firstName='Jane', lastName='Austen', bio='Author of Timeless Romance Novels', nationality='British'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=9, firstName='Agatha', lastName='Christie', bio='Stellar Mystery Novelist and Creator of Poirot', nationality='British'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=6, firstName='Winston', lastName='Churchill', bio='Author of World War II Memoirs', nationality='British'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=12, firstName='Fyodor', lastName='Dostoevsky', bio='Russian Novelist Known for Crime and Punishment', nationality='Russian'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Alan', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=2, firstName='Charlie', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=10, firstName='Ernest', lastName='Hemingway', bio='Nobel Prize-Winning American Author', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Raymond', lastName='Holt', bio='Co-Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=5, firstName='Gina', lastName='Linetti', bio='Contributor to Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=16, firstName='Haruki', lastName='Murakami', bio='Japanese Novelist Known for Magical Realism', nationality='Japanese'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=15, firstName='George', lastName='Orwell', bio='Author of 1984 and Animal Farm', nationality='British'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=3, firstName='Jake', lastName='Peralta', bio='Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=14, firstName='JK', lastName='Rowling', bio='Author of the World-Famous Harry Potter Series', nationality='British'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=13, firstName='Homer', lastName='Simpson', bio='Co-Author of Springfield's Guide to Donuts', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=11, firstName='Leo', lastName='Tolstoy', bio='Author of War and Peace and Anna Karenina', nationality='Russian'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=8, firstName='Mark', lastName='Twain', bio='American Humorist and Author of Classic Novels', nationality='US Citizen'}
+2025-05-02 18:48:50 - Starting to append a new Author 
+2025-05-02 18:48:50 - AuthorFileManager - Append author operation success
+2025-05-02 18:48:50 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
+2025-05-02 18:48:52 - Starting to append a new Book
+2025-05-02 18:48:52 - BookService - Book saved successfully
+2025-05-02 18:48:52 - Starting to append a new Book
+2025-05-02 18:48:52 - BookService - Book saved successfully
+2025-05-02 18:48:52 - Starting to append a new Book
+2025-05-02 18:48:52 - BookService - Book saved successfully
+2025-05-02 18:48:52 - Starting to append a new Book
+2025-05-02 18:48:52 - BookService - Book saved successfully
+2025-05-02 18:48:52 - Starting to append a new Book
+2025-05-02 18:48:52 - BookService - Book saved successfully
+2025-05-02 18:48:54 - BookService - Fetching all books from file
+2025-05-02 18:49:47 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:49:47 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:49:47 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:49:47 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:49:47 - AuthorBookFileManager initialized.
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=19, firstName='Maya', lastName='Angelou', bio='Poet and Civil Rights Activist', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=17, firstName='Isaac', lastName='Asimov', bio='Author of Foundation Series and Sci-Fi Icon', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=20, firstName='Margaret', lastName='Atwood', bio='Author of The Handmaid's Tale', nationality='Canadian'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=18, firstName='Jane', lastName='Austen', bio='Author of Timeless Romance Novels', nationality='British'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=9, firstName='Agatha', lastName='Christie', bio='Stellar Mystery Novelist and Creator of Poirot', nationality='British'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=6, firstName='Winston', lastName='Churchill', bio='Author of World War II Memoirs', nationality='British'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=12, firstName='Fyodor', lastName='Dostoevsky', bio='Russian Novelist Known for Crime and Punishment', nationality='Russian'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Alan', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=2, firstName='Charlie', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=10, firstName='Ernest', lastName='Hemingway', bio='Nobel Prize-Winning American Author', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Raymond', lastName='Holt', bio='Co-Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=5, firstName='Gina', lastName='Linetti', bio='Contributor to Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=16, firstName='Haruki', lastName='Murakami', bio='Japanese Novelist Known for Magical Realism', nationality='Japanese'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=15, firstName='George', lastName='Orwell', bio='Author of 1984 and Animal Farm', nationality='British'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=3, firstName='Jake', lastName='Peralta', bio='Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=14, firstName='JK', lastName='Rowling', bio='Author of the World-Famous Harry Potter Series', nationality='British'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=13, firstName='Homer', lastName='Simpson', bio='Co-Author of Springfield's Guide to Donuts', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=11, firstName='Leo', lastName='Tolstoy', bio='Author of War and Peace and Anna Karenina', nationality='Russian'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=8, firstName='Mark', lastName='Twain', bio='American Humorist and Author of Classic Novels', nationality='US Citizen'}
+2025-05-02 18:49:47 - Starting to append a new Author 
+2025-05-02 18:49:47 - AuthorFileManager - Append author operation success
+2025-05-02 18:49:47 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
+2025-05-02 18:49:51 - Starting to append a new Book
+2025-05-02 18:49:51 - BookService - Book saved successfully
+2025-05-02 18:49:51 - Starting to append a new Book
+2025-05-02 18:49:51 - BookService - Book saved successfully
+2025-05-02 18:49:51 - Starting to append a new Book
+2025-05-02 18:49:51 - BookService - Book saved successfully
+2025-05-02 18:49:51 - Starting to append a new Book
+2025-05-02 18:49:51 - BookService - Book saved successfully
+2025-05-02 18:49:52 - BookService - Fetching all books from file
+2025-05-02 18:50:38 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:50:38 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:50:38 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-02 18:50:38 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-02 18:50:38 - AuthorBookFileManager initialized.
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=19, firstName='Maya', lastName='Angelou', bio='Poet and Civil Rights Activist', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=17, firstName='Isaac', lastName='Asimov', bio='Author of Foundation Series and Sci-Fi Icon', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=20, firstName='Margaret', lastName='Atwood', bio='Author of The Handmaid's Tale', nationality='Canadian'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=18, firstName='Jane', lastName='Austen', bio='Author of Timeless Romance Novels', nationality='British'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=9, firstName='Agatha', lastName='Christie', bio='Stellar Mystery Novelist and Creator of Poirot', nationality='British'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=6, firstName='Winston', lastName='Churchill', bio='Author of World War II Memoirs', nationality='British'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=12, firstName='Fyodor', lastName='Dostoevsky', bio='Russian Novelist Known for Crime and Punishment', nationality='Russian'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Alan', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=2, firstName='Charlie', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=10, firstName='Ernest', lastName='Hemingway', bio='Nobel Prize-Winning American Author', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Raymond', lastName='Holt', bio='Co-Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=5, firstName='Gina', lastName='Linetti', bio='Contributor to Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=16, firstName='Haruki', lastName='Murakami', bio='Japanese Novelist Known for Magical Realism', nationality='Japanese'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=15, firstName='George', lastName='Orwell', bio='Author of 1984 and Animal Farm', nationality='British'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=3, firstName='Jake', lastName='Peralta', bio='Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=14, firstName='JK', lastName='Rowling', bio='Author of the World-Famous Harry Potter Series', nationality='British'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=13, firstName='Homer', lastName='Simpson', bio='Co-Author of Springfield's Guide to Donuts', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=11, firstName='Leo', lastName='Tolstoy', bio='Author of War and Peace and Anna Karenina', nationality='Russian'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=8, firstName='Mark', lastName='Twain', bio='American Humorist and Author of Classic Novels', nationality='US Citizen'}
+2025-05-02 18:50:38 - Starting to append a new Author 
+2025-05-02 18:50:38 - AuthorFileManager - Append author operation success
+2025-05-02 18:50:38 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
+2025-05-02 18:50:42 - Starting to append a new Book
+2025-05-02 18:50:42 - BookService - Book saved successfully
+2025-05-02 18:50:42 - Starting to append a new Book
+2025-05-02 18:50:42 - BookService - Book saved successfully
+2025-05-02 18:50:42 - Starting to append a new Book
+2025-05-02 18:50:42 - BookService - Book saved successfully
+2025-05-02 18:50:42 - Starting to append a new Book
+2025-05-02 18:50:42 - BookService - Book saved successfully
+2025-05-02 18:50:42 - Starting to append a new Book
+2025-05-02 18:50:42 - BookService - Book saved successfully
+2025-05-02 18:50:43 - BookService - Fetching all books from file
+2025-05-02 18:50:56 - BookService - Fetching all books from file
+2025-05-02 18:50:56 - BookService - Sorting books by title
+2025-05-02 18:51:03 - BookService - Fetching all books from file
+2025-05-02 18:51:28 - BookFileManager - Book found with ID: 22
+2025-05-02 18:51:28 - BookService - Successfully found book with ID: 22
+2025-05-02 18:51:38 - AuthorFileManger - Author found with ID: 61
+2025-05-02 18:51:38 - AuthorService - Successfully found author with ID: 61
+2025-05-02 18:51:38 - Loading author-book relationships from file.
+2025-05-02 18:51:38 - Saving author-book relationships to file.
+2025-05-02 18:51:44 - Loading author-book relationships from file.
+2025-05-02 18:51:44 - AuthorFileManger - Author found with ID: 61
+2025-05-02 18:51:44 - BookFileManager - Book found with ID: 22
+2025-05-02 18:52:17 - BookFileManager - Book found with ID: 22
+2025-05-02 18:52:17 - BookService - Successfully found book with ID: 22
+2025-05-02 18:53:23 - AuthorFileManger - Author found with ID: 14
+2025-05-02 18:53:23 - AuthorService - Successfully found author with ID: 14
+2025-05-02 18:53:23 - Loading author-book relationships from file.
+2025-05-02 18:53:23 - AuthorFileManger - Author found with ID: 61
+2025-05-02 18:53:23 - BookFileManager - Book found with ID: 22
+2025-05-02 18:53:23 - Saving author-book relationships to file.
+2025-05-02 18:53:28 - Loading author-book relationships from file.
+2025-05-02 18:53:28 - AuthorFileManger - Author found with ID: 61
+2025-05-02 18:53:28 - BookFileManager - Book found with ID: 22
+2025-05-02 18:53:28 - AuthorFileManger - Author found with ID: 14
+2025-05-02 18:53:28 - BookFileManager - Book found with ID: 22

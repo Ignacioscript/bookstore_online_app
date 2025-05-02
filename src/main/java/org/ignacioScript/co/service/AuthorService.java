@@ -6,6 +6,7 @@ import org.ignacioScript.co.util.FileLogger;
 import org.ignacioScript.co.validation.AuthorValidator;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class AuthorService {
@@ -84,6 +85,69 @@ public class AuthorService {
         }catch (IOException e) {
             FileLogger.logError("AuthorService - Error fetching authors: " + e.getMessage());
             throw new RuntimeException("Failed to load authors");
+        }
+    }
+
+    //Bubble sort authors by last name
+    public List<Author> sortAuthorsByLastName(List<Author> authors) {
+        FileLogger.logInfo("Sorting authors by last name");
+        for (int i = 0; i < authors.size() - 1; i++) {
+            for (int j = 0; j < authors.size() - 1 - i; j++) {
+                if (authors.get(j).getLastName().compareTo(authors.get(j + 1).getLastName()) > 0) {
+                    Author temp = authors.get(j);
+                    authors.set(j, authors.get(j + 1));
+                    authors.set(j + 1, temp);
+                }
+            }
+        }
+        return authors;
+    }
+
+    //Bubble sort authors by first name
+    public List<Author> sortAuthorsByFirstName(List<Author> authors) {
+        FileLogger.logInfo("Sorting authors by first name");
+        for (int i = 0; i < authors.size() - 1; i++) {
+            for (int j = 0; j < authors.size() - 1 - i; j++) {
+                if (authors.get(j).getFirstName().compareTo(authors.get(j + 1).getFirstName()) > 0) {
+                    Author temp = authors.get(j);
+                    authors.set(j, authors.get(j + 1));
+                    authors.set(j + 1, temp);
+                }
+            }
+        }
+        return authors;
+    }
+
+    public List<Author> searchAuthorsByKeyword(String keyword) {
+        List<Author> authors;
+        try {
+            // Load all authors
+            authors = authorFileManager.load();
+
+            // Create a fixed-size array to store matches
+            Author[] matchedAuthors = new Author[authors.size()];
+            int matchedIndex = 0;
+
+            // Iterate over authors to find matches
+            for (Author author : authors) {
+                if (author.getFirstName().toLowerCase().contains(keyword.toLowerCase()) ||
+                        author.getLastName().toLowerCase().contains(keyword.toLowerCase()) ||
+                        author.getBio().toLowerCase().contains(keyword.toLowerCase())) {
+
+                    // Add to array at next index
+                    matchedAuthors[matchedIndex++] = author;
+                }
+            }
+
+            // Convert back to a list for the return statement
+            List<Author> result = new ArrayList<>();
+            for (int i = 0; i < matchedIndex; i++) {
+                result.add(matchedAuthors[i]);
+            }
+            return result;
+
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to search authors: " + e.getMessage(), e);
         }
     }
 

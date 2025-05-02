@@ -105,3 +105,6 @@
 2025-05-01 16:16:21 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
 2025-05-01 16:16:21 - ItemOrderService - Error finding ItemOrder: ItemOrder with ID: 999 does not exist
 2025-05-01 17:00:46 - AuthorService - Error finding author: Author with ID: 21 does not exist
+2025-05-02 18:47:43 - BookController - Error viewing books: Text ' who travels on an incredible journey.' could not be parsed at index 0
+2025-05-02 18:48:54 - BookController - Error viewing books: Text ' who travels on an incredible journey.' could not be parsed at index 0
+2025-05-02 18:49:52 - BookController - Error viewing books: Text ' who travels on an incredible journey.' could not be parsed at index 0
