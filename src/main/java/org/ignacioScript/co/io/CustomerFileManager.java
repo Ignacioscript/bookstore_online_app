@@ -146,8 +146,31 @@ public class CustomerFileManager extends FileManager <Customer> {
 
         // Return null if the customer is not found
         return null;
+    }
 
+    public Customer getByEmail(String email) {
 
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                Customer customer = stringToObject(line);
+
+                if (customer.getMail().equalsIgnoreCase(email)) {
+                    FileLogger.logInfo("CustomerFileManager - Customer found with email: " + email);
+                    return customer; // Return the customer immediately
+                }
+            }
+
+            // Log if the customer is not found
+            FileLogger.logInfo("CustomerFileManager - Customer with email " + email + " not found.");
+        } catch (IOException e) {
+            // Log the error and wrap it
+            FileLogger.logError("CustomerFileManager - Error reading file for getByEmail: " + e.getMessage());
+            throw new RuntimeException("Error while reading file to search for customer with email " + email, e);
+        }
+
+        // Return null if the customer is not found
+        return null;
     }
 
 
@@ -176,6 +199,7 @@ public class CustomerFileManager extends FileManager <Customer> {
         customer.setCustomerId(Integer.parseInt(parts[0]));
         return customer;
     }
+
 
 
 }

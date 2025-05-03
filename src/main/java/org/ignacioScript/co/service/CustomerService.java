@@ -86,6 +86,25 @@ public class CustomerService {
         }
     }
 
+    // Find a customer by email
+    public Customer findCustomerByEmail(String email) {
+        // Delegate to CustomerFileManager's getByEmail
+        try {
+            Customer customer = customerFileManager.getByEmail(email);
+
+            if (customer == null) {
+                throw new IllegalArgumentException("Customer with email " + email + " does not exist.");
+            }
+
+            FileLogger.logInfo("CustomerService - Successfully found customer with email: " + email);
+            return customer;
+
+        } catch (RuntimeException e) {
+            FileLogger.logError("CustomerService - Error finding customer: " + e.getMessage());
+            throw e; // Rethrow to propagate the error upwards
+        }
+    }
+
 
 
     // Validation logic

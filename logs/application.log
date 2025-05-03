@@ -2,3 +2,14 @@
 2025-05-02 18:48:54 - BookController - Viewing all books
 2025-05-02 18:49:52 - BookController - Viewing all books
 2025-05-02 18:50:43 - BookController - Viewing all books
+2025-05-03 08:51:02 - BookController - Creating a new book
+2025-05-03 08:53:01 - BookController - Creating a new book
+2025-05-03 08:54:18 - BookController - book created: Book{bookId=6, isbn='A187637894', bookTitle='Step Up Now', description='A journey for those who wants to change their daily habits', publisher='Kindle amazon', publicationDate=2024-12-18, price=3.99, stock=50}
+2025-05-03 09:04:15 - BookController - Viewing all books
+2025-05-03 13:48:39 - CustomerController - created: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=10}
+2025-05-03 15:55:06 - CustomerController - found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=10}
+2025-05-03 15:55:16 - CustomerController - updated loyalty points: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 15:56:57 - CustomerController - found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 15:57:33 - CustomerController - found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 16:00:06 - CustomerController - found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 16:00:29 - CustomerController - updated: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}

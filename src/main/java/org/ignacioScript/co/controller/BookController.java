@@ -26,7 +26,7 @@ public class BookController {
            switch (choice) {
                 case 1 -> createBook(scanner, bookService);
                 case 2 -> viewBooks(bookService);
-                case 3 -> findBookById(scanner, bookService);
+                case 3 -> searchForBook(scanner);
                 case 4 -> updateBook(scanner, bookService);
                 case 5 -> deleteBook(scanner, bookService);
                 case 6 -> {
@@ -46,7 +46,7 @@ public class BookController {
         System.out.println("\n===== Manage Books =====");
         System.out.println("1. Create Book");
         System.out.println("2. View All Books");
-        System.out.println("3. Find Book by ID");
+        System.out.println("3. Find Book ");
         System.out.println("4. Update Book");
         System.out.println("5. Delete Book");
         System.out.println("6. Back to Main Menu");
@@ -118,6 +118,20 @@ public class BookController {
             System.out.println("Error: " + e.getMessage());
         }
 
+    }
+
+    private void searchForBook(Scanner scanner) {
+        System.out.println("Enter book title or ISBN to search:");
+        String keyword = scanner.nextLine();
+        List<Book> books = bookService.searchBooksByKeyword(keyword);
+        if (books.isEmpty()) {
+            System.out.println("No books found.");
+        } else {
+            System.out.println("Books found:");
+            for (Book book : books) {
+                System.out.println(book);
+            }
+        }
     }
 
     private void viewBooks(BookService bookService) {

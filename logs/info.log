@@ -6579,3 +6579,476 @@
 2025-05-02 18:53:28 - BookFileManager - Book found with ID: 22
 2025-05-02 18:53:28 - AuthorFileManger - Author found with ID: 14
 2025-05-02 18:53:28 - BookFileManager - Book found with ID: 22
+2025-05-03 08:42:17 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 08:42:17 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 08:42:17 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 08:42:17 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 08:42:17 - AuthorBookFileManager initialized.
+2025-05-03 08:42:17 - Starting to append a new Author 
+2025-05-03 08:42:17 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=19, firstName='Maya', lastName='Angelou', bio='Poet and Civil Rights Activist', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=17, firstName='Isaac', lastName='Asimov', bio='Author of Foundation Series and Sci-Fi Icon', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=20, firstName='Margaret', lastName='Atwood', bio='Author of The Handmaid's Tale', nationality='Canadian'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=18, firstName='Jane', lastName='Austen', bio='Author of Timeless Romance Novels', nationality='British'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=9, firstName='Agatha', lastName='Christie', bio='Stellar Mystery Novelist and Creator of Poirot', nationality='British'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=6, firstName='Winston', lastName='Churchill', bio='Author of World War II Memoirs', nationality='British'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=12, firstName='Fyodor', lastName='Dostoevsky', bio='Russian Novelist Known for Crime and Punishment', nationality='Russian'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Alan', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=2, firstName='Charlie', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=10, firstName='Ernest', lastName='Hemingway', bio='Nobel Prize-Winning American Author', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Raymond', lastName='Holt', bio='Co-Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=5, firstName='Gina', lastName='Linetti', bio='Contributor to Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=16, firstName='Haruki', lastName='Murakami', bio='Japanese Novelist Known for Magical Realism', nationality='Japanese'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=15, firstName='George', lastName='Orwell', bio='Author of 1984 and Animal Farm', nationality='British'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=3, firstName='Jake', lastName='Peralta', bio='Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=14, firstName='JK', lastName='Rowling', bio='Author of the World-Famous Harry Potter Series', nationality='British'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=13, firstName='Homer', lastName='Simpson', bio='Co-Author of Springfield's Guide to Donuts', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=11, firstName='Leo', lastName='Tolstoy', bio='Author of War and Peace and Anna Karenina', nationality='Russian'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=8, firstName='Mark', lastName='Twain', bio='American Humorist and Author of Classic Novels', nationality='US Citizen'}
+2025-05-03 08:42:18 - Starting to append a new Author 
+2025-05-03 08:42:18 - AuthorFileManager - Append author operation success
+2025-05-03 08:42:18 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
+2025-05-03 08:42:46 - Starting to append a new Book
+2025-05-03 08:42:46 - BookService - Book saved successfully
+2025-05-03 08:42:46 - Starting to append a new Book
+2025-05-03 08:42:46 - BookService - Book saved successfully
+2025-05-03 08:42:46 - Starting to append a new Book
+2025-05-03 08:42:46 - BookService - Book saved successfully
+2025-05-03 08:42:46 - Starting to append a new Book
+2025-05-03 08:42:46 - BookService - Book saved successfully
+2025-05-03 08:42:46 - Starting to append a new Book
+2025-05-03 08:42:46 - BookService - Book saved successfully
+2025-05-03 08:50:11 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 08:50:11 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 08:50:11 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 08:50:11 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 08:50:11 - AuthorBookFileManager initialized.
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=19, firstName='Maya', lastName='Angelou', bio='Poet and Civil Rights Activist', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=17, firstName='Isaac', lastName='Asimov', bio='Author of Foundation Series and Sci-Fi Icon', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=20, firstName='Margaret', lastName='Atwood', bio='Author of The Handmaid's Tale', nationality='Canadian'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=18, firstName='Jane', lastName='Austen', bio='Author of Timeless Romance Novels', nationality='British'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=9, firstName='Agatha', lastName='Christie', bio='Stellar Mystery Novelist and Creator of Poirot', nationality='British'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=6, firstName='Winston', lastName='Churchill', bio='Author of World War II Memoirs', nationality='British'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=12, firstName='Fyodor', lastName='Dostoevsky', bio='Russian Novelist Known for Crime and Punishment', nationality='Russian'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Alan', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=2, firstName='Charlie', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=10, firstName='Ernest', lastName='Hemingway', bio='Nobel Prize-Winning American Author', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Raymond', lastName='Holt', bio='Co-Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=5, firstName='Gina', lastName='Linetti', bio='Contributor to Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=16, firstName='Haruki', lastName='Murakami', bio='Japanese Novelist Known for Magical Realism', nationality='Japanese'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=15, firstName='George', lastName='Orwell', bio='Author of 1984 and Animal Farm', nationality='British'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=3, firstName='Jake', lastName='Peralta', bio='Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=14, firstName='JK', lastName='Rowling', bio='Author of the World-Famous Harry Potter Series', nationality='British'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=13, firstName='Homer', lastName='Simpson', bio='Co-Author of Springfield's Guide to Donuts', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=11, firstName='Leo', lastName='Tolstoy', bio='Author of War and Peace and Anna Karenina', nationality='Russian'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=8, firstName='Mark', lastName='Twain', bio='American Humorist and Author of Classic Novels', nationality='US Citizen'}
+2025-05-03 08:50:14 - Starting to append a new Author 
+2025-05-03 08:50:14 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:14 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
+2025-05-03 08:50:50 - Starting to append a new Author 
+2025-05-03 08:50:50 - AuthorFileManager - Append author operation success
+2025-05-03 08:50:50 - AuthorService - Author saved successfully: Author{AuthorId=21, firstName='Ignacio', lastName='Navarro', bio='Software analyst and developer, future java champions', nationality='colombian'}
+2025-05-03 08:51:00 - Starting to append a new Book
+2025-05-03 08:51:00 - BookService - Book saved successfully
+2025-05-03 08:51:00 - Starting to append a new Book
+2025-05-03 08:51:00 - BookService - Book saved successfully
+2025-05-03 08:51:00 - Starting to append a new Book
+2025-05-03 08:51:00 - BookService - Book saved successfully
+2025-05-03 08:51:00 - Starting to append a new Book
+2025-05-03 08:51:00 - BookService - Book saved successfully
+2025-05-03 08:51:00 - Starting to append a new Book
+2025-05-03 08:51:00 - BookService - Book saved successfully
+2025-05-03 08:52:51 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 08:52:51 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 08:52:51 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 08:52:51 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 08:52:51 - AuthorBookFileManager initialized.
+2025-05-03 08:53:00 - Starting to append a new Book
+2025-05-03 08:53:00 - BookService - Book saved successfully
+2025-05-03 08:53:00 - Starting to append a new Book
+2025-05-03 08:53:00 - BookService - Book saved successfully
+2025-05-03 08:53:00 - Starting to append a new Book
+2025-05-03 08:53:00 - BookService - Book saved successfully
+2025-05-03 08:53:00 - Starting to append a new Book
+2025-05-03 08:53:00 - BookService - Book saved successfully
+2025-05-03 08:53:00 - Starting to append a new Book
+2025-05-03 08:53:00 - BookService - Book saved successfully
+2025-05-03 08:54:18 - Starting to append a new Book
+2025-05-03 08:54:18 - BookService - Book saved successfully
+2025-05-03 09:00:32 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:00:32 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:00:32 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:00:32 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:00:32 - AuthorBookFileManager initialized.
+2025-05-03 09:00:37 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:01:31 - Starting to append a new Author 
+2025-05-03 09:01:31 - AuthorFileManager - Append author operation success
+2025-05-03 09:01:31 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Kevin', lastName='De Bruyne', bio='Best midfielder in the history of Premer League of England', nationality='belguim'}
+2025-05-03 09:01:36 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:03:08 - Starting to append a new Book
+2025-05-03 09:03:08 - BookService - Book saved successfully
+2025-05-03 09:03:28 - Loading author-book relationships from file.
+2025-05-03 09:03:28 - AuthorFileManger - Author found with ID: 61
+2025-05-03 09:03:28 - BookFileManager - Book found with ID: 22
+2025-05-03 09:03:28 - AuthorFileManger - Author found with ID: 14
+2025-05-03 09:03:28 - BookFileManager - Book found with ID: 22
+2025-05-03 09:04:05 - Starting to append a new Book
+2025-05-03 09:04:05 - BookService - Book saved successfully
+2025-05-03 09:04:05 - Starting to append a new Book
+2025-05-03 09:04:05 - BookService - Book saved successfully
+2025-05-03 09:04:05 - Starting to append a new Book
+2025-05-03 09:04:05 - BookService - Book saved successfully
+2025-05-03 09:04:05 - Starting to append a new Book
+2025-05-03 09:04:05 - BookService - Book saved successfully
+2025-05-03 09:04:05 - Starting to append a new Book
+2025-05-03 09:04:05 - BookService - Book saved successfully
+2025-05-03 09:04:15 - BookService - Fetching all books from file
+2025-05-03 09:12:44 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:12:44 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:12:44 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:12:44 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:12:44 - AuthorBookFileManager initialized.
+2025-05-03 09:12:49 - Starting to append a new Book
+2025-05-03 09:12:49 - BookService - Book saved successfully
+2025-05-03 09:12:49 - Starting to append a new Book
+2025-05-03 09:12:49 - BookService - Book saved successfully
+2025-05-03 09:12:49 - Starting to append a new Book
+2025-05-03 09:12:49 - BookService - Book saved successfully
+2025-05-03 09:12:49 - Starting to append a new Book
+2025-05-03 09:12:49 - BookService - Book saved successfully
+2025-05-03 09:12:49 - Starting to append a new Book
+2025-05-03 09:12:49 - BookService - Book saved successfully
+2025-05-03 09:20:07 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:20:07 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:20:07 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:20:07 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:20:07 - AuthorBookFileManager initialized.
+2025-05-03 09:28:44 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:28:44 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:28:44 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:28:44 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:28:44 - AuthorBookFileManager initialized.
+2025-05-03 09:29:28 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:29:28 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:29:28 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:29:28 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:29:28 - AuthorBookFileManager initialized.
+2025-05-03 09:29:34 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:29:34 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:29:34 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:29:34 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:29:34 - AuthorBookFileManager initialized.
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=19, firstName='Maya', lastName='Angelou', bio='Poet and Civil Rights Activist', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=17, firstName='Isaac', lastName='Asimov', bio='Author of Foundation Series and Sci-Fi Icon', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=20, firstName='Margaret', lastName='Atwood', bio='Author of The Handmaid's Tale', nationality='Canadian'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=18, firstName='Jane', lastName='Austen', bio='Author of Timeless Romance Novels', nationality='British'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=9, firstName='Agatha', lastName='Christie', bio='Stellar Mystery Novelist and Creator of Poirot', nationality='British'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=6, firstName='Winston', lastName='Churchill', bio='Author of World War II Memoirs', nationality='British'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=12, firstName='Fyodor', lastName='Dostoevsky', bio='Russian Novelist Known for Crime and Punishment', nationality='Russian'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Alan', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=2, firstName='Charlie', lastName='Harper', bio='Co-Author of Two and a Half Man book', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=10, firstName='Ernest', lastName='Hemingway', bio='Nobel Prize-Winning American Author', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Raymond', lastName='Holt', bio='Co-Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=5, firstName='Gina', lastName='Linetti', bio='Contributor to Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=16, firstName='Haruki', lastName='Murakami', bio='Japanese Novelist Known for Magical Realism', nationality='Japanese'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=15, firstName='George', lastName='Orwell', bio='Author of 1984 and Animal Farm', nationality='British'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=3, firstName='Jake', lastName='Peralta', bio='Author of Brooklyn Nine-Nine Detective Manual', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=14, firstName='JK', lastName='Rowling', bio='Author of the World-Famous Harry Potter Series', nationality='British'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=13, firstName='Homer', lastName='Simpson', bio='Co-Author of Springfield's Guide to Donuts', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=11, firstName='Leo', lastName='Tolstoy', bio='Author of War and Peace and Anna Karenina', nationality='Russian'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=8, firstName='Mark', lastName='Twain', bio='American Humorist and Author of Classic Novels', nationality='US Citizen'}
+2025-05-03 09:29:35 - Starting to append a new Author 
+2025-05-03 09:29:35 - AuthorFileManager - Append author operation success
+2025-05-03 09:29:35 - AuthorService - Author saved successfully: Author{AuthorId=7, firstName='Virginia', lastName='Woolf', bio='Pioneer of Modernist Literature', nationality='British'}
+2025-05-03 09:30:14 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:30:14 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:30:14 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:30:14 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:30:14 - AuthorBookFileManager initialized.
+2025-05-03 09:31:53 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:31:53 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:31:53 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:31:53 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:31:53 - AuthorBookFileManager initialized.
+2025-05-03 09:36:13 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:36:13 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:36:13 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:36:13 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:36:13 - AuthorBookFileManager initialized.
+2025-05-03 09:36:50 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:36:50 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:36:50 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:36:50 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:36:50 - AuthorBookFileManager initialized.
+2025-05-03 09:38:09 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:38:09 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:38:09 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:38:09 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:38:09 - AuthorBookFileManager initialized.
+2025-05-03 09:40:31 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:40:31 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:40:31 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:40:31 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:40:31 - AuthorBookFileManager initialized.
+2025-05-03 09:41:06 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:41:06 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:41:06 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:41:06 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:41:06 - AuthorBookFileManager initialized.
+2025-05-03 09:41:11 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:41:11 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:41:11 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 09:41:11 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 09:41:11 - AuthorBookFileManager initialized.
+2025-05-03 12:42:25 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 12:42:25 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 12:42:25 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 12:42:25 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 12:42:25 - AuthorBookFileManager initialized.
+2025-05-03 12:42:34 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 12:42:34 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 12:42:34 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 12:42:34 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 12:42:34 - AuthorBookFileManager initialized.
+2025-05-03 13:38:19 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 13:38:19 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:38:19 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:38:19 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:38:19 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:38:19 - AuthorBookFileManager initialized.
+2025-05-03 13:38:34 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 13:38:34 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:38:34 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:38:34 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:38:34 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:38:34 - AuthorBookFileManager initialized.
+2025-05-03 13:41:54 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 13:41:54 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:41:54 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:41:54 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:41:54 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:41:54 - AuthorBookFileManager initialized.
+2025-05-03 13:43:38 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 13:43:38 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:43:38 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:43:38 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:43:38 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:43:38 - AuthorBookFileManager initialized.
+2025-05-03 13:44:50 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 13:44:50 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:44:50 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:44:50 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:44:50 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:44:50 - AuthorBookFileManager initialized.
+2025-05-03 13:46:18 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 13:46:18 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:46:18 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:46:18 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:46:18 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:46:18 - AuthorBookFileManager initialized.
+2025-05-03 13:48:15 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 13:48:15 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:48:15 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:48:15 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 13:48:15 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 13:48:15 - AuthorBookFileManager initialized.
+2025-05-03 13:48:39 - Starting to append a new Customer 
+2025-05-03 13:48:39 - CustomerService - Customer saved successfully: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=10}
+2025-05-03 13:48:44 - CustomerService - Fetching all customers from file.
+2025-05-03 15:43:52 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:43:52 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:43:52 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:43:52 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:43:52 - AuthorBookFileManager initialized.
+2025-05-03 15:43:52 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 15:43:52 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:43:52 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:43:59 - CustomerService - Fetching all customers from file.
+2025-05-03 15:44:03 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:44:03 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:44:03 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:44:03 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:44:03 - AuthorBookFileManager initialized.
+2025-05-03 15:44:03 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 15:44:03 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:44:03 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:45:51 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 15:45:51 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:45:51 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:45:51 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:45:51 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:45:51 - AuthorBookFileManager initialized.
+2025-05-03 15:45:59 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 15:45:59 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:45:59 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:45:59 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:45:59 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:45:59 - AuthorBookFileManager initialized.
+2025-05-03 15:46:28 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 15:46:28 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:46:28 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:46:28 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:46:28 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:46:28 - AuthorBookFileManager initialized.
+2025-05-03 15:54:54 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 15:54:54 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:54:54 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:54:54 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:54:54 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:54:54 - AuthorBookFileManager initialized.
+2025-05-03 15:55:06 - CustomerFileManager - Customer found with email: leah@mail.com
+2025-05-03 15:55:06 - CustomerService - Successfully found customer with email: leah@mail.com
+2025-05-03 15:55:16 - CustomerService - Fetching all customers from file.
+2025-05-03 15:55:16 - Attempting to update customer with ID: 1
+2025-05-03 15:55:16 - Starting to save 1 customers
+2025-05-03 15:55:16 - Save customer: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 15:55:16 - Successfully saved all customers
+2025-05-03 15:55:16 - Successfully updated customer with ID: 1
+2025-05-03 15:55:16 - CustomerService - Customer updated successfully: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 15:55:23 - CustomerService - Fetching all customers from file.
+2025-05-03 15:56:44 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 15:56:44 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:56:44 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:56:44 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:56:44 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:56:44 - AuthorBookFileManager initialized.
+2025-05-03 15:56:57 - CustomerFileManager - Customer found with email: leah@mail.com
+2025-05-03 15:56:57 - CustomerService - Successfully found customer with email: leah@mail.com
+2025-05-03 15:57:22 - CustomerService - Fetching all customers from file.
+2025-05-03 15:57:33 - CustomerFileManager - Customer found with email: leah@mail.com
+2025-05-03 15:57:33 - CustomerService - Successfully found customer with email: leah@mail.com
+2025-05-03 15:58:36 - CustomerService - Fetching all customers from file.
+2025-05-03 15:59:54 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 15:59:54 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:59:54 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:59:54 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 15:59:54 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 15:59:54 - AuthorBookFileManager initialized.
+2025-05-03 16:00:06 - CustomerFileManager - Customer found with email: leah@mail.com
+2025-05-03 16:00:06 - CustomerService - Successfully found customer with email: leah@mail.com
+2025-05-03 16:00:29 - CustomerService - Fetching all customers from file.
+2025-05-03 16:00:29 - Attempting to update customer with ID: 1
+2025-05-03 16:00:29 - Starting to save 1 customers
+2025-05-03 16:00:29 - Save customer: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 16:00:29 - Successfully saved all customers
+2025-05-03 16:00:29 - Successfully updated customer with ID: 1
+2025-05-03 16:00:29 - CustomerService - Customer updated successfully: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 16:00:40 - CustomerService - Fetching all customers from file.
+2025-05-03 16:00:45 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-03 16:00:45 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 16:00:45 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 16:00:45 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-03 16:00:45 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-03 16:00:45 - AuthorBookFileManager initialized.

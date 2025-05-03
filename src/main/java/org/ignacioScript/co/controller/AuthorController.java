@@ -22,7 +22,7 @@ public class AuthorController {
             switch (choice) {
                 case 1 -> createAuthor(scanner, authorService);
                 case 2 -> viewAuthors(authorService);
-                case 3 -> findAuthorById(scanner, authorService);
+                case 3 -> searchForAuthor(scanner);
                 case 4 -> updateAuthor(scanner, authorService);
                 case 5 -> deleteAuthor(scanner, authorService);
                 case 6 -> {
@@ -157,6 +157,20 @@ public class AuthorController {
             }
         } catch (Exception e) {
             System.out.println("Error: " + e.getMessage());
+        }
+    }
+
+    private void searchForAuthor(Scanner scanner) {
+        System.out.println("Enter author name or last name to search:");
+        String keyword = scanner.nextLine();
+        List<Author> authors = authorService.searchAuthorsByKeyword(keyword);
+        if (authors.isEmpty()) {
+            System.out.println("No authors found.");
+        } else {
+            System.out.println("Authors found:");
+            for (Author author : authors) {
+                System.out.println(author);
+            }
         }
     }
 
