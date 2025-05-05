@@ -81,14 +81,29 @@ public class ItemOrderService {
         }
     }
 
+    public Double getTotal(ItemOrder itemOrder, double unitPrice, int quantity) {
+        FileLogger.logInfo("ItemOrderService - Getting total");
+
+        try {
+            double total = itemOrder.getUnitPrice() * itemOrder.getQuantity();
+            ItemOrderValidator.validateUnits(total, 1, 500000);
+            FileLogger.logInfo("ItemOrderService - Getting total operation success");
+            return total;
+        }catch (Exception e) {
+            FileLogger.logError("ItemOrderService - Error getting total" + e.getMessage());
+            throw new RuntimeException("Getting total failed");
+        }
+
+    }
+
     private void validateItemOrder(ItemOrder itemOrder) {
         if (itemOrder == null) {
             throw new IllegalArgumentException("ItemOrder cannot be null");
         }
 
         ItemOrderValidator.validateId(itemOrder.getItemOrderId());
-        ItemOrderValidator.validateUnits(itemOrder.getQuantity(), 1, 100);
-        ItemOrderValidator.validateUnits(itemOrder.getUnitPrice(), 1.0, 99.99);
+        ItemOrderValidator.validateUnits(itemOrder.getQuantity(), 1, 500);
+        ItemOrderValidator.validateUnits(itemOrder.getUnitPrice(), 1.0, 500000);
         ItemOrderValidator.validateBookNullParameter(itemOrder.getBook());
         ItemOrderValidator.validateOrderNullParameter(itemOrder.getOrder());
     }

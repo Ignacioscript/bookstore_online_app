@@ -13,3 +13,80 @@
 2025-05-03 15:57:33 - CustomerController - found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=30}
 2025-05-03 16:00:06 - CustomerController - found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='55234567', address='Medellin', registrationDate=2025-05-03, loyaltyPoints=30}
 2025-05-03 16:00:29 - CustomerController - updated: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 17:56:21 - ItemOrderController - getOrder
+2025-05-03 17:56:21 - OrderController - createOrder
+2025-05-03 17:56:45 - OrderController - Customer found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 18:00:03 - ItemOrderController - getOrder
+2025-05-03 18:00:03 - OrderController - createOrder
+2025-05-03 18:00:24 - OrderController - Customer found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 18:00:40 - OrderController - created: Order{orderId=50, customer=Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}, orderDate=2025-05-03, total=76.9, paymentMethod='Debit Card', status=PENDING}
+2025-05-03 18:00:40 - OrderController - Order created: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 18:00:55 - ItemOrderController - Item Order created: ItemOrder{itemOrderId=1, book=1, order=50, quantity=3, unitPrice=80.2}
+2025-05-03 18:10:40 - ItemOrderController - getOrder
+2025-05-03 18:10:40 - OrderController - createOrder
+2025-05-03 18:11:01 - OrderController - Customer found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 18:11:25 - OrderController - created: Order{orderId=55, customer=Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}, orderDate=2025-05-03, total=25.3, paymentMethod='Credit Card', status=PENDING}
+2025-05-03 18:11:25 - OrderController - Order created: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 18:11:30 - ItemOrderController - Item Order created: ItemOrder{itemOrderId=2, book=6, order=55, quantity=2, unitPrice=45.0}
+2025-05-03 18:28:58 - ItemOrderController - getOrder
+2025-05-03 18:28:58 - OrderController - createOrder
+2025-05-03 18:29:34 - OrderController - Customer found: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 18:29:34 - OrderController - createOrder
+2025-05-03 18:31:48 - OrderController - created: Order{orderId=51, customer=Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}, orderDate=2025-05-03, total=45.0, paymentMethod='Cash', status=PROCESSING}
+2025-05-03 18:31:48 - OrderController - Order created: Customer{customerId=1, firstName='Leah', lastName='Rose', mail='leah@cat.com', phoneNumber='55576289', address='London', registrationDate=2025-05-03, loyaltyPoints=30}
+2025-05-03 18:33:50 - ItemOrderController - Item Order created: ItemOrder{itemOrderId=3, book=2, order=51, quantity=2, unitPrice=12.0}
+2025-05-04 09:19:41 - CustomerController - found: Customer{customerId=1, firstName='John', lastName='Doe', mail='john.doe@example.com', phoneNumber='1234567890', address='123 Main St', registrationDate=2025-05-04, loyaltyPoints=50}
+2025-05-04 09:19:41 - CustomerController - created: Customer{customerId=10, firstName='Alice', lastName='Brown', mail='alice.brown@example.com', phoneNumber='5551234567', address='789 Oak St', registrationDate=2025-05-04, loyaltyPoints=30}
+2025-05-04 15:59:02 - CustomerController - created: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:13:54 - BookController - Creating a new book
+2025-05-04 16:15:31 - BookController - book created: Book{bookId=2, isbn='A1239076354', bookTitle='The Fortress', description='A exciting thriller, persecution, drama, historical culture and desperaration', publisher='fake sas', publicationDate=2022-10-12, price=23.4, stock=10}
+2025-05-04 16:28:09 - ItemOrderController - getOrder
+2025-05-04 16:28:09 - OrderController - createOrder
+2025-05-04 16:28:23 - OrderController - Customer found: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:28:23 - OrderController - createOrder
+2025-05-04 16:48:46 - OrderController - created: Order{orderId=24, customer=Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}, orderDate=2025-05-04, total=10.0, paymentMethod='Debit Card', status=PROCESSING}
+2025-05-04 16:48:46 - OrderController - Order created: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:48:51 - ItemOrderController - Item Order created: ItemOrder{itemOrderId=1, book=2, order=24, quantity=2, unitPrice=31.98}
+2025-05-04 16:51:12 - ItemOrderController - getOrder
+2025-05-04 16:51:12 - OrderController - createOrder
+2025-05-04 16:51:25 - OrderController - Customer found: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:51:25 - OrderController - createOrder
+2025-05-04 16:53:43 - OrderController - created: Order{orderId=19, customer=Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}, orderDate=2025-05-04, total=10.0, paymentMethod='Debit Card', status=PENDING}
+2025-05-04 16:53:43 - OrderController - Order created: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:53:45 - ItemOrderController - Item Order created: ItemOrder{itemOrderId=1, book=2, order=19, quantity=1, unitPrice=15.99}
+2025-05-04 16:54:50 - ItemOrderController - getOrder
+2025-05-04 16:54:50 - OrderController - createOrder
+2025-05-04 16:54:58 - OrderController - Customer found: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:54:58 - OrderController - createOrder
+2025-05-04 16:55:06 - OrderController - created: Order{orderId=19, customer=Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}, orderDate=2025-05-04, total=10.0, paymentMethod='Credit Card', status=PENDING}
+2025-05-04 16:55:06 - OrderController - Order created: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:56:44 - ItemOrderController - getOrder
+2025-05-04 16:56:44 - OrderController - createOrder
+2025-05-04 16:56:53 - OrderController - Customer found: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:56:53 - OrderController - createOrder
+2025-05-04 16:56:56 - OrderController - created: Order{orderId=19, customer=Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}, orderDate=2025-05-04, total=10.0, paymentMethod='Credit Card', status=PENDING}
+2025-05-04 16:56:56 - OrderController - Order created: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:57:54 - ItemOrderController - getOrder
+2025-05-04 16:57:54 - OrderController - createOrder
+2025-05-04 16:58:01 - OrderController - Customer found: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:58:01 - OrderController - createOrder
+2025-05-04 16:58:04 - OrderController - created: Order{orderId=19, customer=Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}, orderDate=2025-05-04, total=10.0, paymentMethod='Credit Card', status=PENDING}
+2025-05-04 16:58:04 - OrderController - Order created: Customer{customerId=1, firstName='Alan', lastName='Harper', mail='alan@mail.com', phoneNumber='1188833445', address='fake st 123', registrationDate=2025-05-04, loyaltyPoints=10}
+2025-05-04 16:58:06 - ItemOrderController - Item Order created: ItemOrder{itemOrderId=1, book=2, order=19, quantity=10, unitPrice=159.9}
+2025-05-04 18:39:19 - BookController - Updating a book
+2025-05-04 18:40:47 - BookController - Book updated: Book{bookId=4, isbn='9780451524935', bookTitle='1984', description='A chilling dystopia about surveillance and totalitarism', publisher='Signet Classic', publicationDate=1950-07-01, price=9.99, stock=50}
+2025-05-04 18:40:51 - BookController - Viewing all books
+2025-05-04 18:41:36 - BookController - Deleting a book
+2025-05-04 18:41:38 - BookController - Book deleted with ID: 4
+2025-05-04 18:41:42 - BookController - Viewing all books
+2025-05-04 18:41:56 - BookController - Deleting a book
+2025-05-04 18:42:09 - BookController - Book deleted with ID: 2
+2025-05-04 18:42:23 - BookController - Updating a book
+2025-05-04 18:43:47 - BookController - Book updated: Book{bookId=4, isbn='9780451524935', bookTitle='1984', description='A chilling dystopia about surveillance and totalitarism', publisher='Signet Classic', publicationDate=1950-07-01, price=9.99, stock=50}
+2025-05-04 18:44:03 - BookController - Viewing all books
+2025-05-04 18:46:27 - CustomerController - created: Customer{customerId=304, firstName='Ignacio', lastName='Navarro', mail='ignacio@mail.com', phoneNumber='3003195171', address='Medellin', registrationDate=2025-05-04, loyaltyPoints=50}
+2025-05-04 18:47:18 - CustomerController - updated: Customer{customerId=304, firstName='Jose Ignacio', lastName='Navarro', mail='jonachonavarro@gmail.com', phoneNumber='3006769929', address='Medellin', registrationDate=2025-05-04, loyaltyPoints=20}
+2025-05-04 18:49:35 - CustomerController - updated: Customer{customerId=304, firstName='Ignacio', lastName='Navarro', mail='ignacio@mail.com', phoneNumber='559958789', address='medellin', registrationDate=2025-05-04, loyaltyPoints=20}
+2025-05-04 18:49:46 - CustomerController - found: Customer{customerId=304, firstName='Ignacio', lastName='Navarro', mail='ignacio@mail.com', phoneNumber='559958789', address='medellin', registrationDate=2025-05-04, loyaltyPoints=20}
+2025-05-04 18:50:33 - CustomerController - updated loyalty points: Customer{customerId=304, firstName='Ignacio', lastName='Navarro', mail='ignacio@mail.com', phoneNumber='559958789', address='medellin', registrationDate=2025-05-04, loyaltyPoints=60}
+2025-05-04 18:51:31 - CustomerController - deleted: 1

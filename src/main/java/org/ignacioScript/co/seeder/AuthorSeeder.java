@@ -12,7 +12,6 @@ public class AuthorSeeder {
 
     public static void seedAuthors(AuthorService authorService) {
 
-        List<Author> authors = new ArrayList<>();
         List<Author> authorList = Arrays.asList(
                 new Author("Alan", "Harper", "Co-Author of Two and a Half Man book", "US Citizen"),
                 new Author("Charlie", "Harper", "Co-Author of Two and a Half Man book", "US Citizen"),
@@ -35,7 +34,7 @@ public class AuthorSeeder {
                 new Author("Maya", "Angelou", "Poet and Civil Rights Activist", "US Citizen"),
                 new Author("Margaret", "Atwood", "Author of The Handmaid's Tale", "Canadian")
         );
-        authors.addAll(authorList);
+        List<Author> authors = new ArrayList<>(authorList);
         authors.sort((a1, a2) -> a1.getLastName().compareToIgnoreCase(a2.getLastName()));
 
         for (Author author : authors) {

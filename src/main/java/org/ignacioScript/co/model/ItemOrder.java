@@ -62,7 +62,7 @@ public class ItemOrder {
     }
 
     public void setUnitPrice(double unitPrice) {
-        ItemOrderValidator.validateUnits(unitPrice, 1.0, 99.99);
+        ItemOrderValidator.validateUnits(unitPrice, 1.0, 9999999);
         this.unitPrice = unitPrice;
     }
 

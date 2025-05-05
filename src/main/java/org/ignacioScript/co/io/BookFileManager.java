@@ -146,6 +146,8 @@ public class BookFileManager extends FileManager <Book> {
         return null; // or throw an exception
     }
 
+    //TODO create a method to retrieve book by title or description  that matches with a keyword to select ID
+
     public void saveAuthorBookRelationship(AuthorBook authorBook) {
         String filePath = "src/main/resources/author_book.csv";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
@@ -156,6 +158,8 @@ public class BookFileManager extends FileManager <Book> {
             System.out.println("Error saving author-book relationship: " + e.getMessage());
         }
     }
+
+    //TODO modify this method to simplify creating a book and then am author
 
     @Override
     protected String objectToString(Book book) {
@@ -174,20 +178,34 @@ public class BookFileManager extends FileManager <Book> {
 
     @Override
     protected Book stringToObject(String line) {
-        String[] parts = line.split(",");
-        Book book = new Book(
-                parts[1],
-                parts[2],
-                parts[3],
-                parts[4],
-                LocalDate.parse(parts[5]),
-                Double.parseDouble(parts[6]),
-                Integer.parseInt(parts[7])
-        );
-        book.setBookId(Integer.parseInt(parts[0])); // ← 🔥 Set the ID from the file!
-        return book;
-    }
+        if (line == null || line.trim().isEmpty()) {
+            FileLogger.logError("Encountered an empty or null line in books.csv");
+            throw new IllegalArgumentException("Malformed line: " + line);
+        }
 
+        String[] parts = line.split(",");
+        if (parts.length != 8) { // Ensure the line has exactly 8 fields
+            FileLogger.logError("Malformed line in books.csv: " + line);
+            throw new IllegalArgumentException("Malformed line: " + line);
+        }
+
+        try {
+            Book book = new Book(
+                    parts[1],
+                    parts[2],
+                    parts[3],
+                    parts[4],
+                    LocalDate.parse(parts[5]),
+                    Double.parseDouble(parts[6]),
+                    Integer.parseInt(parts[7])
+            );
+            book.setBookId(Integer.parseInt(parts[0])); // Set the ID from the file
+            return book;
+        } catch (Exception e) {
+            FileLogger.logError("Error parsing line in books.csv: " + line + " - " + e.getMessage());
+            throw new RuntimeException("Error parsing line: " + line, e);
+        }
+    }
 
 
 }

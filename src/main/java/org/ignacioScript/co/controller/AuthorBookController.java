@@ -13,20 +13,21 @@ import java.util.Scanner;
 
 public class AuthorBookController {
 
-    private final AuthorBookService authorBookService;
-    private final AuthorService authorService;
-    private final BookService bookService;
-    private AuthorController authorController;
-    private BookController bookController;
-    private AuthorBookController authorBookController;
+    private static AuthorBookService authorBookService;
+    private  static AuthorService authorService;
+    private  static BookService bookService;
+    private static Scanner scanner;
 
-    public AuthorBookController(AuthorBookService authorBookService, AuthorService authorService, BookService bookService) {
-        this.authorBookService = authorBookService;
-        this.authorService = authorService;
-        this.bookService = bookService;
+    public AuthorBookController(Scanner scanner, AuthorBookService authorBookService, AuthorService authorService, BookService bookService) {
+        AuthorBookController.authorBookService = authorBookService;
+        AuthorBookController.authorService = authorService;
+        AuthorBookController.bookService = bookService;
+        AuthorBookController.scanner = scanner;
     }
 
-    public void displayMenu(Scanner scanner) {
+
+
+    public void displayMenu() {
         while (true) {
             System.out.println("\n===== Author and Books Main Menu =====");
             System.out.println("1. Manage Authors");
@@ -35,15 +36,17 @@ public class AuthorBookController {
             System.out.println("4. Back to Main Menu");
             System.out.print("Enter your choice: ");
 
-            int choice = Integer.parseInt(scanner.nextLine());
+            int choice = scanner.nextInt();
+            scanner.nextLine();
 
+            AuthorController authorController = new AuthorController(scanner, authorService);
+            BookController bookController = new BookController(scanner, bookService);
             switch (choice) {
-                case 1 -> authorController = new AuthorController(scanner, authorService);
-                case 2 -> bookController = new BookController(scanner, bookService);
-                case 3 -> displayAuthorBookMenu(scanner);
+                case 1 -> authorController.displayAuthorMenu();
+                case 2 -> bookController.displayBookMenu();
+                case 3 -> displayAuthorBookMenu();
                 case 4 -> {
                     System.out.println("Returning to Main Menu... \n");
-
                     MenuController.runMenu();
                     return;
                 }
@@ -55,7 +58,7 @@ public class AuthorBookController {
 
 
 
-    public void displayAuthorBookMenu(Scanner scanner) {
+    public void displayAuthorBookMenu() {
         System.out.println("\n===== Author-Book Menu =====");
         System.out.println("1.create Author");
         System.out.println("2.create Book");
@@ -67,24 +70,18 @@ public class AuthorBookController {
         int choice = Integer.parseInt(scanner.nextLine());
 
         switch (choice) {
-            case 1 -> createAuthor(scanner, new AuthorService());
-            case 2 -> createBook(scanner, new BookService());
-            case 3 -> createAuthorBookRelationship(scanner, new Author(), new Book());
+            case 1 -> createAuthor();
+            case 2 -> createBook();
+            case 3 -> createAuthorBookRelationship(new Author(), new Book());
             case 4 -> viewAllAuthorBookRelationships();
             case 5 -> System.out.println("Returning to Main Menu...");
             default -> System.out.println("Invalid choice. Please try again.");
         }
     }
 
-    /**
-     * Creates a relationship between an author and a book.
-     * The user can search for books and authors by keywords or list all of them.
-     * After selecting a book and an author, the relationship is created and saved.
-     *
-     * @param scanner Scanner object for user input
-     */
 
-    public void createAuthor(Scanner scanner, AuthorService authorService) {
+
+    public void createAuthor() {
 
         try {
             System.out.println("Insert author name:");
@@ -103,7 +100,7 @@ public class AuthorBookController {
             System.out.println("Want to create a book? (yes/no)");
             String response = scanner.nextLine();
             if (response.equalsIgnoreCase("yes")) {
-                createBook(scanner, new BookService());
+                createBook();
             } else {
                 System.out.println("Returning to Main Menu...");
             }
@@ -113,7 +110,7 @@ public class AuthorBookController {
         }
     }
 
-    public void createBook(Scanner scanner, BookService bookService) {
+    public void createBook() {
         try {
             System.out.println("Insert book ISBN:");
             String isbn = scanner.nextLine();
@@ -136,7 +133,7 @@ public class AuthorBookController {
             System.out.println("Want to create an author? (yes/no)");
             String response = scanner.nextLine();
             if (response.equalsIgnoreCase("yes")) {
-                createAuthor(scanner, new AuthorService());
+                createAuthor();
             } else {
                 System.out.println("Returning to Main Menu...");
             }
@@ -145,7 +142,7 @@ public class AuthorBookController {
         }
     }
 
-    public void createAuthorBookRelationshipMenu(Scanner scanner) {
+    public void createAuthorBookRelationshipMenu() {
        try {
             System.out.println("===== Create Author-Book Relationship =====");
             System.out.println("1. Search for a book");
@@ -157,9 +154,9 @@ public class AuthorBookController {
             int choice = Integer.parseInt(scanner.nextLine());
 
             switch (choice) {
-                case 1 -> searchForBook(scanner);
+                case 1 -> searchForBook();
                 case 2 -> listAllBooks();
-                case 3 -> searchForAuthor(scanner);
+                case 3 -> searchForAuthor();
                 case 4 -> listAllAuthors();
                 case 5 -> System.out.println("Returning to Main Menu...");
                 default -> System.out.println("Invalid choice. Please try again.");
@@ -169,7 +166,7 @@ public class AuthorBookController {
         }
        }
 
-    private void searchForBook(Scanner scanner) {
+    private void searchForBook() {
         System.out.println("Enter book title or ISBN to search:");
         String keyword = scanner.nextLine();
         List<Book> books = bookService.searchBooksByKeyword(keyword);
@@ -195,7 +192,7 @@ public class AuthorBookController {
         }
     }
 
-    private void searchForAuthor(Scanner scanner) {
+    private void searchForAuthor() {
         System.out.println("Enter author name or last name to search:");
         String keyword = scanner.nextLine();
         List<Author> authors = authorService.searchAuthorsByKeyword(keyword);
@@ -222,7 +219,7 @@ public class AuthorBookController {
 
     }
 
-    public void createAuthorBookRelationship(Scanner scanner, Author author, Book book) {
+    public void createAuthorBookRelationship(Author author, Book book) {
         try {
             System.out.println("Insert author ID:");
             int authorId = Integer.parseInt(scanner.nextLine());

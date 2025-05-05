@@ -111,11 +111,11 @@ public abstract class Validator  {
         }
 
 
-        if (date.isBefore(LocalDate.now())) {
+        if (date.isBefore(LocalDate.now().minusDays(7) )) {
             throw new DateTimeException("Input cannot be in the past");
         }
 
-        if (date.isAfter(LocalDate.now())) {
+        if (date.isAfter(LocalDate.now().plusDays(7))) {
             throw new DateTimeException("Input cannot be in the future");
         }
 

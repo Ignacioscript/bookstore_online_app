@@ -4,6 +4,7 @@ import org.ignacioScript.co.util.IdGenerator;
 import org.ignacioScript.co.validation.BookValidator;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Book {
 
@@ -15,6 +16,7 @@ public class Book {
     private LocalDate publicationDate;
     private Double price;
     private Integer stock;
+
 
     public Book(String isbn, String bookTitle, String description, String publisher, LocalDate publicationDate, Double price, Integer stock) {
         this.bookId = IdGenerator.generateId();

@@ -10,6 +10,8 @@ public class Author {
     private String bio;
     private String nationality;
 
+    //TODO think to implement List of books
+
     public Author() {
     }
 

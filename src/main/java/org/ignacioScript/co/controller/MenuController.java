@@ -18,44 +18,36 @@ public class MenuController {
         AuthorService authorService = new AuthorService();
         BookService bookService = new BookService();
         AuthorBookService authorBookService = new AuthorBookService();
+        ItemOrderController itemOrderController = new ItemOrderController(scanner, customerService, bookService);
 
         // Initialize controllers
 
-        AuthorController authorController;
-        BookController bookController;
-        AuthorBookController authorBookController = new AuthorBookController(authorBookService, authorService, bookService);
 
-        // main menu
-        System.out.println("Welcome to the Library Management System");
-        System.out.println("1. Manage Authors And Books");
-        System.out.println("2. Manage Customers");
-        System.out.println("3. Manage Orders");
-        System.out.println("4. Exit");
+        CustomerController customerController = new CustomerController(scanner, customerService);
+        AuthorBookController authorBookController = new AuthorBookController(scanner, authorBookService, authorService, bookService);
 
-        System.out.print("Enter your choice: ");
-        int choice = Integer.parseInt(scanner.nextLine().trim());
-        switch (choice) {
-            case 1 -> {
-                authorBookController.displayMenu(scanner);
-            }
-            case 2 -> { CustomerController.displayCustomerMenu(scanner, customerService);
-            }
 
-            case 3 -> {
-                // OrderController orderController = new OrderController(scanner, orderService);
-                // orderController.displayMenu();
-                System.out.println("Order management is not implemented yet.");
-            }
+            // Main menu
+            System.out.println("Welcome to the Library Management System");
+            System.out.println("1. Manage Authors And Books");
+            System.out.println("2. Manage Customers");
+            System.out.println("3. Manage Orders");
+            System.out.println("4. Exit and close the Library System");
+            System.out.print("Enter your choice: ");
 
-            case 4 -> {
-                System.out.println("Exiting the program. Goodbye!");
-                scanner.close();
-                return;
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character
+
+            switch (choice) {
+                case 1 -> authorBookController.displayMenu();
+                case 2 -> customerController.displayCustomerMenu();
+                case 3 -> itemOrderController.displayItemOrderMenu();
+                case 4 -> {
+                    System.out.println("Exiting the program. Goodbye!");
+                    scanner.close(); // Close the scanner when exiting
+                }
+                default -> System.out.println("Invalid option, try again");
             }
 
-
-            // Main menu loop
-
-        }
     }
 }

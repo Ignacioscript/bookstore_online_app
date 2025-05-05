@@ -13,55 +13,57 @@ import java.util.Scanner;
 
 public class BookController {
 
-    private final BookService bookService;
+    private BookService bookService;
+    private static Scanner scanner;
+    private AuthorService authorService;
 
     public BookController(Scanner scanner, BookService bookService) {
         this.bookService = bookService;
-        BookSeeder.seedBooks(bookService);
+        this.scanner = scanner;
 
-        while (true) {
-            displayBookMenu();
-            int choice = getChoice(scanner);
-
-           switch (choice) {
-                case 1 -> createBook(scanner, bookService);
-                case 2 -> viewBooks(bookService);
-                case 3 -> searchForBook(scanner);
-                case 4 -> updateBook(scanner, bookService);
-                case 5 -> deleteBook(scanner, bookService);
-                case 6 -> {
-                    System.out.println("Returning to Main Menu...");
-                    return;
-                }
-                default -> System.out.println("Invalid choice. Please try again.");
-            }
-
-        }
     }
 
 
 
 
-    private static void displayBookMenu() {
+    public  void displayBookMenu() {
+        while (true) {
+            displayMenuOption();
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character
+
+            switch (choice) {
+                case 0 ->  BookSeeder.seedBooks(bookService);
+                case 1 -> createBook();
+                case 2 -> viewBooks();
+                case 3 -> searchForBook();
+                case 4 -> updateBook();
+                case 5 -> deleteBook();
+                case 6 -> {
+                    System.out.println("Returning to Main Menu...\n");
+                    return;
+                }
+                default -> System.out.println("Invalid choice. Please try again.\n");
+            }
+
+        }
+    }
+
+    private void displayMenuOption() {
         System.out.println("\n===== Manage Books =====");
+        System.out.println("0. Seed Books");
         System.out.println("1. Create Book");
         System.out.println("2. View All Books");
-        System.out.println("3. Find Book ");
+        System.out.println("3. Find Book by ID");
         System.out.println("4. Update Book");
         System.out.println("5. Delete Book");
         System.out.println("6. Back to Main Menu");
         System.out.print("Enter your choice: ");
     }
 
-    private static int getChoice(Scanner scanner) {
-        try {
-            return Integer.parseInt(scanner.nextLine().trim());
-        } catch (NumberFormatException e) {
-            return -1; // Invalid choice
-        }
-    }
 
-    private static void createBook(Scanner scanner, BookService bookService) {
+
+    private  void createBook() {
         FileLogger.logApp("BookController - Creating a new book");
         try {
             System.out.println("Enter ISBN:");
@@ -91,7 +93,7 @@ public class BookController {
 
     }
 
-    public void sortBooks(Scanner scanner) {
+    private void sortBooks() {
         try {
             System.out.println("\nHow would you like to sort books?");
             System.out.println("1. Bubble Sort by Title");
@@ -120,7 +122,7 @@ public class BookController {
 
     }
 
-    private void searchForBook(Scanner scanner) {
+    private void searchForBook() {
         System.out.println("Enter book title or ISBN to search:");
         String keyword = scanner.nextLine();
         List<Book> books = bookService.searchBooksByKeyword(keyword);
@@ -134,7 +136,7 @@ public class BookController {
         }
     }
 
-    private void viewBooks(BookService bookService) {
+    private void viewBooks() {
         FileLogger.logApp("BookController - Viewing all books");
         try {
             List<Book> books = bookService.getAllBooks();
@@ -148,7 +150,7 @@ public class BookController {
         }
     }
 
-    private static void findBookById(Scanner scanner, BookService bookService) {
+    private  void findBookById() {
         FileLogger.logApp("BookController - Finding book by ID");
       try {
           System.out.println("Enter Book ID to find:");
@@ -166,7 +168,7 @@ public class BookController {
       }
 
 
-    private static void updateBook(Scanner scanner, BookService bookService) {
+    private  void updateBook() {
         FileLogger.logApp("BookController - Updating a book");
         try {
             System.out.println("Enter Book ID to update:");
@@ -199,7 +201,7 @@ public class BookController {
 
     }
 
-    private static void deleteBook(Scanner scanner, BookService bookService) {
+    private  void deleteBook() {
         FileLogger.logApp("BookController - Deleting a book");
         try {
             System.out.println("Enter Book ID to delete:");

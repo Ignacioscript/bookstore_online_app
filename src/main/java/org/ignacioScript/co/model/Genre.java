@@ -7,6 +7,7 @@ public class Genre {
     private int genreId;
     private String genreName;
     private String genreDescription;
+    //TODO convert this to enum
 
     public Genre(String genreName, String genreDescription) {
         this.genreId = IdGenerator.generateId();

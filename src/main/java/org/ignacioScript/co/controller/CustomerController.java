@@ -1,6 +1,7 @@
 package org.ignacioScript.co.controller;
 
 import org.ignacioScript.co.model.Customer;
+import org.ignacioScript.co.seeder.CustomerSeeder;
 import org.ignacioScript.co.service.CustomerService;
 import org.ignacioScript.co.util.FileLogger;
 
@@ -9,50 +10,62 @@ import java.util.Scanner;
 
 public class CustomerController {
 
-    private final  CustomerService customerService;
+    private  CustomerService customerService;
+    private  static  Scanner scanner;
 
     public CustomerController(Scanner scanner, CustomerService customerService) {
         this.customerService = customerService;
-        //CustomerSeeder.seedCustomers(customerService);
+        this.scanner = scanner;
 
 
     }
 
 
 
-    public static void displayCustomerMenu(Scanner scanner, CustomerService customerService) {
-        while (true) {
+    public  void displayCustomerMenu() {
             //displayCustomerMenu(scanner);
-            System.out.println("\n===== Manage Customers =====");
-            System.out.println("1. Create Customer");
-            System.out.println("2. View All Customers");
-            System.out.println("3. Find Customer by Email");
-            System.out.println("4. Update Customer");
-            System.out.println("5. Delete Customer");
-            System.out.println("6. Back to Main Menu");
-            System.out.print("Enter your choice: ");
 
-            int choice = Integer.parseInt(scanner.nextLine().trim());
+
+        while (true) {
+            diplayMenuOptions();
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character
 
             switch (choice) {
-                case 1 -> createCustomer(scanner, customerService);
-                case 2 -> viewCustomers(customerService);
-                case 3 -> searchForCustomer(scanner, customerService);
-                case 4 -> updateCustomer(scanner, customerService);
-                case 5 -> deleteCustomer(scanner, customerService);
+                case 0 -> CustomerSeeder.seedCustomers(customerService);
+                case 1 -> createCustomer();
+                case 2 -> viewCustomers();
+                case 3 -> searchForCustomer();
+                case 4 -> updateCustomer();
+                case 5 -> deleteCustomer();
                 case 6 -> {
-                    System.out.println("Returning to Main Menu... \n");
-                    MenuController.runMenu();
+                    System.out.println("Returning to Main Menu...\n");
+                    return;
                 }
-                default -> System.out.println("Invalid choice. Please try again.");
+                default -> System.out.println("Invalid choice. Please try again.\n");
             }
 
         }
 
+
+    }
+
+    private void diplayMenuOptions() {
+        System.out.println("\n===== Manage Customers =====");
+        System.out.println("0. Seed Customers");
+        System.out.println("1. Create Customer");
+        System.out.println("2. View All Customers");
+        System.out.println("3. Find Customer by Email");
+        System.out.println("4. Update Customer");
+        System.out.println("5. Delete Customer");
+        System.out.println("6. Back to Main Menu");
+        System.out.print("Enter your choice: ");
     }
 
 
-    private static void createCustomer(Scanner scanner, CustomerService customerService) {
+
+
+    private  void createCustomer() {
         try {
             System.out.println("Enter customer First name:");
             String firstName = scanner.nextLine();
@@ -80,7 +93,7 @@ public class CustomerController {
 
     }
 
-    private static void viewCustomers(CustomerService customerService) {
+    private   void viewCustomers() {
         try {
             System.out.println("All Customers:");
             for (Customer customer : customerService.getAllCustomers()) {
@@ -93,7 +106,7 @@ public class CustomerController {
 
     }
 
-    private static void searchForCustomer(Scanner scanner, CustomerService customerService) {
+    private   void searchForCustomer() {
         System.out.println("Enter customer email to search:");
         String email = scanner.nextLine();
         try {
@@ -106,7 +119,7 @@ public class CustomerController {
                 System.out.println("Would you like to update this customer? or add new loyalty points type:  1. Update or  2. Add points, 3. No changes");
                 int updateChoice = Integer.parseInt(scanner.nextLine());
                 if (updateChoice == 1) {
-                    updateCustomer(scanner,customerService);
+                    updateCustomer();
                 } else if (updateChoice == 2) {
                     System.out.println("Enter points to add:");
                     int pointsToAdd = Integer.parseInt(scanner.nextLine());
@@ -128,7 +141,7 @@ public class CustomerController {
 
     }
 
-    private static void updateCustomer(Scanner scanner, CustomerService customerService) {
+    private  void updateCustomer() {
         try {
             System.out.println("Enter customer ID to update:");
             int id = Integer.parseInt(scanner.nextLine());
@@ -158,7 +171,7 @@ public class CustomerController {
 
     }
 
-    private static void deleteCustomer(Scanner scanner, CustomerService customerService) {
+    private   void deleteCustomer() {
         try {
             System.out.println("Enter customer ID to delete:");
             int id = Integer.parseInt(scanner.nextLine());

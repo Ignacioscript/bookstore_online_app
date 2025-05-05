@@ -3,80 +3,124 @@ package org.ignacioScript.co.controller;
 import org.ignacioScript.co.model.Author;
 import org.ignacioScript.co.seeder.AuthorSeeder;
 import org.ignacioScript.co.service.AuthorService;
+import org.ignacioScript.co.validation.AuthorValidator;
 
 import java.util.List;
+
 import java.util.Scanner;
 
 public class AuthorController {
 
-    private final AuthorService authorService;
+    private AuthorService authorService;
+    private  static  Scanner scanner;
 
     public AuthorController(Scanner scanner, AuthorService authorService) {
         this.authorService = authorService;
-        AuthorSeeder.seedAuthors(authorService);
+        this.scanner = scanner;
 
-        while (true) {
-            displayAuthorMenu();
-            int choice = getChoice(scanner);
 
-            switch (choice) {
-                case 1 -> createAuthor(scanner, authorService);
-                case 2 -> viewAuthors(authorService);
-                case 3 -> searchForAuthor(scanner);
-                case 4 -> updateAuthor(scanner, authorService);
-                case 5 -> deleteAuthor(scanner, authorService);
-                case 6 -> {
-                    System.out.println("Returning to Main Menu...");
-                    return;
-                }
-                default -> System.out.println("Invalid choice. Please try again.");
-            }
 
-        }
     }
 
 
-    private static  void displayAuthorMenu() {
+    public  void displayAuthorMenu() {
+        while (true) {
+            displayMenuOption();
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character
+
+            switch (choice) {
+                case 0 -> AuthorSeeder.seedAuthors(authorService);
+                case 1 -> createAuthor();
+                case 2 -> viewAuthors();
+                case 3 -> searchForAuthor();
+                case 4 -> updateAuthor();
+                case 5 -> deleteAuthor();
+                case 6 -> {
+                    System.out.println("Returning to Author and Book menu... \n");
+                    return;
+                }
+                default -> System.out.println("Invalid choice. Please try again.\n");
+            }
+
+        }
+
+    }
+
+
+    private void displayMenuOption() {
         System.out.println("\n===== Manage Authors =====");
+        System.out.println("0. Seed Authors");
         System.out.println("1. Create Author");
         System.out.println("2. View All Authors");
-        System.out.println("3. Find Author by ID");
+        System.out.println("3. Find Author by Name or Last Name");
         System.out.println("4. Update Author");
         System.out.println("5. Delete Author");
         System.out.println("6. Back to Main Menu");
         System.out.print("Enter your choice: ");
-
     }
 
-    private static int getChoice(Scanner scanner) {
-        try {
-            return Integer.parseInt(scanner.nextLine().trim());
-        } catch (NumberFormatException e) {
-            return -1; // Invalid choice
-        }
 
-    }
 
-    private static void createAuthor(Scanner scanner, AuthorService authorService) {
+    private void createAuthor() {
         try {
-            System.out.print("Enter First Name: ");
-            String firstName = scanner.nextLine();
-            System.out.print("Enter Last Name: ");
-            String lastName = scanner.nextLine();
-            System.out.print("Enter Bio: ");
-            String bio = scanner.nextLine();
-            System.out.print("Enter Nationality: ");
-            String nationality = scanner.nextLine();
+            String firstName;
+            while (true) {
+                System.out.print("Enter First Name: ");
+                firstName = scanner.nextLine();
+                try {
+                    AuthorValidator.validateProperNoun(firstName);
+                    break; // Exit loop if validation passes
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
+
+            String lastName;
+            while (true) {
+                System.out.print("Enter Last Name: ");
+                lastName = scanner.nextLine();
+                try {
+                    AuthorValidator.validateProperNoun(lastName);
+                    break; // Exit loop if validation passes
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
+
+            String bio;
+            while (true) {
+                System.out.print("Enter Bio: ");
+                bio = scanner.nextLine();
+                try {
+                    AuthorValidator.validateDescription(bio, 300, 20);
+                    break; // Exit loop if validation passes
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
+
+            String nationality;
+            while (true) {
+                System.out.print("Enter Nationality: ");
+                nationality = scanner.nextLine();
+                try {
+                    AuthorValidator.validateProperNoun(nationality);
+                    break; // Exit loop if validation passes
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
 
             Author author = new Author(firstName, lastName, bio, nationality);
             authorService.saveAuthor(author);
             System.out.println("Author created successfully!");
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
+            System.out.println("Unexpected Error: " + e.getMessage());
         }
     }
 
-    private static void viewAuthors(AuthorService authorService) {
+    private void viewAuthors() {
         try {
             List<Author> authors = authorService.getAllAuthors();
            // authors.forEach(System.out::println);
@@ -88,7 +132,7 @@ public class AuthorController {
         }
     }
 
-    private static void findAuthorById(Scanner scanner, AuthorService authorService) {
+    private void findAuthorById() {
         try {
             System.out.print("Enter Author ID: ");
             int id = Integer.parseInt(scanner.nextLine());
@@ -99,7 +143,7 @@ public class AuthorController {
         }
     }
 
-    private static void updateAuthor(Scanner scanner, AuthorService authorService) {
+    private  void updateAuthor() {
         try {
             System.out.print("Enter Author ID to Update: ");
             int id = Integer.parseInt(scanner.nextLine());
@@ -121,7 +165,7 @@ public class AuthorController {
         }
     }
 
-    private static void deleteAuthor(Scanner scanner, AuthorService authorService) {
+    private  void deleteAuthor() {
         try {
             System.out.print("Enter Author ID to Delete: ");
             int id = Integer.parseInt(scanner.nextLine());
@@ -160,7 +204,7 @@ public class AuthorController {
         }
     }
 
-    private void searchForAuthor(Scanner scanner) {
+    private void searchForAuthor() {
         System.out.println("Enter author name or last name to search:");
         String keyword = scanner.nextLine();
         List<Author> authors = authorService.searchAuthorsByKeyword(keyword);

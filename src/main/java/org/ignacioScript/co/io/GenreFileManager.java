@@ -8,6 +8,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class GenreFileManager extends FileManager <Genre> {
 
     public GenreFileManager(String filePath) {

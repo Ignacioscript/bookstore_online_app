@@ -112,3 +112,13 @@
 2025-05-03 13:46:52 - CustomerController - Error creating customer: invalid input points cannot be zero or negative number 
 2025-05-03 15:58:36 - CustomerController - Error updating customer: Customer with ID 4 does not exist.
 2025-05-03 15:58:36 - CustomerController - Error searching for customer: java.lang.IllegalArgumentException: Customer with ID 4 does not exist.
+2025-05-03 17:57:00 - OrderController - Error creating order: Input is to short at least 2 or more characters
+2025-05-04 07:23:12 - CustomerController - Error viewing customers: Input cannot be in the past
+2025-05-04 07:42:05 - CustomerController - Error viewing customers: Input cannot be in the past
+2025-05-04 09:19:41 - CustomerController - Error searching for customer: No line found
+2025-05-04 09:19:41 - CustomerController - Error deleting customer: Customer with ID 1 does not exist.
+2025-05-04 16:24:47 - Malformed line in books.csv: 
+2025-05-04 16:26:20 - Encountered an empty or null line in books.csv
+2025-05-04 18:47:38 - CustomerService - Error finding customer: Customer with email jnachonavarro@gmail.com does not exist.
+2025-05-04 18:47:38 - CustomerController - Error searching for customer: Customer with email jnachonavarro@gmail.com does not exist.
+2025-05-04 18:48:47 - CustomerController - Error updating customer: Customer with ID 301 does not exist.
