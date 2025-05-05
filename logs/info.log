@@ -51605,3 +51605,67 @@
 2025-05-05 18:33:23 - Initialized CustomerFileManager for: src/main/resources/customers.csv
 2025-05-05 18:33:23 - OrderFileManager initialized.
 2025-05-05 18:33:23 - ItemOrderFileManager initialized.
+2025-05-05 18:37:27 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:37:27 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-05 18:37:27 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:37:27 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:37:27 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-05 18:37:27 - AuthorBookFileManager initialized.
+2025-05-05 18:37:27 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:37:27 - OrderFileManager initialized.
+2025-05-05 18:37:27 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:37:27 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:37:27 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:37:27 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:37:27 - OrderFileManager initialized.
+2025-05-05 18:37:27 - ItemOrderFileManager initialized.
+2025-05-05 18:38:08 - Starting to append a new Author
+2025-05-05 18:38:08 - AuthorFileManager - Append author operation success
+2025-05-05 18:38:08 - AuthorService - Author saved successfully: Author{AuthorId=1, firstName='Issabell ', lastName='Allende', bio='Writes magical realism', nationality='chilean'}
+2025-05-05 18:38:10 - AuthorService - Fetching all authors from file
+2025-05-05 18:39:07 - Starting to append a new Author
+2025-05-05 18:39:07 - AuthorFileManager - Append author operation success
+2025-05-05 18:39:07 - AuthorService - Author saved successfully: Author{AuthorId=4, firstName='Kazuo', lastName='Ishiguro', bio='Explores memory experience', nationality='british'}
+2025-05-05 18:39:09 - AuthorService - Fetching all authors from file
+2025-05-05 18:47:42 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:47:42 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-05 18:47:42 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:47:42 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:47:42 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-05 18:47:42 - AuthorBookFileManager initialized.
+2025-05-05 18:47:42 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:47:42 - OrderFileManager initialized.
+2025-05-05 18:47:42 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:47:42 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:47:42 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:47:42 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:47:42 - OrderFileManager initialized.
+2025-05-05 18:47:42 - ItemOrderFileManager initialized.
+2025-05-05 18:47:50 - AuthorService - Fetching all authors from file
+2025-05-05 18:48:32 - AuthorFileManager - Author found with ID: 1
+2025-05-05 18:48:32 - AuthorService - Successfully found author with ID: 1
+2025-05-05 18:48:32 - Attempting to update author with ID: 1
+2025-05-05 18:48:32 - Starting to save 3 authors
+2025-05-05 18:48:32 - Author saved: Toni Morrison
+2025-05-05 18:48:32 - Author saved: Isabell Allende
+2025-05-05 18:48:32 - Author saved: Kazuo Ishiguro
+2025-05-05 18:48:32 - Successfully saved all authors
+2025-05-05 18:48:32 - Successfully updated author with ID: 1
+2025-05-05 18:48:32 - AuthorService - Author updated successfully: Author{AuthorId=1, firstName='Isabell', lastName='Allende', bio='Writes magical realism', nationality='chilean'}
+2025-05-05 18:48:35 - AuthorService - Fetching all authors from file
+2025-05-05 18:49:34 - AuthorFileManager - Author with ID: 10 Not found
+2025-05-05 18:51:06 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:51:06 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-05 18:51:06 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:51:06 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:51:06 - Initialized AuthorFileManager for: src/main/resources/authors.csv
+2025-05-05 18:51:06 - AuthorBookFileManager initialized.
+2025-05-05 18:51:06 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:51:06 - OrderFileManager initialized.
+2025-05-05 18:51:06 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:51:06 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:51:06 - Initialized BookFileManager for: src/main/resources/books.csv
+2025-05-05 18:51:06 - Initialized CustomerFileManager for: src/main/resources/customers.csv
+2025-05-05 18:51:06 - OrderFileManager initialized.
+2025-05-05 18:51:06 - ItemOrderFileManager initialized.
+2025-05-05 18:51:13 - AuthorFileManager - Author with ID: 10 Not found

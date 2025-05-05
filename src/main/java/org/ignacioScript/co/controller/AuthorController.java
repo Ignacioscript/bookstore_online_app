@@ -145,19 +145,71 @@ public class AuthorController {
 
     private  void updateAuthor() {
         try {
-            System.out.print("Enter Author ID to Update: ");
-            int id = Integer.parseInt(scanner.nextLine());
-            System.out.print("Enter New First Name: ");
-            String firstName = scanner.nextLine();
-            System.out.print("Enter New Last Name: ");
-            String lastName = scanner.nextLine();
-            System.out.print("Enter New Bio: ");
-            String bio = scanner.nextLine();
-            System.out.print("Enter New Nationality: ");
-            String nationality = scanner.nextLine();
+
+            int authorIdToUpdate;
+            while (true) {
+                System.out.print("Enter Author ID to Update: ");
+                authorIdToUpdate= Integer.parseInt(scanner.nextLine());
+
+                try {
+                    AuthorValidator.validateId(authorIdToUpdate);
+                    authorService.findAuthorById(authorIdToUpdate);
+                    break;
+                }catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
+
+            String firstName;
+            while (true) {
+                System.out.print("Enter First Name: ");
+                firstName = scanner.nextLine();
+                try {
+                    AuthorValidator.validateProperNoun(firstName);
+                    break; // Exit loop if validation passes
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
+
+            String lastName;
+            while (true) {
+                System.out.print("Enter Last Name: ");
+                lastName = scanner.nextLine();
+                try {
+                    AuthorValidator.validateProperNoun(lastName);
+                    break; // Exit loop if validation passes
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
+
+            String bio;
+            while (true) {
+                System.out.print("Enter Bio: ");
+                bio = scanner.nextLine();
+                try {
+                    AuthorValidator.validateDescription(bio, 300, 20);
+                    break; // Exit loop if validation passes
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
+
+            String nationality;
+            while (true) {
+                System.out.print("Enter Nationality: ");
+                nationality = scanner.nextLine();
+                try {
+                    AuthorValidator.validateProperNoun(nationality);
+                    break; // Exit loop if validation passes
+                } catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
 
             Author updatedAuthor = new Author(firstName, lastName, bio, nationality);
-            updatedAuthor.setAuthorId(id);
+            updatedAuthor.setAuthorId(authorIdToUpdate);
             authorService.updateAuthor(updatedAuthor);
             System.out.println("Author updated successfully!");
         } catch (Exception e) {
