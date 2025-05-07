@@ -146,20 +146,10 @@ public class BookFileManager extends FileManager <Book> {
         return null; // or throw an exception
     }
 
-    //TODO create a method to retrieve book by title or description  that matches with a keyword to select ID
 
-    public void saveAuthorBookRelationship(AuthorBook authorBook) {
-        String filePath = "src/main/resources/author_book.csv";
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
-            writer.write(authorBook.toCsvString());
-            writer.newLine();
-            System.out.println("Saved author-book relationship: " + authorBook);
-        } catch (IOException e) {
-            System.out.println("Error saving author-book relationship: " + e.getMessage());
-        }
-    }
 
-    //TODO modify this method to simplify creating a book and then am author
+
+
 
     @Override
     protected String objectToString(Book book) {
@@ -199,7 +189,7 @@ public class BookFileManager extends FileManager <Book> {
                     Double.parseDouble(parts[6]),
                     Integer.parseInt(parts[7])
             );
-            book.setBookId(Integer.parseInt(parts[0])); // Set the ID from the file
+           book.setBookId(Integer.parseInt(parts[0])); // Set the ID from the file
             return book;
         } catch (Exception e) {
             FileLogger.logError("Error parsing line in books.csv: " + line + " - " + e.getMessage());

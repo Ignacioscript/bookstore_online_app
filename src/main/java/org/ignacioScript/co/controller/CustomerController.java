@@ -67,6 +67,7 @@ public class CustomerController {
 
     private  void createCustomer() {
         try {
+            
             System.out.println("Enter customer First name:");
             String firstName = scanner.nextLine();
             System.out.println("Enter customer Last name:");

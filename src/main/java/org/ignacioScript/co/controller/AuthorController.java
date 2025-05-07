@@ -3,6 +3,7 @@ package org.ignacioScript.co.controller;
 import org.ignacioScript.co.model.Author;
 import org.ignacioScript.co.seeder.AuthorSeeder;
 import org.ignacioScript.co.service.AuthorService;
+import org.ignacioScript.co.util.FileLogger;
 import org.ignacioScript.co.validation.AuthorValidator;
 
 import java.util.List;
@@ -112,10 +113,14 @@ public class AuthorController {
                 }
             }
 
+            int authorId = getAuthorId() + 1;
             Author author = new Author(firstName, lastName, bio, nationality);
+            author.setAuthorId(authorId);
             authorService.saveAuthor(author);
-            System.out.println("Author created successfully!");
+            System.out.println("Author created successfully! with ID: " + authorId);
+            FileLogger.logApp("AuthorController - author created successfully! with ID: " + authorId);
         } catch (Exception e) {
+            FileLogger.logError("AuthorController - Error creating author: " + e.getMessage());
             System.out.println("Unexpected Error: " + e.getMessage());
         }
     }
@@ -228,33 +233,7 @@ public class AuthorController {
         }
     }
 
-    public void sortAuthors(Scanner scanner) {
-        try {
-            System.out.println("\nHow would you like to sort authors?");
-            System.out.println("1. Sort by  First Name");
-            System.out.println("2. Sort by  Last Name");
-            System.out.print("Your choice: ");
-            int choice = Integer.parseInt(scanner.nextLine());
 
-            List<Author> authors = authorService.getAllAuthors();
-
-            if (choice == 1) {
-                authors = authorService.sortAuthorsByLastName(authors);
-            } else if (choice == 2) {
-                authors = authorService.sortAuthorsByFirstName(authors);
-            } else {
-                System.out.println("Invalid choice!");
-                return;
-            }
-
-            System.out.println("\nSorted Authors:");
-            for (Author author : authors) {
-                System.out.println(author.getAuthorId() + ": " + author.getFirstName() + " " + author.getLastName());
-            }
-        } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
-        }
-    }
 
     private void searchForAuthor() {
         System.out.println("Enter author name or last name to search:");
@@ -267,6 +246,22 @@ public class AuthorController {
             for (Author author : authors) {
                 System.out.println(author);
             }
+        }
+    }
+
+    private int getAuthorId() {
+        int id = 0;
+        try {
+            List<Author> authors = authorService.getAllAuthors();
+            for (int i = 0; i < authors.size(); i++) {
+                if (authors.get(i).getAuthorId() > id) {
+                    id = authors.get(i).getAuthorId();
+                }
+            }
+            return id;
+        } catch (Exception e) {
+            FileLogger.logError("Error getting author ID: " + e.getMessage());
+            return -1; // Return an invalid ID in case of error
         }
     }
 

@@ -15,10 +15,18 @@ public class BookValidator extends Validator{
     }
 
     public static void validatePublicationDate(LocalDate publicationDate) {
+        if (publicationDate == null) {
+            throw new IllegalArgumentException("Publication date cannot be null");
+        }
         if (publicationDate.isAfter(LocalDate.now())) {
             throw new IllegalArgumentException("Publication date cannot be in the future");
         }
+        if (publicationDate.getYear() < 1000) {
+            throw new IllegalArgumentException("Invalid publication year (must be after year 1000)");
+        }
     }
+
+
 
     public static void validatePrice(Double price) {
         if (price < 0) {

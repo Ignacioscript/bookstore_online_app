@@ -19,11 +19,18 @@ public class BookService {
 
     public BookService(BookFileManager bookFileManager) {
         this.bookFileManager = bookFileManager;
+
+        // Sync the ID counter with the highest existing ID in books.csv
+
+
     }
 
     public BookService() {
         this.bookFileManager = new BookFileManager(DEFAULT_FILE_PATH);
+
     }
+
+
 
 
     public void saveBook(Book book) {
@@ -176,4 +183,8 @@ public class BookService {
         BookValidator.validateStock(book.getStock());
         BookValidator.validateDescription(book.getDescription(), 200, 20);
     }
+
+
+
+
 }

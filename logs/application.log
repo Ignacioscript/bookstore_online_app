@@ -90,3 +90,209 @@
 2025-05-04 18:49:46 - CustomerController - found: Customer{customerId=304, firstName='Ignacio', lastName='Navarro', mail='ignacio@mail.com', phoneNumber='559958789', address='medellin', registrationDate=2025-05-04, loyaltyPoints=20}
 2025-05-04 18:50:33 - CustomerController - updated loyalty points: Customer{customerId=304, firstName='Ignacio', lastName='Navarro', mail='ignacio@mail.com', phoneNumber='559958789', address='medellin', registrationDate=2025-05-04, loyaltyPoints=60}
 2025-05-04 18:51:31 - CustomerController - deleted: 1
+2025-05-06 08:59:07 - BookController - Creating a new book
+2025-05-06 09:02:11 - BookController - Creating a new book
+2025-05-06 09:11:10 - BookController - Creating a new book
+2025-05-06 09:14:20 - BookController - Creating a new book
+2025-05-06 09:15:44 - BookController - book created: Book{bookId=1, isbn='978-03757040024', bookTitle='Norwegian Wood', description='A nostalgic tale of love and loss in 1960s Tokyo', publisher='Vintage', publicationDate=2000-09-12, price=9.99, stock=10}
+2025-05-06 09:15:47 - BookController - Viewing all books
+2025-05-06 09:16:51 - BookController - Creating a new book
+2025-05-06 09:21:59 - BookController - Creating a new book
+2025-05-06 09:27:35 - BookController - Creating a new book
+2025-05-06 09:29:30 - BookController - Creating a new book
+2025-05-06 09:31:30 - BookController - Creating a new book
+2025-05-06 09:33:16 - BookController - book created: Book{bookId=1, isbn='978-1400095209', bookTitle='Some Book', description='bla bla bla a tale of bla bla bla', publisher='Random Publisher', publicationDate=2007-09-04, price=9.9, stock=20}
+2025-05-06 09:33:20 - BookController - Viewing all books
+2025-05-06 09:34:32 - BookController - Creating a new book
+2025-05-06 09:36:25 - BookController - book created: Book{bookId=1, isbn='978-1400095209', bookTitle='HALf of a Yellow SUN', description='a PowerFul tale story set during the nIgerian Civil War', publisher='1234', publicationDate=2007-09-04, price=9.99, stock=10}
+2025-05-06 09:36:29 - BookController - Viewing all books
+2025-05-06 09:41:39 - BookController - Creating a new book
+2025-05-06 09:42:30 - BookController - book created: Book{bookId=1, isbn='978-140009254', bookTitle='Some Book', description='This is some book description', publisher='Vintage', publicationDate=2000-09-03, price=9.99, stock=34}
+2025-05-06 09:42:35 - BookController - Viewing all books
+2025-05-06 09:58:20 - BookController - Deleting a book
+2025-05-06 09:58:45 - BookController - Viewing all books
+2025-05-06 09:59:05 - BookController - Deleting a book
+2025-05-06 09:59:21 - BookController - Viewing all books
+2025-05-06 09:59:33 - BookController - Deleting a book
+2025-05-06 10:00:16 - BookController - Viewing all books
+2025-05-06 10:01:35 - BookController - Viewing all books
+2025-05-06 10:06:07 - BookController - Viewing all books
+2025-05-06 10:10:38 - BookController - Viewing all books
+2025-05-06 10:12:06 - BookController - Creating a new book
+2025-05-06 10:13:24 - BookController - book created: Book-> Id= 1, isbn='978-1400095209', bookTitle='half of Yellow Sun', description='A powerful story set During the Nigerian Civil War', publisher='Random publisher', publicationDate=2007-09-04, price=17.0, stock=20}
+2025-05-06 10:13:27 - BookController - Viewing all books
+2025-05-06 10:13:35 - BookController - Updating a book
+2025-05-06 10:15:32 - BookController - Viewing all books
+2025-05-06 10:15:41 - BookController - Deleting a book
+2025-05-06 10:16:09 - BookController - Viewing all books
+2025-05-06 10:16:19 - BookController - Viewing all books
+2025-05-06 10:16:46 - BookController - Deleting a book
+2025-05-06 10:17:09 - BookController - Viewing all books
+2025-05-06 10:17:13 - BookController - Deleting a book
+2025-05-06 10:19:54 - BookController - Viewing all books
+2025-05-06 10:20:08 - BookController - Deleting a book
+2025-05-06 10:20:12 - BookController - Book deleted with ID: 5
+2025-05-06 10:20:15 - BookController - Viewing all books
+2025-05-06 10:20:29 - BookController - Creating a new book
+2025-05-06 10:21:35 - BookController - book created: Book-> Id= 20, isbn='978-1400095209', bookTitle='Half o a Yellow Sun', description='A powerfull story set during Nigerian Civil War', publisher='Vintage', publicationDate=2007-09-04, price=17.0, stock=20}
+2025-05-06 10:21:38 - BookController - Viewing all books
+2025-05-06 10:22:08 - BookController - Deleting a book
+2025-05-06 10:22:10 - BookController - Book deleted with ID: 20
+2025-05-06 10:22:12 - BookController - Viewing all books
+2025-05-06 10:24:13 - BookController - Creating a new book
+2025-05-06 10:25:30 - BookController - book created: Book-> Id= 1, isbn='978-1400095209', bookTitle='Half of a Yellow Sun', description='A powerful story set during Nigerian Civil war', publisher='Vintage', publicationDate=2007-09-04, price=17.0, stock=20}
+2025-05-06 10:25:31 - BookController - Viewing all books
+2025-05-06 10:28:50 - BookController - Viewing all books
+2025-05-06 10:28:55 - BookController - Deleting a book
+2025-05-06 10:28:57 - BookController - Book deleted with ID: 5
+2025-05-06 10:29:04 - BookController - Viewing all books
+2025-05-06 10:29:06 - BookController - Creating a new book
+2025-05-06 10:29:44 - BookController - book created: Book-> Id= 20, isbn='978-14000', bookTitle='Random book', description='bla bla some tale bla bla', publisher='bla publisher', publicationDate=2007-09-04, price=9.0, stock=20}
+2025-05-06 10:29:45 - BookController - Viewing all books
+2025-05-06 10:29:55 - BookController - Creating a new book
+2025-05-06 10:30:31 - BookController - book created: Book-> Id= 26, isbn='879902038482', bookTitle='Tstin book', description='bla bla bal bla tsting boks', publisher='Tsting publisher', publicationDate=2000-09-23, price=34.0, stock=20}
+2025-05-06 10:30:33 - BookController - Viewing all books
+2025-05-06 10:36:26 - BookController - Viewing all books
+2025-05-06 10:36:31 - BookController - Creating a new book
+2025-05-06 10:36:53 - BookController - book created: Book-> Id= 33, isbn='278977987987', bookTitle='Bla book', description='blablablablablablablaba', publisher='blablabbdba', publicationDate=2000-09-04, price=9.0, stock=20}
+2025-05-06 10:36:57 - BookController - Viewing all books
+2025-05-06 13:14:30 - BookController - Viewing all books
+2025-05-06 13:14:33 - BookController - Creating a new book
+2025-05-06 13:16:27 - BookController - book created: Book-> Id= 11, isbn='978-14000925209', bookTitle='Half of a Yellow Sun', description='A powerful story set during Nigeria Civil war', publisher='Vintage', publicationDate=2007-09-01, price=17.0, stock=20}
+2025-05-06 13:16:29 - BookController - Viewing all books
+2025-05-06 13:17:27 - BookController - Creating a new book
+2025-05-06 13:17:57 - BookController - book created: Book-> Id= 18, isbn='Test Book', bookTitle='test book', description='testing books bla bla', publisher='test book', publicationDate=2000-09-04, price=9.99, stock=20}
+2025-05-06 13:17:59 - BookController - Viewing all books
+2025-05-06 13:18:32 - BookController - Viewing all books
+2025-05-06 13:18:34 - BookController - Creating a new book
+2025-05-06 13:19:14 - BookController - book created: Book-> Id= 1, isbn='98765234', bookTitle='TesBook1', description='this is a test description', publisher='testPublisher1', publicationDate=2000-01-01, price=10.0, stock=10}
+2025-05-06 13:19:15 - BookController - Viewing all books
+2025-05-06 13:19:24 - BookController - Creating a new book
+2025-05-06 13:20:05 - BookController - book created: Book-> Id= 3, isbn='987623467', bookTitle='TestBook2', description='TestBook2 description ', publisher='testpubllisher2', publicationDate=2000-01-02, price=11.0, stock=11}
+2025-05-06 13:20:06 - BookController - Viewing all books
+2025-05-06 13:22:28 - BookController - Creating a new book
+2025-05-06 13:23:03 - BookController - book created: Book-> Id= 1, isbn='12340987', bookTitle='test book 3', description='test book desscription 3', publisher='book publisher 3', publicationDate=2000-01-03, price=12.0, stock=12}
+2025-05-06 13:23:05 - BookController - Viewing all books
+2025-05-06 13:23:42 - BookController - Creating a new book
+2025-05-06 13:24:15 - BookController - book created: Book-> Id= 1, isbn='12340987', bookTitle='test book 1', description='test book description 1', publisher='test publisher 1', publicationDate=2000-01-01, price=10.0, stock=10}
+2025-05-06 13:24:17 - BookController - Viewing all books
+2025-05-06 13:24:42 - BookController - Deleting a book
+2025-05-06 13:38:11 - BookController - Creating a new book
+2025-05-06 13:38:50 - BookController - book created: Book-> Id= 1, isbn='Test book 2', bookTitle='test book 2', description='test book description 2', publisher='test publisher 2', publicationDate=2000-01-02, price=12.0, stock=12}
+2025-05-06 13:38:52 - BookController - Viewing all books
+2025-05-06 14:56:30 - BookController - Viewing all books
+2025-05-06 14:57:59 - BookController - Viewing all books
+2025-05-06 14:58:13 - BookController - Creating a new book
+2025-05-06 14:59:44 - BookController - book created: Book-> Id= 11, isbn='978-1400095209', bookTitle='Half of a Yellow Sun', description='A powerful story set during Nigeria Civil war', publisher='Vintage', publicationDate=2007-09-04, price=17.0, stock=10}
+2025-05-06 14:59:46 - BookController - Viewing all books
+2025-05-06 16:04:39 - BookController - Creating a new book
+2025-05-06 16:06:31 - BookController - book created: Book-> Id= 1, isbn='978-14444456', bookTitle='Test book 1', description='test book description 1', publisher='test publisher 1', publicationDate=2000-01-01, price=9.9, stock=10}
+2025-05-06 16:06:35 - BookController - Viewing all books
+2025-05-06 16:06:40 - BookController - Creating a new book
+2025-05-06 16:07:28 - BookController - book created: Book-> Id= 9, isbn='7877883833', bookTitle='test book 2', description='test book description 2', publisher='test publisher 2', publicationDate=2000-01-02, price=11.0, stock=10}
+2025-05-06 16:09:49 - BookController - Creating a new book
+2025-05-06 16:10:48 - BookController - book created: Book-> Id= 10, isbn='47895984', bookTitle='Test book 3', description='test book description 3', publisher='test publisher 3', publicationDate=2000-01-03, price=10.0, stock=20}
+2025-05-06 16:10:56 - BookController - Creating a new book
+2025-05-06 16:12:12 - BookController - book created: Book-> Id= 11, isbn='2889834989', bookTitle='test book 4', description='test book description 4', publisher='test publisher 4', publicationDate=2000-01-04, price=12.0, stock=10}
+2025-05-06 16:14:52 - BookController - Creating a new book
+2025-05-06 16:15:27 - BookController - book created: Book-> Id= 1, isbn='12349876', bookTitle='test book 1', description='test book description 1', publisher='test publilsher 1', publicationDate=2000-01-01, price=10.0, stock=12}
+2025-05-06 16:15:35 - BookController - Viewing all books
+2025-05-06 16:15:41 - BookController - Creating a new book
+2025-05-06 16:16:16 - BookController - book created: Book-> Id= 3, isbn='123465345', bookTitle='test book 2', description='test book description 2', publisher='test publisher 2', publicationDate=2000-01-02, price=10.0, stock=10}
+2025-05-06 16:16:21 - BookController - Viewing all books
+2025-05-06 16:16:29 - BookController - Creating a new book
+2025-05-06 16:17:18 - BookController - book created: Book-> Id= 6, isbn='1234763568', bookTitle='test book 3', description='test book description 3', publisher='test publisher 3', publicationDate=2000-01-03, price=10.0, stock=10}
+2025-05-06 17:56:39 - BookController - Viewing all books
+2025-05-06 17:56:44 - BookController - Creating a new book
+2025-05-06 17:57:20 - BookController - book created: Book-> Id= 4, isbn='12348976', bookTitle='Test book 1', description='test book description 1', publisher='test publisher 1', publicationDate=2000-01-02, price=9.99, stock=10}
+2025-05-06 17:57:24 - BookController - Viewing all books
+2025-05-06 17:59:02 - BookController - Creating a new book
+2025-05-06 17:59:35 - BookController - book created: Book-> Id= 4, isbn='123458975', bookTitle='test book 1', description='test book description 2', publisher='test publisher 2', publicationDate=2000-01-02, price=9.0, stock=10}
+2025-05-06 17:59:40 - BookController - Viewing all books
+2025-05-06 18:06:01 - BookController - Creating a new book
+2025-05-06 18:06:40 - BookController - book created: Book-> Id= 1, isbn='1234589', bookTitle='test book 4', description='test book description 4', publisher='test book publisher 4', publicationDate=2000-01-02, price=11.0, stock=9}
+2025-05-06 18:13:16 - BookController - Creating a new book
+2025-05-06 18:13:40 - BookController - book created: Book-> Id= 1, isbn='12347894', bookTitle='test book 1', description='test book desccription 1', publisher='test publlisher 1', publicationDate=2000-01-01, price=9.0, stock=10}
+2025-05-06 18:13:42 - BookController - Viewing all books
+2025-05-06 18:15:44 - BookController - Viewing all books
+2025-05-06 18:18:02 - BookController - Creating a new book
+2025-05-06 18:18:33 - BookController - book created: Book-> Id= 1, isbn='12348790', bookTitle='test book5', description='test book 5 description', publisher='test publlisher 5', publicationDate=2000-01-05, price=9.0, stock=10}
+2025-05-06 18:18:36 - BookController - Viewing all books
+2025-05-06 18:18:40 - BookController - Creating a new book
+2025-05-06 18:19:10 - BookController - book created: Book-> Id= 8, isbn='12345993', bookTitle='test book 6', description='test book description 6', publisher='test publisher 6', publicationDate=2000-01-06, price=11.0, stock=12}
+2025-05-06 18:19:13 - BookController - Viewing all books
+2025-05-06 18:22:33 - BookController - Creating a new book
+2025-05-06 18:27:21 - BookController - book created: Book-> Id= 1, isbn='12457890', bookTitle='test book 1', description='test description book 1', publisher='test publisher 1', publicationDate=2000-01-07, price=9.99, stock=10}
+2025-05-06 18:28:16 - BookController - Creating a new book
+2025-05-06 18:31:08 - BookController - book created: Book-> Id= 1, isbn='12908765', bookTitle='test book 9', description='test book 9 description', publisher='test book publisher 9', publicationDate=2000-02-01, price=12.0, stock=15}
+2025-05-06 18:33:28 - BookController - Creating a new book
+2025-05-06 18:35:05 - BookController - book created: Book-> Id= 2, isbn='1289647', bookTitle='test book 10', description='test book 10 description', publisher='test book publisher 10', publicationDate=2000-02-02, price=15.0, stock=20}
+2025-05-06 18:35:39 - BookController - Creating a new book
+2025-05-06 18:37:02 - BookController - book created: Book-> Id= 3, isbn='190847585', bookTitle='test book 11', description='test book description 11', publisher='test book publisher 11', publicationDate=2000-02-03, price=16.0, stock=25}
+2025-05-06 18:40:55 - BookController - Viewing all books
+2025-05-06 18:41:16 - BookController - Deleting a book
+2025-05-06 18:41:21 - BookController - Book deleted with ID: 3
+2025-05-06 18:41:30 - BookController - Viewing all books
+2025-05-06 18:41:43 - BookController - Deleting a book
+2025-05-06 18:41:48 - BookController - Book deleted with ID: 8
+2025-05-06 18:41:54 - BookController - Viewing all books
+2025-05-06 18:42:32 - BookController - Creating a new book
+2025-05-06 18:43:00 - BookController - book created: Book-> Id= 1, isbn='12984658', bookTitle='test book 12', description='test book description 12', publisher='test publuisher 12', publicationDate=2000-02-04, price=15.0, stock=25}
+2025-05-06 18:43:01 - BookController - Viewing all books
+2025-05-06 18:43:20 - BookController - Creating a new book
+2025-05-06 18:43:48 - BookController - book created: Book-> Id= 12, isbn='1289464', bookTitle='test book 13', description='test book 13 description', publisher='test publusher 13', publicationDate=2000-02-05, price=12.0, stock=25}
+2025-05-06 18:43:49 - BookController - Viewing all books
+2025-05-06 18:44:41 - BookController - Creating a new book
+2025-05-06 18:45:23 - BookController - book created: Book-> Id= 1, isbn='1234849', bookTitle='test book 15', description='test description 15 book', publisher='test oublisger12', publicationDate=2000-02-05, price=38.0, stock=34}
+2025-05-06 18:45:39 - BookController - Creating a new book
+2025-05-06 18:46:05 - BookController - book created: Book-> Id= 2, isbn='2212378317', bookTitle='test book 20', description='test book descriptin 20', publisher='test publisher 20', publicationDate=2000-02-20, price=37.0, stock=23}
+2025-05-06 18:53:13 - BookController - Creating a new book
+2025-05-06 18:54:05 - BookController - book created: Book-> Id= 1, isbn='123456', bookTitle='book one', description='book one description', publisher='publisher one', publicationDate=2000-01-01, price=10.0, stock=10}
+2025-05-06 18:54:08 - BookController - Viewing all books
+2025-05-06 18:54:12 - BookController - Creating a new book
+2025-05-06 18:54:54 - BookController - book created: Book-> Id= 3, isbn='1234578', bookTitle='book 2', description='book two description', publisher='pubisher 2', publicationDate=2000-01-02, price=10.0, stock=10}
+2025-05-06 18:55:03 - BookController - Creating a new book
+2025-05-06 18:55:33 - BookController - book created: Book-> Id= 4, isbn='1234590', bookTitle='book 3', description='book three description', publisher='publisher 3', publicationDate=2000-01-03, price=10.0, stock=10}
+2025-05-06 18:55:37 - BookController - Creating a new book
+2025-05-06 18:56:14 - BookController - book created: Book-> Id= 5, isbn='12378923', bookTitle='book 4', description='book four description', publisher='publsher 4', publicationDate=2000-01-04, price=10.0, stock=10}
+2025-05-06 18:56:23 - BookController - Creating a new book
+2025-05-06 18:56:49 - BookController - book created: Book-> Id= 6, isbn='1237890', bookTitle='book 5', description='book fice description', publisher='publuihser 5', publicationDate=2000-01-05, price=10.0, stock=10}
+2025-05-06 18:57:10 - BookController - Viewing all books
+2025-05-06 18:57:14 - BookController - Deleting a book
+2025-05-06 18:57:16 - BookController - Book deleted with ID: 4
+2025-05-06 18:57:18 - BookController - Viewing all books
+2025-05-06 18:57:23 - BookController - Creating a new book
+2025-05-06 18:57:57 - BookController - book created: Book-> Id= 24, isbn='2789455', bookTitle='book 6', description='book six descritptionn', publisher='publilsher 6', publicationDate=2000-01-06, price=10.0, stock=10}
+2025-05-06 18:58:16 - BookController - Creating a new book
+2025-05-06 18:58:46 - BookController - book created: Book-> Id= 25, isbn='123789', bookTitle='book 7', description='book seven description', publisher='publisher 7', publicationDate=2000-01-07, price=10.0, stock=10}
+2025-05-06 18:58:51 - BookController - Updating a book
+2025-05-06 18:59:23 - BookController - Book updated: Book-> Id= 25, isbn='1235789', bookTitle='book 7', description='book seven description updated', publisher='publuisher 7 updated', publicationDate=2000-01-07, price=10.0, stock=10}
+2025-05-06 18:59:25 - BookController - Viewing all books
+2025-05-06 18:59:32 - BookController - Creating a new book
+2025-05-06 18:59:56 - BookController - book created: Book-> Id= 45, isbn='2378943', bookTitle='book 8', description='book eigth description', publisher='publisher 8', publicationDate=2000-01-08, price=10.0, stock=10}
+2025-05-06 19:08:42 - BookController - Creating a new book
+2025-05-06 19:11:40 - BookController - Creating a new book
+2025-05-06 19:12:18 - BookController - book created: null
+2025-05-07 08:37:03 - BookController - Viewing all books
+2025-05-07 08:37:07 - BookController - Creating a new book
+2025-05-07 08:38:09 - BookController - book created: Book-> Id= 12, isbn='978-1400095209', bookTitle='Half of a Yellow Sun', description='A powerful story set during Nigerian Civil war', publisher='Vintange', publicationDate=2007-09-04, price=17.0, stock=10}
+2025-05-07 08:38:15 - BookController - Viewing all books
+2025-05-07 08:41:54 - BookController - Viewing all books
+2025-05-07 08:44:28 - BookController - Creating a new book
+2025-05-07 08:45:06 - BookController - book created: Book-> Id= 6, isbn='12349087', bookTitle='book 1', description='testing book 1 description', publisher='publisher 1', publicationDate=2000-01-01, price=10.0, stock=10}
+2025-05-07 08:45:10 - BookController - Viewing all books
+2025-05-07 08:50:32 - BookController - Viewing all books
+2025-05-07 08:50:37 - BookController - Creating a new book
+2025-05-07 08:51:07 - BookController - book created: Book-> Id= 7, isbn='12340986', bookTitle='book 2', description='testing book 2 description', publisher='publisher 2', publicationDate=2000-01-02, price=10.0, stock=10}
+2025-05-07 08:51:11 - BookController - Viewing all books
+2025-05-07 08:51:41 - BookController - Viewing all books
+2025-05-07 08:51:44 - BookController - Creating a new book
+2025-05-07 08:52:47 - BookController - book created: Book-> Id= 6, isbn='978-1400095209', bookTitle='Half of a Yellow Sun', description='A powerful story set during Nigerian Civil war', publisher='Vintagne', publicationDate=2007-09-04, price=17.0, stock=10}
+2025-05-07 08:52:51 - BookController - Viewing all books
+2025-05-07 08:54:40 - BookController - Viewing all books
+2025-05-07 08:54:42 - BookController - Creating a new book
+2025-05-07 08:55:15 - BookController - book created: Book-> Id= 7, isbn='1234590745', bookTitle='book test 1', description='testing book 1 description', publisher='publisher 1', publicationDate=2000-01-01, price=9.99, stock=10}
+2025-05-07 08:55:18 - BookController - Viewing all books
+2025-05-07 08:55:24 - BookController - Deleting a book
+2025-05-07 08:55:26 - BookController - Book deleted with ID: 7
+2025-05-07 08:55:28 - BookController - Viewing all books

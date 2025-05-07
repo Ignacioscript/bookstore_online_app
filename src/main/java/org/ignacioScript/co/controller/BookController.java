@@ -1,13 +1,14 @@
 package org.ignacioScript.co.controller;
 
 import org.ignacioScript.co.model.Book;
-import org.ignacioScript.co.seeder.AuthorSeeder;
 import org.ignacioScript.co.seeder.BookSeeder;
 import org.ignacioScript.co.service.AuthorService;
 import org.ignacioScript.co.service.BookService;
 import org.ignacioScript.co.util.FileLogger;
+import org.ignacioScript.co.validation.BookValidator;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -16,15 +17,17 @@ public class BookController {
     private BookService bookService;
     private static Scanner scanner;
     private AuthorService authorService;
+    private Book book;
+
 
     public BookController(Scanner scanner, BookService bookService) {
         this.bookService = bookService;
         this.scanner = scanner;
-
     }
 
+    public BookController() {
 
-
+    }
 
     public  void displayBookMenu() {
         while (true) {
@@ -63,29 +66,122 @@ public class BookController {
 
 
 
+
+
+
     private  void createBook() {
         FileLogger.logApp("BookController - Creating a new book");
         try {
-            System.out.println("Enter ISBN:");
-            String isbn = scanner.nextLine();
-            System.out.println("Enter book title:");
-            String bookTitle = scanner.nextLine();
-            System.out.println("Enter book description:");
-            String bookDescription = scanner.nextLine();
-            System.out.println("Enter book publisher:");
-            String bookPublisher = scanner.nextLine();
-            System.out.println("Enter publication date:");
-            LocalDate publicationDate = LocalDate.parse(scanner.nextLine());
-            System.out.println("Enter price:");
-            Double price = Double.parseDouble(scanner.nextLine());
-            System.out.println("Enter stock:");
-            Integer stock = Integer.parseInt(scanner.nextLine());
+
+            String isbn;
+            while (true) {
+                System.out.println("Enter ISBN:");
+
+                try {
+                    isbn = scanner.nextLine();
+                    BookValidator.validateIsbn(isbn);
+                    break;
+                }catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
 
 
-            Book book = new Book(isbn, bookTitle, bookDescription, bookPublisher, publicationDate, price, stock);
+            String bookTitle;
+            while (true) {
+                System.out.println("Enter book title:");
+
+                try {
+                    bookTitle = scanner.nextLine();
+                    BookValidator.validateTitle(bookTitle);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validateTitle");
+                    System.out.println("Error " + e.getMessage());
+                }
+
+            }
+
+            String bookDescription;
+            while (true) {
+                System.out.println("Enter book description:");
+                bookDescription = scanner.nextLine();
+                try {
+                    BookValidator.validateDescription(bookDescription, 100, 20);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validateDescription");
+                    System.err.println("Error " + e.getMessage());
+                }
+
+            }
+
+            String bookPublisher;
+            while (true) {
+                System.out.println("Enter book publisher:");
+                bookPublisher = scanner.nextLine();
+                try {
+                    BookValidator.validatePublisher(bookPublisher);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validatePublisher");
+                    System.err.println("Error " + e.getMessage());
+                }
+
+            }
+
+            LocalDate publicationDate;
+            while (true) {
+                System.out.println("Enter publication date format (yyyy-mm-dd):");
+
+                try {
+                    publicationDate = LocalDate.parse(scanner.nextLine());
+                    BookValidator.validatePublicationDate(publicationDate);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validatePublicationDate");
+                    System.err.println("Error invalid date format, please try again..." );
+                }
+
+            }
+
+            double price;
+            while (true) {
+                System.out.println("Enter price:");
+
+                try {
+                    price = Double.parseDouble(scanner.nextLine());
+                    BookValidator.validatePrice(price);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validatePrice");
+                    System.err.println("Error " + e.getMessage());
+                }
+
+            }
+
+            int stock;
+            while (true) {
+                System.out.println("Enter stock:");
+                stock = Integer.parseInt(scanner.nextLine());
+                try {
+                    BookValidator.validateStock(stock);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validateStock");
+                    System.err.println("Error " + e.getMessage());
+                }
+
+            }
+
+            int bookId = getBookId() + 1;
+
+
+            book = new Book(bookId ,isbn, bookTitle, bookDescription, bookPublisher, publicationDate, price, stock);
             bookService.saveBook(book);
+
             FileLogger.logApp("BookController - book created: " + book);
-            System.out.println("Book created successfully!");
+            System.out.println("Book created successfully! with ID: " + book.getBookId());
         } catch (Exception e) {
             FileLogger.logError("BookController - Error creating book: " + e.getMessage());
             throw new RuntimeException(e);
@@ -142,7 +238,7 @@ public class BookController {
             List<Book> books = bookService.getAllBooks();
             System.out.println("\n===== All Books =====");
             for (Book book : books) {
-                System.out.println(book.toString());
+                System.out.println(book.toCsvString());
             }
         } catch (Exception e) {
             FileLogger.logError("BookController - Error viewing books: " + e.getMessage());
@@ -171,22 +267,117 @@ public class BookController {
     private  void updateBook() {
         FileLogger.logApp("BookController - Updating a book");
         try {
-            System.out.println("Enter Book ID to update:");
-            int bookId = Integer.parseInt(scanner.nextLine());
-            System.out.println("Enter new ISBN:");
-            String isbn = scanner.nextLine();
-            System.out.println("Enter new book title:");
-            String bookTitle = scanner.nextLine();
-            System.out.println("Enter new book description:");
-            String bookDescription = scanner.nextLine();
-            System.out.println("Enter new book publisher:");
-            String bookPublisher = scanner.nextLine();
-            System.out.println("Enter new publication date:");
-            LocalDate publicationDate = LocalDate.parse(scanner.nextLine());
-            System.out.println("Enter new price:");
-            Double price = Double.parseDouble(scanner.nextLine());
-            System.out.println("Enter new stock:");
-            Integer stock = Integer.parseInt(scanner.nextLine());
+
+            int bookId;
+            while (true) {
+                System.out.println("Enter Book ID to update:");
+                bookId = Integer.parseInt(scanner.nextLine());
+                try {
+                    BookValidator.validateId(bookId);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - update input error BookValidator.validateBookId");
+                    System.out.println("Error " + e.getMessage());
+                }
+            }
+
+
+            String isbn;
+            while (true) {
+                System.out.println("Enter ISBN:");
+                isbn = scanner.nextLine();
+                try {
+                    BookValidator.validateIsbn(isbn);
+                    break;
+                }catch (Exception e) {
+                    System.out.println("Error: " + e.getMessage());
+                }
+            }
+
+
+            String bookTitle;
+            while (true) {
+                System.out.println("Enter book title:");
+                bookTitle = scanner.nextLine();
+                try {
+                    BookValidator.validateTitle(bookTitle);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validateTitle");
+                    System.out.println("Error " + e.getMessage());
+                }
+
+            }
+
+            String bookDescription;
+            while (true) {
+                System.out.println("Enter book description:");
+                bookDescription = scanner.nextLine();
+                try {
+                    BookValidator.validateDescription(bookDescription, 100, 20);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validateDescription");
+                    System.err.println("Error " + e.getMessage());
+                }
+
+            }
+
+            String bookPublisher;
+            while (true) {
+                System.out.println("Enter book publisher:");
+                bookPublisher = scanner.nextLine();
+                try {
+                    BookValidator.validatePublisher(bookPublisher);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validatePublisher");
+                    System.err.println("Error " + e.getMessage());
+                }
+
+            }
+
+            LocalDate publicationDate;
+            while (true) {
+                System.out.println("Enter publication date format (yyyy-mm-dd):");
+
+                try {
+                    publicationDate = LocalDate.parse(scanner.nextLine());
+                    BookValidator.validatePublicationDate(publicationDate);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validatePublicationDate");
+                }
+
+            }
+
+            double price;
+            while (true) {
+                System.out.println("Enter price:");
+                price = Double.parseDouble(scanner.nextLine());
+                try {
+                    BookValidator.validatePrice(price);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validatePrice");
+                    System.err.println("Error " + e.getMessage());
+                }
+
+            }
+
+            int stock;
+            while (true) {
+                System.out.println("Enter stock:");
+                stock = Integer.parseInt(scanner.nextLine());
+                try {
+                    BookValidator.validateStock(stock);
+                    break;
+                }catch (Exception e) {
+                    FileLogger.logError("BookController - input error BookValidator.validateStock");
+                    System.err.println("Error " + e.getMessage());
+                }
+
+            }
 
             Book updatedBook = new Book(isbn, bookTitle, bookDescription, bookPublisher, publicationDate, price, stock);
             updatedBook.setBookId(bookId);
@@ -212,6 +403,21 @@ public class BookController {
         } catch (Exception e) {
             FileLogger.logError("BookController - Error deleting book: " + e.getMessage());
             throw new RuntimeException(e);
+        }
+    }
+
+    private int getBookId() {
+        int id = 0;
+        try {
+            List<Book> books = bookService.getAllBooks();
+            for (int i = 0; i < books.size(); i++) {
+               id = books.get(i).getBookId();
+            }
+            return id;
+        }
+        catch (Exception e) {
+            FileLogger.logError("BookController - Error getting book ID: " + e.getMessage());
+            return  -1;
         }
     }
 

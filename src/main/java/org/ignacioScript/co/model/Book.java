@@ -8,6 +8,8 @@ import java.util.List;
 
 public class Book {
 
+
+
     private int bookId;
     private String isbn;
     private String bookTitle;
@@ -19,7 +21,7 @@ public class Book {
 
 
     public Book(String isbn, String bookTitle, String description, String publisher, LocalDate publicationDate, Double price, Integer stock) {
-        this.bookId = IdGenerator.generateId();
+        this.bookId = getBookId();
         setIsbn(isbn); // Calls the setter, which includes validation
         setBookTitle(bookTitle); // Calls the setter, which includes validation
         setDescription(description); // Calls the setter, which includes validation
@@ -29,7 +31,20 @@ public class Book {
         setStock(stock); // Calls the setter, which includes validation
     }
 
+
+
     public Book() {
+    }
+
+    public Book(int bookId, String isbn, String bookTitle, String description, String publisher, LocalDate publicationDate, Double price, Integer stock) {
+        this.bookId = bookId;
+        this.isbn = isbn;
+        this.bookTitle = bookTitle;
+        this.description = description;
+        this.publisher = publisher;
+        this.publicationDate = publicationDate;
+        this.price = price;
+        this.stock = stock;
     }
 
     public void setBookId(int bookId) {
@@ -104,13 +119,15 @@ public class Book {
         this.stock = stock;
     }
 
+
+
     // Validation methods
 
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Book{");
-        sb.append("bookId=").append(bookId);
+        final StringBuilder sb = new StringBuilder("Book-> ");
+        sb.append("Id= ").append(getBookId());
         sb.append(", isbn='").append(isbn).append('\'');
         sb.append(", bookTitle='").append(bookTitle).append('\'');
         sb.append(", description='").append(description).append('\'');
@@ -124,7 +141,7 @@ public class Book {
 
     public String toCsvString() {
         return String.join(",",
-                String.valueOf(bookId),
+                String.valueOf(getBookId()),
                 isbn,
                 bookTitle,
                 description,

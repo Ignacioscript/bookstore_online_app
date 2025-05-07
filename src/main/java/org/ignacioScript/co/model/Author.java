@@ -73,13 +73,13 @@ public class Author {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Author{");
-        sb.append("AuthorId=").append(AuthorId);
-        sb.append(", firstName='").append(firstName).append('\'');
-        sb.append(", lastName='").append(lastName).append('\'');
-        sb.append(", bio='").append(bio).append('\'');
-        sb.append(", nationality='").append(nationality).append('\'');
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("Author details: ");
+        sb.append("Id: ").append(AuthorId);
+        sb.append("\t, First name: '").append(firstName).append('\'');
+        sb.append("\t\t, Last name: '").append(lastName).append('\'');
+        sb.append("\t\t, bio: '").append(bio).append('\'');
+        sb.append("\t\t, nationality: '").append(nationality).append('\'');
+        sb.append('*');
         return sb.toString();
     }
 

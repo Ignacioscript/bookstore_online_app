@@ -124,3 +124,42 @@
 2025-05-04 18:48:47 - CustomerController - Error updating customer: Customer with ID 301 does not exist.
 2025-05-05 18:49:34 - AuthorService - Error finding author: Author with ID: 10 does not exist
 2025-05-05 18:51:13 - AuthorService - Error finding author: Author with ID: 10 does not exist
+2025-05-06 08:59:32 - BookController - input error BookValidator.validateTitle
+2025-05-06 09:00:10 - BookController - input error BookValidator.validateDescription
+2025-05-06 09:00:30 - BookController - input error BookValidator.validateDescription
+2025-05-06 09:03:26 - BookController - input error BookValidator.validatePublisher
+2025-05-06 09:04:10 - BookController - Error creating book: Text '200-09-12' could not be parsed at index 0
+2025-05-06 09:12:41 - BookController - Error creating book: Text '200-08-12' could not be parsed at index 0
+2025-05-06 09:18:31 - BookController - Error creating book: Text '09-04-2007' could not be parsed at index 0
+2025-05-06 09:23:17 - BookController - Error creating book: Text '207-09-04' could not be parsed at index 0
+2025-05-06 09:28:45 - BookController - input error BookValidator.validatePublicationDate
+2025-05-06 09:30:24 - BookController - input error BookValidator.validatePublicationDate
+2025-05-06 09:32:08 - BookController - input error BookValidator.validatePublicationDate
+2025-05-06 09:32:24 - BookController - input error BookValidator.validatePublicationDate
+2025-05-06 09:32:41 - BookController - input error BookValidator.validatePrice
+2025-05-06 09:32:58 - BookController - input error BookValidator.validateStock
+2025-05-06 09:36:10 - BookController - input error BookValidator.validatePrice
+2025-05-06 09:36:21 - BookController - input error BookValidator.validateStock
+2025-05-06 09:58:27 - BookService - Error finding book: Book with ID: 10 does not exist
+2025-05-06 09:58:27 - BookController - Error deleting book: Book with ID: 10 does not exist
+2025-05-06 09:59:08 - BookService - Error finding book: Book with ID: 9 does not exist
+2025-05-06 09:59:08 - BookController - Error deleting book: Book with ID: 9 does not exist
+2025-05-06 09:59:40 - BookService - Error finding book: Book with ID: 8 does not exist
+2025-05-06 09:59:40 - BookController - Error deleting book: Book with ID: 8 does not exist
+2025-05-06 10:14:40 - BookService - Error finding book: Book with ID: 7 does not exist
+2025-05-06 10:14:40 - BookController - Error updating book: Book with ID: 7 does not exist
+2025-05-06 10:15:43 - BookService - Error finding book: Book with ID: 6 does not exist
+2025-05-06 10:15:43 - BookController - Error deleting book: Book with ID: 6 does not exist
+2025-05-06 10:16:49 - BookService - Error finding book: Book with ID: 6 does not exist
+2025-05-06 10:16:49 - BookController - Error deleting book: Book with ID: 6 does not exist
+2025-05-06 10:17:18 - BookService - Error finding book: Book with ID: 5 does not exist
+2025-05-06 10:17:18 - BookController - Error deleting book: Book with ID: 5 does not exist
+2025-05-06 13:24:43 - BookService - Error finding book: Book with ID: 2 does not exist
+2025-05-06 13:24:43 - BookController - Error deleting book: Book with ID: 2 does not exist
+2025-05-06 16:06:53 - BookController - input error BookValidator.validateDescription
+2025-05-06 16:10:07 - BookController - input error BookValidator.validateDescription
+2025-05-06 16:11:18 - BookController - input error BookValidator.validateDescription
+2025-05-06 18:54:25 - BookController - input error BookValidator.validateDescription
+2025-05-06 19:09:30 - BookController - Error creating book: Book cannot be null
+2025-05-06 19:11:50 - BookController - input error BookValidator.validateDescription
+2025-05-06 19:12:18 - BookController - Error creating book: Cannot invoke "org.ignacioScript.co.model.Book.getBookId()" because "this.book" is null
