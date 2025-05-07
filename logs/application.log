@@ -296,3 +296,27 @@
 2025-05-07 08:55:24 - BookController - Deleting a book
 2025-05-07 08:55:26 - BookController - Book deleted with ID: 7
 2025-05-07 08:55:28 - BookController - Viewing all books
+2025-05-07 10:35:43 - CustomerController - created: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765345', address='Medellin, Antionquia apto 1322', registrationDate=2025-05-07, loyaltyPoints=10}
+2025-05-07 10:38:29 - CustomerController - created: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=10}
+2025-05-07 10:47:40 - CustomerController - updated: Customer{customerId=4, firstName='Bob', lastName='Brown', mail='bob@mail.com', phoneNumber='555223344', address='321 pine st', registrationDate=2025-05-07, loyaltyPoints=15}
+2025-05-07 10:48:20 - CustomerController - found: Customer{customerId=4, firstName='Bob', lastName='Brown', mail='bob@mail.com', phoneNumber='555223344', address='321 pine st', registrationDate=2025-05-07, loyaltyPoints=15}
+2025-05-07 10:50:24 - CustomerController - updated loyalty points: Customer{customerId=4, firstName='Bob', lastName='Brown', mail='bob@mail.com', phoneNumber='555223344', address='321 pine st', registrationDate=2025-05-07, loyaltyPoints=25}
+2025-05-07 11:12:54 - ItemOrderController - getOrder
+2025-05-07 11:12:54 - OrderController - createOrder
+2025-05-07 16:44:04 - CustomerController - found: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=10}
+2025-05-07 16:46:05 - CustomerController - found: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=10}
+2025-05-07 16:46:14 - CustomerController - updated loyalty points: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=20}
+2025-05-07 16:48:36 - CustomerController - found: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=20}
+2025-05-07 16:48:45 - CustomerController - updated loyalty points: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=30}
+2025-05-07 16:54:10 - CustomerController - found: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=30}
+2025-05-07 17:08:19 - CustomerController - found: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=30}
+2025-05-07 17:09:28 - CustomerController - found: Customer{customerId=4, firstName='Bob', lastName='Brown', mail='bob@mail.com', phoneNumber='555223344', address='321 pine st', registrationDate=2025-05-07, loyaltyPoints=25}
+2025-05-07 17:09:49 - CustomerController - deleted: 4
+2025-05-07 17:09:49 - CustomerController - removed: Customer{customerId=4, firstName='Bob', lastName='Brown', mail='bob@mail.com', phoneNumber='555223344', address='321 pine st', registrationDate=2025-05-07, loyaltyPoints=25}
+2025-05-07 17:11:29 - CustomerController - found: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=30}
+2025-05-07 17:11:33 - CustomerController - removed: Customer{customerId=11, firstName='Leah', lastName='Rose', mail='leah@mail.com', phoneNumber='3006765678', address='Antioquia Medellin apto 1322', registrationDate=2025-05-07, loyaltyPoints=30}
+2025-05-07 17:15:41 - CustomerController - deleted: 2
+2025-05-07 17:23:34 - CustomerController - found: Customer{customerId=8, firstName='Fiona', lastName='Garcia', mail='fiona.garcia@example.com', phoneNumber='6664567890', address='753 Walnut St', registrationDate=2025-05-07, loyaltyPoints=10}
+2025-05-07 17:24:27 - CustomerController - updated: Customer{customerId=8, firstName='Fiona', lastName='Lauren', mail='fiona@mail.com', phoneNumber='555111890', address='fake st 123', registrationDate=2025-05-07, loyaltyPoints=10}
+2025-05-07 17:25:05 - CustomerController - found: Customer{customerId=8, firstName='Fiona', lastName='Lauren', mail='fiona@mail.com', phoneNumber='555111890', address='fake st 123', registrationDate=2025-05-07, loyaltyPoints=10}
+2025-05-07 17:25:21 - CustomerController - removed: Customer{customerId=8, firstName='Fiona', lastName='Lauren', mail='fiona@mail.com', phoneNumber='555111890', address='fake st 123', registrationDate=2025-05-07, loyaltyPoints=10}

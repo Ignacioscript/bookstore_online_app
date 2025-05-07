@@ -163,3 +163,20 @@
 2025-05-06 19:09:30 - BookController - Error creating book: Book cannot be null
 2025-05-06 19:11:50 - BookController - input error BookValidator.validateDescription
 2025-05-06 19:12:18 - BookController - Error creating book: Cannot invoke "org.ignacioScript.co.model.Book.getBookId()" because "this.book" is null
+2025-05-07 10:35:47 - CustomerController - Error viewing customers: Text ' Antionquia apto 1322' could not be parsed at index 0
+2025-05-07 10:37:01 - CustomerController - Error viewing customers: Text ' Antionquia apto 1322' could not be parsed at index 0
+2025-05-07 10:37:34 - CustomerController - Error deleting customer: Text ' Antionquia apto 1322' could not be parsed at index 0
+2025-05-07 11:13:41 - CustomerController - Error creating customer: Input contains invalid characters
+2025-05-07 11:13:41 - OrderController - Error creating order: java.lang.IllegalArgumentException: Input contains invalid characters
+2025-05-07 16:54:38 - CustomerService - Error finding customer: Customer with email jshj'fd does not exist.
+2025-05-07 16:54:38 - CustomerController - Error searching for customer: Customer with email jshj'fd does not exist.
+2025-05-07 16:57:47 - CustomerService - Error finding customer: Customer with email ladjfdsf does not exist.
+2025-05-07 16:57:47 - CustomerController - Error searching for customer: Customer with email ladjfdsf does not exist.
+2025-05-07 16:58:57 - CustomerService - Error finding customer: Customer with email lasjdfj does not exist.
+2025-05-07 16:58:57 - CustomerController - Error searching for customer: Customer with email lasjdfj does not exist.
+2025-05-07 17:00:26 - CustomerService - Error finding customer: Customer with email lsdkfjsd does not exist.
+2025-05-07 17:00:26 - CustomerController - Error searching for customer: Customer with email lsdkfjsd does not exist.
+2025-05-07 17:04:57 - CustomerService - Error finding customer: Customer with email leahjkljsdhjf does not exist.
+2025-05-07 17:04:57 - CustomerController - Error searching for customer: Customer with email leahjkljsdhjf does not exist.
+2025-05-07 17:08:00 - CustomerService - Error finding customer: Customer with email jshlksf does not exist.
+2025-05-07 17:08:11 - CustomerService - Error finding customer: Customer with email leah@cat.com does not exist.
