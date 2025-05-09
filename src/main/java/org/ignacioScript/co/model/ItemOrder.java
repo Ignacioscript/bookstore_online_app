@@ -14,11 +14,19 @@ public class ItemOrder {
 
     public ItemOrder(Book book, Order order, int quantity, double unitPrice) {
 
-        this.itemOrderId = IdGenerator.generateId();
+        this.itemOrderId = getItemOrderId();
         setBook(book);
         setOrder(order);
         setQuantity(quantity);
         setUnitPrice(unitPrice);
+    }
+
+    public ItemOrder(int itemOrderId, Book book, Order order, int quantity, double unitPrice) {
+        this.itemOrderId = itemOrderId;
+        this.book = book;
+        this.order = order;
+        this.quantity = quantity;
+        this.unitPrice = unitPrice;
     }
 
     public void setItemOrderId(int itemOrderId) {

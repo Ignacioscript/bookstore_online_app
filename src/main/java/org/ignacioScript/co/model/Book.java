@@ -126,16 +126,14 @@ public class Book {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Book-> ");
-        sb.append("Id= ").append(getBookId());
-        sb.append(", isbn='").append(isbn).append('\'');
-        sb.append(", bookTitle='").append(bookTitle).append('\'');
-        sb.append(", description='").append(description).append('\'');
-        sb.append(", publisher='").append(publisher).append('\'');
-        sb.append(", publicationDate=").append(publicationDate);
-        sb.append(", price=").append(price);
-        sb.append(", stock=").append(stock);
-        sb.append('}');
+        final StringBuilder sb = new StringBuilder("BOOK ID: " + getBookId() + '\n');
+        sb.append(" ISBN: ").append(isbn).append('\t');
+        sb.append(" TITLE: ").append(bookTitle).append('\n');
+        sb.append(" DESCRIPTION: ").append(description).append('\t');
+        sb.append(" PUBLISHER: ").append(publisher).append('\n');
+        sb.append(" PUBLICATION DATE: ").append(publicationDate).append('\n');
+        sb.append(" PRICE: $").append(price);
+        sb.append(" STOCK: ").append(stock).append('\n');
         return sb.toString();
     }
 

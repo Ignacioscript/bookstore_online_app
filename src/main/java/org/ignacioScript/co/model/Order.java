@@ -14,10 +14,19 @@ public class Order {
     private Status status;
 
     public Order(Customer customer, LocalDate orderDate, double total, String paymentMethod, Status status) {
-        this.orderId = IdGenerator.generateId();
+        this.orderId = getOrderId();
         this.customer = customer;
         this.orderDate = orderDate;
         setTotal(total);
+        this.paymentMethod = paymentMethod;
+        this.status = status;
+    }
+
+    public Order(int orderId, Customer customer, LocalDate orderDate, double total, String paymentMethod, Status status) {
+        this.orderId = orderId;
+        this.customer = customer;
+        this.orderDate = orderDate;
+        this.total = total;
         this.paymentMethod = paymentMethod;
         this.status = status;
     }

@@ -34,10 +34,8 @@ public class AuthorController {
                 case 0 -> AuthorSeeder.seedAuthors(authorService);
                 case 1 -> createAuthor();
                 case 2 -> viewAuthors();
-                case 3 -> searchForAuthor();
-                case 4 -> updateAuthor();
-                case 5 -> deleteAuthor();
-                case 6 -> {
+                case 3 -> manageAuthor();
+                case 4 -> {
                     System.out.println("Returning to Author and Book menu... \n");
                     return;
                 }
@@ -55,15 +53,14 @@ public class AuthorController {
         System.out.println("1. Create Author");
         System.out.println("2. View All Authors");
         System.out.println("3. Find Author by Name or Last Name");
-        System.out.println("4. Update Author");
-        System.out.println("5. Delete Author");
-        System.out.println("6. Back to Main Menu");
+        System.out.println("4. Back to Main Menu");
         System.out.print("Enter your choice: ");
     }
 
 
 
-    private void createAuthor() {
+    public Author createAuthor() {
+        System.out.println("\n===== Create New Author =====");
         try {
             String firstName;
             while (true) {
@@ -119,13 +116,17 @@ public class AuthorController {
             authorService.saveAuthor(author);
             System.out.println("Author created successfully! with ID: " + authorId);
             FileLogger.logApp("AuthorController - author created successfully! with ID: " + authorId);
+            return  author;
         } catch (Exception e) {
             FileLogger.logError("AuthorController - Error creating author: " + e.getMessage());
             System.out.println("Unexpected Error: " + e.getMessage());
+            throw  new RuntimeException("Error creating author: " + e.getMessage());
         }
+
     }
 
     private void viewAuthors() {
+        System.out.println("\n===== View All Authors =====");
         try {
             List<Author> authors = authorService.getAllAuthors();
            // authors.forEach(System.out::println);
@@ -148,22 +149,17 @@ public class AuthorController {
         }
     }
 
-    private  void updateAuthor() {
+    private  void updateAuthor(int id) {
         try {
 
-            int authorIdToUpdate;
-            while (true) {
-                System.out.print("Enter Author ID to Update: ");
-                authorIdToUpdate= Integer.parseInt(scanner.nextLine());
 
                 try {
-                    AuthorValidator.validateId(authorIdToUpdate);
-                    authorService.findAuthorById(authorIdToUpdate);
-                    break;
+                    AuthorValidator.validateId(id);
+                    authorService.findAuthorById(id);
                 }catch (Exception e) {
                     System.out.println("Error: " + e.getMessage());
                 }
-            }
+
 
             String firstName;
             while (true) {
@@ -214,7 +210,7 @@ public class AuthorController {
             }
 
             Author updatedAuthor = new Author(firstName, lastName, bio, nationality);
-            updatedAuthor.setAuthorId(authorIdToUpdate);
+            updatedAuthor.setAuthorId(id);
             authorService.updateAuthor(updatedAuthor);
             System.out.println("Author updated successfully!");
         } catch (Exception e) {
@@ -222,10 +218,8 @@ public class AuthorController {
         }
     }
 
-    private  void deleteAuthor() {
+    private  void deleteAuthor(int id) {
         try {
-            System.out.print("Enter Author ID to Delete: ");
-            int id = Integer.parseInt(scanner.nextLine());
             authorService.deleteAuthor(id);
             System.out.println("Author deleted successfully!");
         } catch (Exception e) {
@@ -235,19 +229,34 @@ public class AuthorController {
 
 
 
-    private void searchForAuthor() {
+    public  Author searchForAuthor() {
+        System.out.println("\n===== Find Author =====");
         System.out.println("Enter author name or last name to search:");
-        String keyword = scanner.nextLine();
-        List<Author> authors = authorService.searchAuthorsByKeyword(keyword);
-        if (authors.isEmpty()) {
-            System.out.println("No authors found.");
-        } else {
-            System.out.println("Authors found:");
-            for (Author author : authors) {
-                System.out.println(author);
+        String keyword;
+        int authorId;
+
+        try {
+            keyword = scanner.nextLine();
+            List<Author> authors = authorService.searchAuthorsByKeyword(keyword.toLowerCase());
+            if (authors != null) {
+                System.out.println("\n===== Authors found =====");
+                for (Author author : authors) {
+                    System.out.println(author);
+                }
+                System.out.println("\nEnter Author ID to view details:");
+                authorId = Integer.parseInt(scanner.nextLine());
+                return authorService.findAuthorById(authorId);
+            } else {
+                System.out.println("No authors found.");
             }
+
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
+        return null;
     }
+
 
     private int getAuthorId() {
         int id = 0;
@@ -266,5 +275,30 @@ public class AuthorController {
     }
 
 
+    public void manageAuthor() {
+        try {
+           Author author = searchForAuthor();
+            int id = author.getAuthorId();
+            System.out.println("Author selected: " + author.getFirstName() + " " + author.getLastName() + " (ID: " +  author.getAuthorId() + ")");
+            System.out.println("What do you want to do with the author?");
+            System.out.println("1. Update Author");
+            System.out.println("2. Delete Author");
+            System.out.println("3. Back to Author Menu");
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume the newline character
+            switch (choice) {
+                case 1 -> updateAuthor(id);
+                case 2 -> deleteAuthor(id);
+                case 3 -> {
+                    System.out.println("Returning to Author menu... \n");
+                    return;
+                }
+                default -> System.out.println("Invalid choice. Please try again.\n");
+            }
+        }catch (Exception e) {
+            FileLogger.logError("Error managing author: " + e.getMessage());
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
 
 }

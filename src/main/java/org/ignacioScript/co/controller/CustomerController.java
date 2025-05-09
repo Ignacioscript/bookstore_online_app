@@ -21,6 +21,11 @@ public class CustomerController {
 
     }
 
+    public CustomerController(CustomerService customerService) {
+        this.customerService = customerService;
+        this.scanner = new Scanner(System.in);
+    }
+
 
 
     public  void displayCustomerMenu() {
@@ -65,7 +70,7 @@ public class CustomerController {
 
 
 
-    private  void createCustomer() {
+    public  Customer createCustomer() {
         try {
             System.out.println("===== Create Customer =====");
 
@@ -138,6 +143,9 @@ public class CustomerController {
             customerService.saveCustomer(customer);
             FileLogger.logApp("CustomerController - created: " + customer);
             System.out.println("Customer created successfully! with ID: " + id);
+
+            return customer;
+
         } catch (Exception e) {
             FileLogger.logError("CustomerController - Error creating customer: " + e.getMessage());
             throw new RuntimeException(e);
@@ -159,9 +167,7 @@ public class CustomerController {
 
     }
 
-    private   void searchForCustomer() {
-
-
+    public void searchForCustomer() {
         try {
 
             while (true) {
@@ -170,7 +176,7 @@ public class CustomerController {
                 try {
 
                     email = scanner.nextLine();
-                    Customer customer = customerService.findCustomerByEmail(email);
+                    Customer customer = customerService.findCustomerByEmail(email.toLowerCase());
                     CustomerValidator.validateMail(email);
                     if (customer != null) {
                         System.out.println("Customer found: " + customer);
@@ -182,6 +188,7 @@ public class CustomerController {
                         System.out.println("2. Update Loyalty Points");
                         System.out.println("3. Remove Customer");
                         System.out.println("4. No changes");
+
                         int updateChoice = Integer.parseInt(scanner.nextLine());
                         if (updateChoice == 1) {
                             int id = customer.getCustomerId();
@@ -306,7 +313,7 @@ public class CustomerController {
 
     }
 
-    private   void deleteCustomer() {
+    public void deleteCustomer() {
         try {
             System.out.println("Enter customer ID to delete:");
             int id = Integer.parseInt(scanner.nextLine());

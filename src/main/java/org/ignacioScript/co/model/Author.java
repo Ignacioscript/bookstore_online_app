@@ -17,14 +17,20 @@ public class Author {
 
 
     public Author(String firstName, String lastName, String bio, String nationality) {
-        AuthorId = IdGenerator.generateId();
+        AuthorId = getAuthorId();
         setFirstName(firstName);
         setLastName(lastName);
         setBio(bio);
         setNationality(nationality);
     }
 
-
+    public Author(int authorId, String firstName, String lastName, String bio, String nationality) {
+        AuthorId = authorId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.bio = bio;
+        this.nationality = nationality;
+    }
 
     public void setAuthorId(int authorId) {
         AuthorId = authorId;

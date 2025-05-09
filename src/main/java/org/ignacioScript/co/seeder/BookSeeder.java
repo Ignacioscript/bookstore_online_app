@@ -15,7 +15,7 @@ public class BookSeeder {
         try {
             // List of books to seed
             List<Book> seedBooks = List.of(
-                    new Book(
+                    new Book(1,
                             "978-0439708180",
                             "Harry Potter and the Sorcerer's Stone",
                             "A magical journey of a young wizard's first year at Hogwarts.",
@@ -24,7 +24,7 @@ public class BookSeeder {
                             25.99,
                             100
                     ),
-                    new Book(
+                    new Book(2,
                             "978-0261103573",
                             "The Hobbit",
                             "A classic tale of Bilbo Baggins a hobbit who travels on an incredible journey.",
@@ -33,7 +33,7 @@ public class BookSeeder {
                             15.99,
                             50
                     ),
-                    new Book(
+                    new Book(3,
                             "978-0141439518",
                             "Pride and Prejudice",
                             "Jane Austen explores the humorous side of romance and society.",
@@ -42,7 +42,7 @@ public class BookSeeder {
                             10.99,
                             200
                     ),
-                    new Book(
+                    new Book(4,
                             "978-0061120084",
                             "To Kill a Mockingbird",
                             "A novel about racial injustice and moral character in a small American town.",
@@ -51,7 +51,7 @@ public class BookSeeder {
                             12.99,
                             70
                     ),
-                    new Book(
+                    new Book(5,
                             "978-0743273565",
                             "The Great Gatsby",
                             "F. Scott Fitzgerald's masterpiece about wealth and the American dream.",

@@ -17,7 +17,7 @@ public class Customer {
     private int loyaltyPoints;
 
     public Customer(String firstName, String lastName, String mail, String phoneNumber, String address, LocalDate registrationDate, int loyaltyPoints) {
-        this.customerId = IdGenerator.generateId();
+        this.customerId = getCustomerId();
         setFirstName(firstName);
         setLastName(lastName);
         setMail(mail);
@@ -25,6 +25,20 @@ public class Customer {
         setAddress(address);
         setRegistrationDate(registrationDate);
         setLoyaltyPoints(loyaltyPoints);
+    }
+
+    // Default constructor for deserialization
+
+
+    public Customer(int customerId, String firstName, String lastName, String mail, String phoneNumber, String address, LocalDate registrationDate, int loyaltyPoints) {
+        this.customerId = customerId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.mail = mail;
+        this.phoneNumber = phoneNumber;
+        this.address = address;
+        this.registrationDate = registrationDate;
+        this.loyaltyPoints = loyaltyPoints;
     }
 
     public Customer() {

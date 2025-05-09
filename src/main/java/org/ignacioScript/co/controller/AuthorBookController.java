@@ -8,7 +8,9 @@ import org.ignacioScript.co.service.AuthorService;
 import org.ignacioScript.co.service.BookService;
 
 import java.time.LocalDate;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class AuthorBookController {
@@ -17,12 +19,18 @@ public class AuthorBookController {
     private  static AuthorService authorService;
     private  static BookService bookService;
     private static Scanner scanner;
+    private static BookController bookController;
+    private static AuthorController authorController;
+
 
     public AuthorBookController(Scanner scanner, AuthorBookService authorBookService, AuthorService authorService, BookService bookService) {
         AuthorBookController.authorBookService = authorBookService;
         AuthorBookController.authorService = authorService;
         AuthorBookController.bookService = bookService;
         AuthorBookController.scanner = scanner;
+        AuthorBookController.bookController = new BookController(scanner, bookService);
+        AuthorBookController.authorController = new AuthorController(scanner, authorService);
+
     }
 
 
@@ -63,8 +71,9 @@ public class AuthorBookController {
         System.out.println("1.create Author");
         System.out.println("2.create Book");
         System.out.println("3.create Author-Book Relationship");
-        System.out.println("4.view All Author-Book Relationships");
-        System.out.println("5.Back to Main Menu");
+        System.out.println("4.create Author with Multiple Books");
+        System.out.println("5.view All Authors and Books");
+        System.out.println("6.Back to Main Menu");
         System.out.print("Enter your choice: ");
 
         int choice = Integer.parseInt(scanner.nextLine());
@@ -72,73 +81,33 @@ public class AuthorBookController {
         switch (choice) {
             case 1 -> createAuthor();
             case 2 -> createBook();
-            case 3 -> createAuthorBookRelationship(new Author(), new Book());
-            case 4 -> viewAllAuthorBookRelationships();
-            case 5 -> System.out.println("Returning to Main Menu...");
+            case 3 -> createAuthorBookRelationship();
+            case 4 -> createAuthorWithMultipleBooks();
+            case 5 -> viewAllAuthorBookRelationships();
+            case 6 -> System.out.println("Returning to Main Menu...");
             default -> System.out.println("Invalid choice. Please try again.");
         }
     }
 
 
 
-    public void createAuthor() {
+    public Author createAuthor() {
+
 
         try {
-            System.out.println("Insert author name:");
-            String authorName = scanner.nextLine();
-            System.out.println("Insert author last name:");
-            String authorLastName = scanner.nextLine();
-            System.out.println("Insert author bio:");
-            String authorBio = scanner.nextLine();
-            System.out.println("Insert nationality:");
-            String nationality = scanner.nextLine();
-
-
-            Author author = new Author(authorName, authorLastName, authorBio, nationality);
-            authorService.saveAuthor(author);
-            System.out.println("Author created successfully!");
-            System.out.println("Want to create a book? (yes/no)");
-            String response = scanner.nextLine();
-            if (response.equalsIgnoreCase("yes")) {
-                createBook();
-            } else {
-                System.out.println("Returning to Main Menu...");
-            }
-
+            return authorController.createAuthor();
         }catch (Exception e) {
             System.out.println("Error creating author: " + e.getMessage());
+            throw new RuntimeException("Error creating author: " + e.getMessage());
         }
     }
 
-    public void createBook() {
+    public Book createBook() {
         try {
-            System.out.println("Insert book ISBN:");
-            String isbn = scanner.nextLine();
-            System.out.println("Insert book title:");
-            String bookTitle = scanner.nextLine();
-            System.out.println("Insert book description:");
-            String bookDescription = scanner.nextLine();
-            System.out.println("Insert book publisher:");
-            String bookPublisher = scanner.nextLine();
-            System.out.println("Insert publication date (YYYY-MM-DD):");
-            LocalDate publicationDate = LocalDate.parse(scanner.nextLine());
-            System.out.println("Insert price:");
-            Double price = Double.parseDouble(scanner.nextLine());
-            System.out.println("Insert stock:");
-            Integer stock = Integer.parseInt(scanner.nextLine());
-            Book book = new Book(isbn ,bookTitle, bookDescription, bookPublisher, publicationDate, price, stock);
-            bookService.saveBook(book);
-            System.out.println("Book created successfully!");
-
-            System.out.println("Want to create an author? (yes/no)");
-            String response = scanner.nextLine();
-            if (response.equalsIgnoreCase("yes")) {
-                createAuthor();
-            } else {
-                System.out.println("Returning to Main Menu...");
-            }
+            return bookController.createBook();
         } catch (Exception e) {
             System.out.println("Error creating book: " + e.getMessage());
+            throw new RuntimeException("Error creating book: " + e.getMessage());
         }
     }
 
@@ -192,7 +161,8 @@ public class AuthorBookController {
         }
     }
 
-    private void searchForAuthor() {
+    private Author searchForAuthor() {
+        Author authorFounded;
         System.out.println("Enter author name or last name to search:");
         String keyword = scanner.nextLine();
         List<Author> authors = authorService.searchAuthorsByKeyword(keyword);
@@ -202,8 +172,11 @@ public class AuthorBookController {
             System.out.println("Authors found:");
             for (Author author : authors) {
                 System.out.println(author);
+                authorFounded = author;
+                return authorFounded;
             }
         }
+        return null;
     }
 
     private void listAllAuthors() {
@@ -219,16 +192,16 @@ public class AuthorBookController {
 
     }
 
-    public void createAuthorBookRelationship(Author author, Book book) {
+    public void createAuthorBookRelationship() {
+
+        System.out.println("===== Create Author-Book Relationship =====");
         try {
-            System.out.println("Insert author ID:");
-            int authorId = Integer.parseInt(scanner.nextLine());
-            System.out.println("Insert book ID:");
-            int bookId = Integer.parseInt(scanner.nextLine());
-            Author selectedAuthor = authorService.findAuthorById(authorId);
-            Book selectedBook = bookService.findBookById(bookId);
-            if (selectedAuthor != null && selectedBook != null) {
-                AuthorBook authorBook = new AuthorBook(selectedBook, selectedAuthor);
+            System.out.println("Let's start by creating a Book");
+                Book book = createBook();
+            System.out.println("Now let's create an Author");
+                Author author = createAuthor();
+            if (author != null && book != null) {
+                AuthorBook authorBook = new AuthorBook(book, author);
                 authorBookService.saveAuthorBook(authorBook);
                 System.out.println("Author-Book relationship created successfully!");
             } else {
@@ -238,6 +211,63 @@ public class AuthorBookController {
             System.out.println("Error creating Author-Book relationship: " + e.getMessage());
         }
     }
+
+    public void createAuthorWithMultipleBooks() {
+        Map<Author, List<Book>> authorBookMap = new HashMap<>();
+        System.out.println("===== Create Author with Multiple Books =====");
+
+        try {
+            System.out.println("Let's start by creating an Author");
+            Author author = createAuthor();
+            System.out.println("Now let's create multiple Books");
+            List<Book> books = bookController.createMultipleBooks();
+            authorBookMap.put(author, books);
+            if (author != null && books != null) {
+                for (Book book : books) {
+                    AuthorBook authorBook = new AuthorBook(book, author);
+                    authorBookService.saveAuthorBook(authorBook);
+                }
+                System.out.println("Author-Book relationships created successfully!");
+            } else {
+                System.out.println("Invalid Author or Book ID.");
+            }
+            System.out.println("Author: " + author.getFirstName() + " " + author.getLastName());
+            System.out.println("Books:");
+            System.out.println(authorBookMap.getOrDefault(author, books));
+
+        } catch (Exception e) {
+            System.out.println("Error creating Author-Book relationship: " + e.getMessage());
+        }
+
+
+    }
+
+    public void getAuthorBooks() {
+        System.out.println("===== Get Author's Books =====");
+        try {
+           Author author =  searchForAuthor();
+           Map<Author, List<Book>> authorListMap = new HashMap<>();
+            if (author != null) {
+                List<Book> books = authorListMap.get(author);
+                if (books != null && !books.isEmpty()) {
+                    System.out.println("Books by " + author.getFirstName() + " " + author.getLastName() + ":");
+                    for (Book book : books) {
+                        System.out.println(book);
+                    }
+                } else {
+                    System.out.println("No books found for this author.");
+                }
+            } else {
+                System.out.println("Author not found.");
+            }
+        } catch (Exception e) {
+            System.out.println("Error retrieving author's books: " + e.getMessage());
+        }
+    }
+
+    /**
+     * This method retrieves and displays all Author-Book relationships.
+     */
 
     public void viewAllAuthorBookRelationships() {
         try {

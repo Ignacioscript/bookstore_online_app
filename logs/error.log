@@ -180,3 +180,33 @@
 2025-05-07 17:04:57 - CustomerController - Error searching for customer: Customer with email leahjkljsdhjf does not exist.
 2025-05-07 17:08:00 - CustomerService - Error finding customer: Customer with email jshlksf does not exist.
 2025-05-07 17:08:11 - CustomerService - Error finding customer: Customer with email leah@cat.com does not exist.
+2025-05-08 08:34:38 - BookController - input error BookValidator.validateDescription
+2025-05-08 08:35:13 - BookController - input error BookValidator.validatePublicationDate
+2025-05-08 08:35:28 - BookController - input error BookValidator.validatePrice
+2025-05-08 08:35:37 - BookController - input error BookValidator.validatePrice
+2025-05-08 08:35:48 - BookController - input error BookValidator.validatePrice
+2025-05-08 08:35:56 - BookController - input error BookValidator.validatePrice
+2025-05-08 08:36:01 - BookController - input error BookValidator.validatePrice
+2025-05-08 08:36:12 - BookController - input error BookValidator.validatePrice
+2025-05-08 08:36:22 - BookController - input error BookValidator.validateStock
+2025-05-08 08:36:27 - BookController - input error BookValidator.validateStock
+2025-05-08 08:36:30 - Error parsing line in books.csv:    1,978-0439708180,Harry Potter and the Sorcerer's Stone,A magical journey of a young wizard's first year at Hogwarts.,Bloomsbury,1997-06-26,25.99,100 - For input string: "   1"
+2025-05-08 08:36:30 - BookController - Error getting book ID: Error parsing line:    1,978-0439708180,Harry Potter and the Sorcerer's Stone,A magical journey of a young wizard's first year at Hogwarts.,Bloomsbury,1997-06-26,25.99,100
+2025-05-08 08:36:30 - BookController - Error creating book: Invalid id, must be a positive number
+2025-05-08 08:39:46 - Error parsing line in books.csv:    1,978-0439708180,Harry Potter and the Sorcerer's Stone,A magical journey of a young wizard's first year at Hogwarts.,Bloomsbury,1997-06-26,25.99,100 - For input string: "   1"
+2025-05-08 08:39:46 - BookController - Error viewing books: Error parsing line:    1,978-0439708180,Harry Potter and the Sorcerer's Stone,A magical journey of a young wizard's first year at Hogwarts.,Bloomsbury,1997-06-26,25.99,100
+2025-05-08 08:40:59 - BookController - input error BookValidator.validateDescription
+2025-05-08 08:43:06 - BookController - input error BookValidator.validateDescription
+2025-05-08 08:43:12 - BookController - input error BookValidator.validateDescription
+2025-05-08 09:02:22 - BookController - input error BookValidator.validatePublisher
+2025-05-08 10:54:55 - BookController - input error BookValidator.validatePublicationDate
+2025-05-08 11:02:20 - BookController - input error BookValidator.validateDescription
+2025-05-09 08:29:03 - BookController - input error BookValidator.validatePublicationDate
+2025-05-09 08:41:38 - CustomerController - Error creating customer: Input contains invalid characters
+2025-05-09 08:41:38 - OrderController - Error creating order: java.lang.IllegalArgumentException: Input contains invalid characters
+2025-05-09 08:47:04 - CustomerController - Error creating customer: Cannot invoke "org.ignacioScript.co.controller.CustomerController.createCustomer()" because "this.customerController" is null
+2025-05-09 08:47:04 - OrderController - Error creating order: java.lang.NullPointerException: Cannot invoke "org.ignacioScript.co.controller.CustomerController.createCustomer()" because "this.customerController" is null
+2025-05-09 08:50:40 - CustomerController - Error creating customer: Cannot invoke "org.ignacioScript.co.controller.CustomerController.createCustomer()" because "this.customerController" is null
+2025-05-09 08:50:40 - OrderController - Error creating order: java.lang.NullPointerException: Cannot invoke "org.ignacioScript.co.controller.CustomerController.createCustomer()" because "this.customerController" is null
+2025-05-09 08:56:53 - OrderController - Error creating order: Cannot invoke "org.ignacioScript.co.controller.CustomerController.createCustomer()" because "this.customerController" is null
+2025-05-09 09:52:40 - Error managing author: java.lang.NumberFormatException: For input string: "J Miller"

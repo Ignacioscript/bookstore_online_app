@@ -18,12 +18,14 @@ public class OrderController {
     private final OrderService orderService;
     private final CustomerService customerService;
     private final BookService bookService;
+    private CustomerController customerController;
 
 
     public OrderController(OrderService orderService, CustomerService customerService, BookService bookService) {
         this.orderService = orderService;
         this.customerService = customerService;
         this.bookService = bookService;
+        this.customerController = new CustomerController(customerService);
     }
 
     public OrderController() {
@@ -35,7 +37,7 @@ public class OrderController {
 
 
 
-    public Order createOrder(Scanner scanner, CustomerService customerService, BookService bookService) {
+    public Order createOrder(Scanner scanner) {
         Order order;
         try {
             Customer customer;
@@ -48,7 +50,10 @@ public class OrderController {
 
             if (choice == 1) {
                 System.out.println("Creating a new Customer...");
-                customer =  createCustomer(scanner);
+                if (customerController == null) {
+                    customerController = new CustomerController(customerService);
+                }
+                customer =  customerController.createCustomer();
                 FileLogger.logApp("OrderController - Customer created: " + customer);
 
 
@@ -59,7 +64,7 @@ public class OrderController {
                  FileLogger.logApp("OrderController - Customer found: " + customer);
                 if (customer == null) {
                     System.out.println("Customer not found. Please create a new customer.");
-                    customer = createCustomer(scanner);
+                    customer = createCustomer();
                 }
 
             } else {
@@ -96,26 +101,9 @@ public class OrderController {
         }
     }
 
-    private Customer createCustomer(Scanner scanner) {
+    private Customer createCustomer() {
         try {
-            System.out.println("Enter customer First name:");
-            String firstName = scanner.nextLine();
-            System.out.println("Enter customer Last name:");
-            String lastName = scanner.nextLine();
-            System.out.println("Enter customer email:");
-            String email = scanner.nextLine();
-            System.out.println("Enter customer phone:");
-            String phone = scanner.nextLine();
-            System.out.println("Enter customer address:");
-            String address = scanner.nextLine();
-            LocalDate registrationDate = LocalDate.now(); // Default value for registration date
-            System.out.println("Enter initial points:");
-            int loyaltyPoints =  Integer.parseInt(scanner.nextLine());
-
-            Customer customer = new Customer(firstName, lastName, email, phone, address, registrationDate, loyaltyPoints);
-            customerService.saveCustomer(customer);
-            FileLogger.logApp("CustomerController - created: " + customer);
-            System.out.println("Customer created successfully!");
+            Customer customer = customerController.createCustomer();
             return customer;
         } catch (Exception e) {
             FileLogger.logError("CustomerController - Error creating customer: " + e.getMessage());
