@@ -143,7 +143,7 @@ public class ItemOrderFileManager extends FileManager<ItemOrder> {
                 String.valueOf(itemOrder.getBook().getBookId()),
                 String.valueOf(itemOrder.getOrder().getOrderId()),
                 String.valueOf(itemOrder.getQuantity()),
-                String.valueOf(itemOrder.getUnitPrice())
+                String.valueOf(itemOrder.getTotal())
         );
     }
 

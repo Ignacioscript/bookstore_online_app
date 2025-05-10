@@ -3,6 +3,7 @@ package org.ignacioScript.co.controller;
 import org.ignacioScript.co.model.Customer;
 import org.ignacioScript.co.seeder.CustomerSeeder;
 import org.ignacioScript.co.service.CustomerService;
+import org.ignacioScript.co.util.ConsoleColor;
 import org.ignacioScript.co.util.FileLogger;
 import org.ignacioScript.co.validation.CustomerValidator;
 
@@ -11,14 +12,12 @@ import java.util.Scanner;
 
 public class CustomerController {
 
-    private  CustomerService customerService;
-    private  static  Scanner scanner;
+    private CustomerService customerService;
+    private static Scanner scanner;
 
     public CustomerController(Scanner scanner, CustomerService customerService) {
         this.customerService = customerService;
         this.scanner = scanner;
-
-
     }
 
     public CustomerController(CustomerService customerService) {
@@ -26,12 +25,7 @@ public class CustomerController {
         this.scanner = new Scanner(System.in);
     }
 
-
-
-    public  void displayCustomerMenu() {
-            //displayCustomerMenu(scanner);
-
-
+    public void displayCustomerMenu() {
         while (true) {
             diplayMenuOptions();
             int choice = scanner.nextInt();
@@ -44,105 +38,99 @@ public class CustomerController {
                 case 3 -> searchForCustomer();
                 case 4 -> deleteCustomer();
                 case 5 -> {
-                    System.out.println("Returning to Main Menu...\n");
+                    ConsoleColor.println("Returning to Main Menu...\n", ConsoleColor.GREEN);
                     MenuController.runMenu();
                     return;
                 }
-                default -> System.out.println("Invalid choice. Please try again.\n");
+                default -> ConsoleColor.println("Invalid choice. Please try again.\n", ConsoleColor.RED);
             }
-
         }
-
-
     }
 
     private void diplayMenuOptions() {
-        System.out.println("\n===== Manage Customers =====");
-        System.out.println("0. Seed Customers");
-        System.out.println("1. Create Customer");
-        System.out.println("2. View All Customers");
-        System.out.println("3. Find Customer by Email");
-        System.out.println("4. Delete Customer");
-        System.out.println("5. Back to Main Menu");
-        System.out.print("Enter your choice: ");
+        ConsoleColor.println("\n===== Manage Customers =====", ConsoleColor.CYAN);
+        ConsoleColor.println("0. Seed Customers", ConsoleColor.BLUE);
+        ConsoleColor.println("1. Create Customer", ConsoleColor.BLUE);
+        ConsoleColor.println("2. View All Customers", ConsoleColor.BLUE);
+        ConsoleColor.println("3. Find Customer by Email", ConsoleColor.BLUE);
+        ConsoleColor.println("4. Delete Customer", ConsoleColor.BLUE);
+        ConsoleColor.println("5. Back to Main Menu", ConsoleColor.BLUE);
+        ConsoleColor.print("Enter your choice: ", ConsoleColor.PURPLE);
     }
 
-
-
-
-    public  Customer createCustomer() {
+    public Customer createCustomer() {
         try {
-            System.out.println("===== Create Customer =====");
+            ConsoleColor.println("===== Create Customer =====", ConsoleColor.CYAN);
 
             String firstName;
             while (true) {
-                System.out.println("Enter customer First name:");
+                ConsoleColor.print("Enter customer First name: ", ConsoleColor.PURPLE);
                 try {
                     firstName = scanner.nextLine();
                     CustomerValidator.validateProperNoun(firstName);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
             String lastName;
             while (true) {
-                System.out.println("Enter customer Last name:");
+                ConsoleColor.print("Enter customer Last name: ", ConsoleColor.PURPLE);
                 try {
                     lastName = scanner.nextLine();
                     CustomerValidator.validateProperNoun(lastName);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
             String email;
             while (true) {
-                System.out.println("Enter customer email:");
+                ConsoleColor.print("Enter customer email: ", ConsoleColor.PURPLE);
                 try {
                     email = scanner.nextLine();
                     CustomerValidator.validateMail(email);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
             String phone;
             while (true) {
-                System.out.println("Enter customer phone:");
+                ConsoleColor.print("Enter customer phone: ", ConsoleColor.PURPLE);
                 try {
                     phone = scanner.nextLine();
                     CustomerValidator.validateOnlyNumbers(phone, 20, 6);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
             String address;
             while (true) {
-                System.out.println("Enter customer address:");
+                ConsoleColor.print("Enter customer address: ", ConsoleColor.PURPLE);
                 try {
                     address = scanner.nextLine();
                     CustomerValidator.validateAddress(address);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
-            LocalDate registrationDate = LocalDate.now(); // Default value for registration date
-            int loyaltyPoints =  10; // Default value for loyalty points
+            LocalDate registrationDate = LocalDate.now();
+            int loyaltyPoints = 10;
 
-            int id = getCustomerId() + 1; // Increment the ID for the new customer
+            int id = getCustomerId() + 1;
             Customer customer = new Customer(firstName, lastName, email, phone, address, registrationDate, loyaltyPoints);
             customer.setCustomerId(id);
             customerService.saveCustomer(customer);
             FileLogger.logApp("CustomerController - created: " + customer);
-            System.out.println("Customer created successfully! with ID: " + id);
+            ConsoleColor.println("Customer created successfully! with ID: " + id, ConsoleColor.GREEN);
 
             return customer;
 
@@ -150,190 +138,173 @@ public class CustomerController {
             FileLogger.logError("CustomerController - Error creating customer: " + e.getMessage());
             throw new RuntimeException(e);
         }
-
-
     }
 
-    private   void viewCustomers() {
+    private void viewCustomers() {
         try {
-            System.out.println("All Customers:");
+            ConsoleColor.println("All Customers:", ConsoleColor.CYAN);
             for (Customer customer : customerService.getAllCustomers()) {
-                System.out.println(customer);
+                ConsoleColor.println(customer.toString(), ConsoleColor.WHITE);
             }
         } catch (Exception e) {
             FileLogger.logError("CustomerController - Error viewing customers: " + e.getMessage());
             throw new RuntimeException(e);
         }
-
     }
 
     public void searchForCustomer() {
         try {
-
             while (true) {
-                System.out.println("Enter customer email to search:");
+                ConsoleColor.print("Enter customer email to search: ", ConsoleColor.PURPLE);
                 String email;
                 try {
-
                     email = scanner.nextLine();
                     Customer customer = customerService.findCustomerByEmail(email.toLowerCase());
                     CustomerValidator.validateMail(email);
                     if (customer != null) {
-                        System.out.println("Customer found: " + customer);
+                        ConsoleColor.println("Customer found: " + customer, ConsoleColor.GREEN);
                         FileLogger.logApp("CustomerController - found: " + customer);
 
-                        System.out.println("\n");
-                        System.out.println("Would you like to manage this Customer?");
-                        System.out.println("1. Update Customer");
-                        System.out.println("2. Update Loyalty Points");
-                        System.out.println("3. Remove Customer");
-                        System.out.println("4. No changes");
+                        ConsoleColor.println("\nWould you like to manage this Customer?", ConsoleColor.CYAN);
+                        ConsoleColor.println("1. Update Customer", ConsoleColor.BLUE);
+                        ConsoleColor.println("2. Update Loyalty Points", ConsoleColor.BLUE);
+                        ConsoleColor.println("3. Remove Customer", ConsoleColor.BLUE);
+                        ConsoleColor.println("4. No changes", ConsoleColor.BLUE);
 
                         int updateChoice = Integer.parseInt(scanner.nextLine());
                         if (updateChoice == 1) {
                             int id = customer.getCustomerId();
                             updateCustomer(id);
-
                         } else if (updateChoice == 2) {
-                            System.out.println("Current loyalty points: " + customer.getLoyaltyPoints());
-                            System.out.println("Enter points to add:");
+                            ConsoleColor.println("Current loyalty points: " + customer.getLoyaltyPoints(), ConsoleColor.WHITE);
+                            ConsoleColor.print("Enter points to add: ", ConsoleColor.PURPLE);
                             int pointsToAdd = Integer.parseInt(scanner.nextLine());
                             customer.setLoyaltyPoints(customer.getLoyaltyPoints() + pointsToAdd);
                             customerService.updateCustomer(customer);
                             FileLogger.logApp("CustomerController - updated loyalty points: " + customer);
-                            System.out.println("Customer: " + customer.getFirstName() +  " has now : " + customer.getLoyaltyPoints() + " total loyalty points");
-                            System.out.println("Loyalty points updated successfully!");
+                            ConsoleColor.println("Customer: " + customer.getFirstName() + " has now: " + customer.getLoyaltyPoints() + " total loyalty points", ConsoleColor.GREEN);
+                            ConsoleColor.println("Loyalty points updated successfully!", ConsoleColor.GREEN);
                         } else if (updateChoice == 3) {
-                            //deleteCustomer();
                             customerService.deleteCustomer(customer.getCustomerId());
                             FileLogger.logApp("CustomerController - removed: " + customer);
-                            System.out.println("Customer " + customer.getFirstName() + " with ID: " + customer.getCustomerId() + " removed successfully!");
+                            ConsoleColor.println("Customer " + customer.getFirstName() + " with ID: " + customer.getCustomerId() + " removed successfully!", ConsoleColor.GREEN);
                         } else if (updateChoice == 4) {
-                            System.out.println("No changes made to the customer.");
+                            ConsoleColor.println("No changes made to the customer.", ConsoleColor.YELLOW);
+                        } else {
+                            ConsoleColor.println("No valid choice made.", ConsoleColor.RED);
                         }
-                        else {
-                            System.out.println("No valid choice made.");
-                        }
-
                     } else {
-                        System.out.println("Customer not found.");
+                        ConsoleColor.println("Customer not found.", ConsoleColor.RED);
                     }
-                break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                    break;
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
-
             }
-
         } catch (Exception e) {
             FileLogger.logError("CustomerController - Error searching for customer: " + e.getMessage());
             throw new RuntimeException(e);
         }
-
     }
 
-    private  void updateCustomer(int id) {
+    private void updateCustomer(int id) {
         try {
-
-            System.out.println("===== Update Customer =====");
-
+            ConsoleColor.println("===== Update Customer =====", ConsoleColor.CYAN);
 
             String firstName;
             while (true) {
-                System.out.println("Enter customer First name:");
+                ConsoleColor.print("Enter customer First name: ", ConsoleColor.PURPLE);
                 try {
                     firstName = scanner.nextLine();
                     CustomerValidator.validateProperNoun(firstName);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
             String lastName;
             while (true) {
-                System.out.println("Enter customer Last name:");
+                ConsoleColor.print("Enter customer Last name: ", ConsoleColor.PURPLE);
                 try {
                     lastName = scanner.nextLine();
                     CustomerValidator.validateProperNoun(lastName);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
             String email;
             while (true) {
-                System.out.println("Enter customer email:");
+                ConsoleColor.print("Enter customer email: ", ConsoleColor.PURPLE);
                 try {
                     email = scanner.nextLine();
                     CustomerValidator.validateMail(email);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
             String phone;
             while (true) {
-                System.out.println("Enter customer phone:");
+                ConsoleColor.print("Enter customer phone: ", ConsoleColor.PURPLE);
                 try {
                     phone = scanner.nextLine();
                     CustomerValidator.validateOnlyNumbers(phone, 20, 6);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
             String address;
             while (true) {
-                System.out.println("Enter customer address:");
+                ConsoleColor.print("Enter customer address: ", ConsoleColor.PURPLE);
                 try {
                     address = scanner.nextLine();
                     CustomerValidator.validateAddress(address);
                     break;
-                }catch (Exception e) {
-                    System.err.println("Error: " + e.getMessage() + " Please try again.");
+                } catch (Exception e) {
+                    ConsoleColor.println("Error: " + e.getMessage() + " Please try again.", ConsoleColor.RED);
                 }
             }
 
-            LocalDate registrationDate = LocalDate.now(); // Default value for registration date
-            int loyaltyPoints =  10; // Default value for loyalty points
+            LocalDate registrationDate = LocalDate.now();
+            int loyaltyPoints = 10;
 
             Customer updatedCustomer = new Customer(firstName, lastName, email, phone, address, registrationDate, loyaltyPoints);
-            updatedCustomer.setCustomerId(id); // Set the ID of the customer to be updated
+            updatedCustomer.setCustomerId(id);
             customerService.updateCustomer(updatedCustomer);
             FileLogger.logApp("CustomerController - updated: " + updatedCustomer);
-            System.out.println("Customer updated successfully!");
+            ConsoleColor.println("Customer updated successfully!", ConsoleColor.GREEN);
         } catch (Exception e) {
             FileLogger.logError("CustomerController - Error updating customer: " + e.getMessage());
             throw new RuntimeException(e);
         }
-
     }
 
     public void deleteCustomer() {
         try {
-            System.out.println("Enter customer ID to delete:");
+            ConsoleColor.print("Enter customer ID to delete: ", ConsoleColor.PURPLE);
             int id = Integer.parseInt(scanner.nextLine());
-           Customer customerToRemove = customerService.findCustomerById(id);
-            System.out.println("Are you sure you want to delete customer: "+ customerToRemove.getFirstName()  + " with ID " + id + "? (yes/no)");
+            Customer customerToRemove = customerService.findCustomerById(id);
+            ConsoleColor.println("Are you sure you want to delete customer: " + customerToRemove.getFirstName() + " with ID " + id + "? (yes/no)", ConsoleColor.YELLOW);
             String confirmation = scanner.nextLine();
             if (!confirmation.equalsIgnoreCase("yes")) {
-                System.out.println("Customer deletion cancelled.");
+                ConsoleColor.println("Customer deletion cancelled.", ConsoleColor.YELLOW);
                 return;
             } else {
-                System.out.println("Customer deletion confirmed.");
+                ConsoleColor.println("Customer deletion confirmed.", ConsoleColor.GREEN);
             }
             customerService.deleteCustomer(id);
             FileLogger.logApp("CustomerController - deleted: " + id);
-            System.out.println("Customer deleted successfully!");
+            ConsoleColor.println("Customer deleted successfully!", ConsoleColor.GREEN);
         } catch (Exception e) {
             FileLogger.logError("CustomerController - Error deleting customer: " + e.getMessage());
             throw new RuntimeException(e);
         }
-
     }
 
     private int getCustomerId() {
@@ -347,9 +318,7 @@ public class CustomerController {
             return id;
         } catch (Exception e) {
             FileLogger.logError("Error getting customer ID: " + e.getMessage());
-            return -1; // Return an invalid ID in case of error
+            return -1;
         }
     }
-
-
 }

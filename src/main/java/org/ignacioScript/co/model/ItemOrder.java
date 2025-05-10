@@ -10,23 +10,23 @@ public class ItemOrder {
     private Book book;
     private Order order;
     private int quantity;
-    private double unitPrice;
+    private double total;
 
-    public ItemOrder(Book book, Order order, int quantity, double unitPrice) {
+    public ItemOrder(Book book, Order order, int quantity, double total) {
 
         this.itemOrderId = getItemOrderId();
         setBook(book);
         setOrder(order);
         setQuantity(quantity);
-        setUnitPrice(unitPrice);
+        setTotal(total);
     }
 
-    public ItemOrder(int itemOrderId, Book book, Order order, int quantity, double unitPrice) {
+    public ItemOrder(int itemOrderId, Book book, Order order, int quantity, double total) {
         this.itemOrderId = itemOrderId;
         this.book = book;
         this.order = order;
         this.quantity = quantity;
-        this.unitPrice = unitPrice;
+        this.total = total;
     }
 
     public void setItemOrderId(int itemOrderId) {
@@ -49,8 +49,8 @@ public class ItemOrder {
         return quantity;
     }
 
-    public double getUnitPrice() {
-        return unitPrice;
+    public double getTotal() {
+        return total;
     }
 
     public void setBook(Book book) {
@@ -69,9 +69,9 @@ public class ItemOrder {
         this.quantity = quantity;
     }
 
-    public void setUnitPrice(double unitPrice) {
-        ItemOrderValidator.validateUnits(unitPrice, 1.0, 9999999);
-        this.unitPrice = unitPrice;
+    public void setTotal(double total) {
+        ItemOrderValidator.validateUnits(total, 1.0, 9999999);
+        this.total = total;
     }
 
 
@@ -82,7 +82,7 @@ public class ItemOrder {
         sb.append(", book=").append(book.getBookId());
         sb.append(", order=").append(order.getOrderId());
         sb.append(", quantity=").append(quantity);
-        sb.append(", unitPrice=").append(unitPrice);
+        sb.append(", total=").append(total);
         sb.append('}');
         return sb.toString();
     }
@@ -93,7 +93,7 @@ public class ItemOrder {
                 String.valueOf(this.getBook().getBookId()),
                 String.valueOf(this.getOrder().getOrderId()),
                 String.valueOf(this.getQuantity()),
-                String.valueOf(this.getUnitPrice())
+                String.valueOf(this.getTotal())
                 );
     }
 }

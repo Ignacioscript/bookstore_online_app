@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-//TODO finish services for all the remain classes.
+
 public class CustomerService {
 
     private final CustomerFileManager customerFileManager;
@@ -88,23 +88,13 @@ public class CustomerService {
 
     // Find a customer by email
     public Customer findCustomerByEmail(String email) {
-        // Delegate to CustomerFileManager's getByEmail
-        try {
-            Customer customer = customerFileManager.getByEmail(email);
+        // Validate email format
 
-            if (customer == null) {
-                throw new IllegalArgumentException("Customer with email " + email + " does not exist.");
-            }
+        Customer customer = customerFileManager.getByEmail(email);
+        FileLogger.logInfo("CustomerService - Successfully found customer with email: " + email);
+        return customer;
 
-            FileLogger.logInfo("CustomerService - Successfully found customer with email: " + email);
-            return customer;
-
-        } catch (RuntimeException e) {
-            FileLogger.logError("CustomerService - Error finding customer: " + e.getMessage());
-            throw e; // Rethrow to propagate the error upwards
-        }
     }
-
 
 
     // Validation logic

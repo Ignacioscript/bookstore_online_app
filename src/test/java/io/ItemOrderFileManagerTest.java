@@ -156,7 +156,7 @@ class ItemOrderFileManagerTest {
         assertEquals(1, loadedItemOrders.size(), "Should have one item order");
         ItemOrder loaded = loadedItemOrders.get(0);
         assertEquals(5, loaded.getQuantity(), "Quantity should be updated");
-        assertEquals(39.99, loaded.getUnitPrice(), "Unit price should be updated");
+        assertEquals(39.99, loaded.gettotal(), "Unit price should be updated");
     }
 
     @Test
@@ -217,7 +217,7 @@ class ItemOrderFileManagerTest {
     private void assertItemOrderEquals(ItemOrder expected, ItemOrder actual) {
         assertEquals(expected.getItemOrderId(), actual.getItemOrderId(), "ItemOrder ID should match");
         assertEquals(expected.getQuantity(), actual.getQuantity(), "Quantity should match");
-        assertEquals(expected.getUnitPrice(), actual.getUnitPrice(), "Unit price should match");
+        assertEquals(expected.gettotal(), actual.gettotal(), "Unit price should match");
         assertEquals(expected.getBook().getBookId(), actual.getBook().getBookId(), "Book ID should match");
         assertEquals(expected.getOrder().getOrderId(), actual.getOrder().getOrderId(), "Order ID should match");
         assertEquals(expected.getOrder().getCustomer().getFirstName(),

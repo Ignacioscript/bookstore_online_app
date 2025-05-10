@@ -85,7 +85,7 @@ public class ItemOrderService {
         FileLogger.logInfo("ItemOrderService - Getting total");
 
         try {
-            double total = itemOrder.getUnitPrice() * itemOrder.getQuantity();
+            double total = itemOrder.getTotal() * itemOrder.getQuantity();
             ItemOrderValidator.validateUnits(total, 1, 500000);
             FileLogger.logInfo("ItemOrderService - Getting total operation success");
             return total;
@@ -103,7 +103,7 @@ public class ItemOrderService {
 
         ItemOrderValidator.validateId(itemOrder.getItemOrderId());
         ItemOrderValidator.validateUnits(itemOrder.getQuantity(), 1, 500);
-        ItemOrderValidator.validateUnits(itemOrder.getUnitPrice(), 1.0, 500000);
+        ItemOrderValidator.validateUnits(itemOrder.getTotal(), 1.0, 500000);
         ItemOrderValidator.validateBookNullParameter(itemOrder.getBook());
         ItemOrderValidator.validateOrderNullParameter(itemOrder.getOrder());
     }

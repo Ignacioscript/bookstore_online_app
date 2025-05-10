@@ -10,3 +10,9 @@
 3,2,Leah,Rose,leah@mail.com,555-111-22-33,catland st 123,2025-05-09,10,2025-05-09,10.0,Credit Card,PENDING
 3,2,Leah,Rose,leah@mail.com,555-111-22-33,catland st 123,2025-05-09,10,2025-05-09,10.0,Credit Card,PROCESSING
 3,2,Leah,Rose,leah@mail.com,555-111-22-33,catland st 123,2025-05-09,10,2025-05-09,10.0,Credit Card,PENDING
+0,3,Harry,Potter,harry@mail.com,12346789,hogwards st 123,2025-05-09,10,2025-05-09,10.0,Cash,PROCESSING
+0,3,Harry,Potter,harry@mail.com,12346789,hogwards st 123,2025-05-09,10,2025-05-09,10.0,Cash,PENDING
+0,3,Harry,Potter,harry@mail.com,12346789,hogwards st 123,2025-05-09,10,2025-05-09,10.0,Credit Card,SHIPPED
+0,3,Harry,Potter,harry@mail.com,12346789,hogwards st 123,2025-05-09,10,2025-05-09,10.0,Credit Card,PENDING
+0,3,Harry,Potter,harry@mail.com,12346789,hogwards st 123,2025-05-09,10,2025-05-09,10.0,Credit Card,PENDING
+0,3,Harry,Potter,harry@mail.com,12346789,hogwards st 123,2025-05-09,10,2025-05-09,10.0,Debit Card,PROCESSING
