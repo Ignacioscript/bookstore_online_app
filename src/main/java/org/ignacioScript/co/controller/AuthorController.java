@@ -143,6 +143,9 @@ public class AuthorController {
             AuthorValidator.validateId(id);
             authorService.findAuthorById(id);
 
+            Author author = authorService.findAuthorById(id);
+            authorDetails(author);
+
             String firstName;
             while (true) {
                 ConsoleColor.print("Enter First Name: ", ConsoleColor.PURPLE);
@@ -195,6 +198,7 @@ public class AuthorController {
             updatedAuthor.setAuthorId(id);
             authorService.updateAuthor(updatedAuthor);
             ConsoleColor.println("Author updated successfully!", ConsoleColor.GREEN);
+            authorDetails(updatedAuthor);
         } catch (Exception e) {
             ConsoleColor.println("Error: " + e.getMessage(), ConsoleColor.RED);
         }
@@ -256,7 +260,7 @@ public class AuthorController {
 
             int id = author.getAuthorId();
             ConsoleColor.println("Author selected: " + author.getFirstName() + " " + author.getLastName() + " (ID: " + id + ")", ConsoleColor.WHITE);
-            ConsoleColor.println("What do you want to do with the author?", ConsoleColor.CYAN);
+            ConsoleColor.println("\nWhat do you want to do with this author?", ConsoleColor.CYAN);
             ConsoleColor.println("1. Update Author", ConsoleColor.BLUE);
             ConsoleColor.println("2. Delete Author", ConsoleColor.BLUE);
             ConsoleColor.println("3. Back to Author Menu", ConsoleColor.BLUE);
@@ -275,4 +279,15 @@ public class AuthorController {
             ConsoleColor.println("Error: " + e.getMessage(), ConsoleColor.RED);
         }
     }
+
+    private void authorDetails(Author author) {
+        ConsoleColor.println("\n===== Author Details =====", ConsoleColor.CYAN);
+        ConsoleColor.println("ID: " + author.getAuthorId(), ConsoleColor.WHITE);
+        ConsoleColor.println("First Name: " + author.getFirstName(), ConsoleColor.WHITE);
+        ConsoleColor.println("Last Name: " + author.getLastName(), ConsoleColor.WHITE);
+        ConsoleColor.println("Bio: " + author.getBio(), ConsoleColor.WHITE);
+    }
+
+
+
 }

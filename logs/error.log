@@ -234,3 +234,4 @@
 2025-05-09 19:03:56 - CustomerController - Error creating customer: Cannot invoke "org.ignacioScript.co.controller.CustomerController.createCustomer()" because "this.customerController" is null
 2025-05-09 19:03:56 - OrderController - Error finding customer: java.lang.NullPointerException: Cannot invoke "org.ignacioScript.co.controller.CustomerController.createCustomer()" because "this.customerController" is null
 2025-05-09 19:03:56 - OrderController - Error creating order: java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.ignacioScript.co.controller.CustomerController.createCustomer()" because "this.customerController" is null
+2025-05-11 07:19:33 - BookController - input error BookValidator.validatePublisher

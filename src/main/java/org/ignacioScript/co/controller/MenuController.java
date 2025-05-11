@@ -29,7 +29,7 @@ public class MenuController {
         ConsoleColor.println("Created by: Ignacio Navarro", ConsoleColor.YELLOW);
         ConsoleColor.println("Email: ignacio@ignaciodev.me", ConsoleColor.YELLOW);
         ConsoleColor.println("Role: Analyst & Software Developer", ConsoleColor.YELLOW);
-        ConsoleColor.println("Motto: \"Code with passion, deliver with purpose.\"", ConsoleColor.YELLOW);
+        ConsoleColor.println("Motto: \"Code w ith passion, deliver with purpose.\"", ConsoleColor.YELLOW);
         ConsoleColor.println("=====================================================\n", ConsoleColor.CYAN);
 
         ConsoleColor.println("===== Library Management System DashBoard =====", ConsoleColor.GREEN);
